@@ -1,0 +1,158 @@
+{
+  "context": {
+    "date": "2019-12-14 19:23:25",
+    "executable": "./scope",
+    "num_cpus": 96,
+    "mhz_per_cpu": 3700,
+    "cpu_scaling_enabled": false,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 32000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 32000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 1024000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 33792000000,
+        "num_sharing": 48
+      }
+    ],
+    "library_build_type": "release"
+  },
+  "benchmarks": [
+    {
+      "name": "Comm_UM_Latency_GPUToGPU/1/0/log2(N):8/manual_time",
+      "iterations": 1846,
+      "real_time": 3.8079207808229339e+05,
+      "cpu_time": 4.6651372156013001e+05,
+      "time_unit": "ns",
+      "dst_gpu": 0.0000000000000000e+00,
+      "src_gpu": 1.0000000000000000e+00,
+      "strides": 8.0000000000000000e+00
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToGPU/1/0/log2(N):10/manual_time",
+      "iterations": 1514,
+      "real_time": 4.6042295356891322e+05,
+      "cpu_time": 5.5654271003963042e+05,
+      "time_unit": "ns",
+      "dst_gpu": 0.0000000000000000e+00,
+      "src_gpu": 1.0000000000000000e+00,
+      "strides": 1.0000000000000000e+01
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToGPU/1/0/log2(N):12/manual_time",
+      "iterations": 1287,
+      "real_time": 5.4330582022753765e+05,
+      "cpu_time": 6.5022524630924664e+05,
+      "time_unit": "ns",
+      "dst_gpu": 0.0000000000000000e+00,
+      "src_gpu": 1.0000000000000000e+00,
+      "strides": 1.2000000000000000e+01
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToGPU/1/0/log2(N):14/manual_time",
+      "iterations": 1117,
+      "real_time": 6.2500142517158610e+05,
+      "cpu_time": 7.4270589077887207e+05,
+      "time_unit": "ns",
+      "dst_gpu": 0.0000000000000000e+00,
+      "src_gpu": 1.0000000000000000e+00,
+      "strides": 1.4000000000000000e+01
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToGPU/1/0/log2(N):16/manual_time",
+      "iterations": 988,
+      "real_time": 7.0458668687565601e+05,
+      "cpu_time": 8.3392185931173956e+05,
+      "time_unit": "ns",
+      "dst_gpu": 0.0000000000000000e+00,
+      "src_gpu": 1.0000000000000000e+00,
+      "strides": 1.6000000000000000e+01
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToGPU/1/0/log2(N):18/manual_time",
+      "iterations": 888,
+      "real_time": 7.8560446979224193e+05,
+      "cpu_time": 9.2600423198198050e+05,
+      "time_unit": "ns",
+      "dst_gpu": 0.0000000000000000e+00,
+      "src_gpu": 1.0000000000000000e+00,
+      "strides": 1.8000000000000000e+01
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToGPU/1/0/log2(N):20/manual_time",
+      "iterations": 783,
+      "real_time": 8.8995269588628935e+05,
+      "cpu_time": 1.0426220153256684e+06,
+      "time_unit": "ns",
+      "dst_gpu": 0.0000000000000000e+00,
+      "src_gpu": 1.0000000000000000e+00,
+      "strides": 2.0000000000000000e+01
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToGPU/1/0/log2(N):22/manual_time",
+      "iterations": 717,
+      "real_time": 9.7139896456388594e+05,
+      "cpu_time": 1.1340150808926085e+06,
+      "time_unit": "ns",
+      "dst_gpu": 0.0000000000000000e+00,
+      "src_gpu": 1.0000000000000000e+00,
+      "strides": 2.2000000000000000e+01
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToGPU/1/0/log2(N):24/manual_time",
+      "iterations": 662,
+      "real_time": 1.0547310207461168e+06,
+      "cpu_time": 1.2294369728096663e+06,
+      "time_unit": "ns",
+      "dst_gpu": 0.0000000000000000e+00,
+      "src_gpu": 1.0000000000000000e+00,
+      "strides": 2.4000000000000000e+01
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToGPU/1/0/log2(N):26/manual_time",
+      "iterations": 615,
+      "real_time": 1.1359642568324520e+06,
+      "cpu_time": 1.3218585739837440e+06,
+      "time_unit": "ns",
+      "dst_gpu": 0.0000000000000000e+00,
+      "src_gpu": 1.0000000000000000e+00,
+      "strides": 2.6000000000000000e+01
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToGPU/1/0/log2(N):28/manual_time",
+      "iterations": 575,
+      "real_time": 1.2190970934360570e+06,
+      "cpu_time": 1.4170536991304371e+06,
+      "time_unit": "ns",
+      "dst_gpu": 0.0000000000000000e+00,
+      "src_gpu": 1.0000000000000000e+00,
+      "strides": 2.8000000000000000e+01
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToGPU/1/0/log2(N):30/manual_time",
+      "iterations": 538,
+      "real_time": 1.2988358042306753e+06,
+      "cpu_time": 1.5095798828996241e+06,
+      "time_unit": "ns",
+      "dst_gpu": 0.0000000000000000e+00,
+      "src_gpu": 1.0000000000000000e+00,
+      "strides": 3.0000000000000000e+01
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+# ./scope --benchmark_filter=Latency_GPUToGPU -c=0 -c=8 --benchmark_out_format=json --benchmark_out=latency/comm-latency-0-8-dual.json
+2019-12-14 19:29:13
+Running ./scope
+Run on (96 X 3700 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x48)
+  L1 Instruction 32K (x48)
+  L2 Unified 1024K (x48)
+  L3 Unified 33792K (x2)
+-----------------------------------------------------------------------------------------------------------
+Benchmark                                                    Time           CPU Iterations UserCounters...
+-----------------------------------------------------------------------------------------------------------
+Comm_UM_Latency_GPUToGPU/0/8/log2(N):8/manual_time      387216 ns     482419 ns       1790 dst_gpu=8 src_gpu=0 strides=8
+Comm_UM_Latency_GPUToGPU/0/8/log2(N):10/manual_time     456670 ns     562354 ns       1520 dst_gpu=8 src_gpu=0 strides=10
+Comm_UM_Latency_GPUToGPU/0/8/log2(N):12/manual_time     553235 ns     670279 ns       1268 dst_gpu=8 src_gpu=0 strides=12
+Comm_UM_Latency_GPUToGPU/0/8/log2(N):14/manual_time     633697 ns     762320 ns       1098 dst_gpu=8 src_gpu=0 strides=14
+Comm_UM_Latency_GPUToGPU/0/8/log2(N):16/manual_time     709990 ns     850149 ns        985 dst_gpu=8 src_gpu=0 strides=16
+Comm_UM_Latency_GPUToGPU/0/8/log2(N):18/manual_time     790966 ns     942052 ns        896 dst_gpu=8 src_gpu=0 strides=18
+Comm_UM_Latency_GPUToGPU/0/8/log2(N):20/manual_time     891238 ns    1055580 ns        786 dst_gpu=8 src_gpu=0 strides=20
+Comm_UM_Latency_GPUToGPU/0/8/log2(N):22/manual_time     969627 ns    1145122 ns        718 dst_gpu=8 src_gpu=0 strides=22
+Comm_UM_Latency_GPUToGPU/0/8/log2(N):24/manual_time    1053312 ns    1243291 ns        666 dst_gpu=8 src_gpu=0 strides=24
+Comm_UM_Latency_GPUToGPU/0/8/log2(N):26/manual_time    1138001 ns    1340315 ns        617 dst_gpu=8 src_gpu=0 strides=26
+Comm_UM_Latency_GPUToGPU/0/8/log2(N):28/manual_time    1219101 ns    1431799 ns        570 dst_gpu=8 src_gpu=0 strides=28
+Comm_UM_Latency_GPUToGPU/0/8/log2(N):30/manual_time    1304359 ns    1531676 ns        537 dst_gpu=8 src_gpu=0 strides=30

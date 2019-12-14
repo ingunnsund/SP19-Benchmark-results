@@ -1,0 +1,24 @@
+# ./scope --benchmark_filter=Latency_GPUToGPU -c=15 -c=0 --benchmark_out_format=json --benchmark_out=latency/comm-latency-15-0-dual.json
+2019-12-14 19:31:38
+Running ./scope
+Run on (96 X 3700 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x48)
+  L1 Instruction 32K (x48)
+  L2 Unified 1024K (x48)
+  L3 Unified 33792K (x2)
+------------------------------------------------------------------------------------------------------------
+Benchmark                                                     Time           CPU Iterations UserCounters...
+------------------------------------------------------------------------------------------------------------
+Comm_UM_Latency_GPUToGPU/15/0/log2(N):8/manual_time      365050 ns     451945 ns       1899 dst_gpu=0 src_gpu=15 strides=8
+Comm_UM_Latency_GPUToGPU/15/0/log2(N):10/manual_time     442658 ns     540921 ns       1577 dst_gpu=0 src_gpu=15 strides=10
+Comm_UM_Latency_GPUToGPU/15/0/log2(N):12/manual_time     521202 ns     630313 ns       1337 dst_gpu=0 src_gpu=15 strides=12
+Comm_UM_Latency_GPUToGPU/15/0/log2(N):14/manual_time     595306 ns     714984 ns       1161 dst_gpu=0 src_gpu=15 strides=14
+Comm_UM_Latency_GPUToGPU/15/0/log2(N):16/manual_time     674549 ns     806610 ns       1034 dst_gpu=0 src_gpu=15 strides=16
+Comm_UM_Latency_GPUToGPU/15/0/log2(N):18/manual_time     748322 ns     891056 ns        920 dst_gpu=0 src_gpu=15 strides=18
+Comm_UM_Latency_GPUToGPU/15/0/log2(N):20/manual_time     849321 ns    1005665 ns        819 dst_gpu=0 src_gpu=15 strides=20
+Comm_UM_Latency_GPUToGPU/15/0/log2(N):22/manual_time     930158 ns    1096512 ns        747 dst_gpu=0 src_gpu=15 strides=22
+Comm_UM_Latency_GPUToGPU/15/0/log2(N):24/manual_time    1007467 ns    1187057 ns        692 dst_gpu=0 src_gpu=15 strides=24
+Comm_UM_Latency_GPUToGPU/15/0/log2(N):26/manual_time    1085348 ns    1275588 ns        640 dst_gpu=0 src_gpu=15 strides=26
+Comm_UM_Latency_GPUToGPU/15/0/log2(N):28/manual_time    1166830 ns    1369136 ns        599 dst_gpu=0 src_gpu=15 strides=28
+Comm_UM_Latency_GPUToGPU/15/0/log2(N):30/manual_time    1249732 ns    1465187 ns        561 dst_gpu=0 src_gpu=15 strides=30
