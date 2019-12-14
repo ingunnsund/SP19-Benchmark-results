@@ -1,0 +1,35 @@
+# ./scope --benchmark_filter=NCCL/ops/allReduce --ngpu=3 --benchmark_out_format=json --benchmark_out=benchmarks/nccl-allreduce-3.json
+2019-12-14 16:50:02
+Running ./scope
+Run on (96 X 3700 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x48)
+  L1 Instruction 32K (x48)
+  L2 Unified 1024K (x48)
+  L3 Unified 33792K (x2)
+-------------------------------------------------------------------------------------------------
+Benchmark                                          Time           CPU Iterations UserCounters...
+-------------------------------------------------------------------------------------------------
+NCCL/ops/allReduce/log2(N):8/manual_time       29272 ns      41243 ns      23449 avg=3.47733m bytes=256 d0=3.264m d1=4.096m d2=3.072m d3=0   8.34037MB/s
+NCCL/ops/allReduce/log2(N):9/manual_time       30465 ns      42147 ns      22595 avg=3.264m bytes=512 d0=3.648m d1=3.072m d2=3.072m d3=0   16.0274MB/s
+NCCL/ops/allReduce/log2(N):10/manual_time      31089 ns      42842 ns      22457 avg=3.136m bytes=1024 d0=3.264m d1=3.072m d2=3.072m d3=0   31.4117MB/s
+NCCL/ops/allReduce/log2(N):11/manual_time      32773 ns      44592 ns      21281 avg=3.136m bytes=2.048k d0=3.264m d1=3.072m d2=3.072m d3=0   59.5959MB/s
+NCCL/ops/allReduce/log2(N):12/manual_time      35465 ns      47020 ns      19781 avg=3.46667m bytes=4.096k d0=3.232m d1=4.096m d2=3.072m d3=0   110.144MB/s
+NCCL/ops/allReduce/log2(N):13/manual_time      39120 ns      50937 ns      17937 avg=3.59467m bytes=8.192k d0=3.616m d1=4.096m d2=3.072m d3=0   199.706MB/s
+NCCL/ops/allReduce/log2(N):14/manual_time      43947 ns      55654 ns      16022 avg=3.136m bytes=16.384k d0=3.264m d1=3.072m d2=3.072m d3=0   355.544MB/s
+NCCL/ops/allReduce/log2(N):15/manual_time      49076 ns      60752 ns      14097 avg=3.12533m bytes=32.768k d0=3.232m d1=3.072m d2=3.072m d3=0    636.77MB/s
+NCCL/ops/allReduce/log2(N):16/manual_time      56581 ns      67895 ns      12364 avg=3.14667m bytes=65.536k d0=3.296m d1=3.072m d2=3.072m d3=0   1104.61MB/s
+NCCL/ops/allReduce/log2(N):17/manual_time      76192 ns      87524 ns       9195 avg=3.46667m bytes=131.072k d0=3.232m d1=3.072m d2=4.096m d3=0   1.60215GB/s
+NCCL/ops/allReduce/log2(N):18/manual_time      87081 ns      97594 ns       7879 avg=3.52m bytes=262.144k d0=3.392m d1=4.096m d2=3.072m d3=0   2.80361GB/s
+NCCL/ops/allReduce/log2(N):19/manual_time     114539 ns     127367 ns       6509 avg=3.264m bytes=524.288k d0=3.648m d1=3.072m d2=3.072m d3=0   4.26301GB/s
+NCCL/ops/allReduce/log2(N):20/manual_time     151659 ns     162809 ns       4608 avg=3.81867m bytes=1048.58k d0=3.264m d1=4.096m d2=4.096m d3=0   6.43918GB/s
+NCCL/ops/allReduce/log2(N):21/manual_time     153992 ns     165451 ns       4574 avg=3.12533m bytes=2.09715M d0=3.232m d1=3.072m d2=3.072m d3=0   12.6833GB/s
+NCCL/ops/allReduce/log2(N):22/manual_time     243252 ns     254307 ns       2896 avg=3.14667m bytes=4.1943M d0=3.296m d1=3.072m d2=3.072m d3=0   16.0585GB/s
+NCCL/ops/allReduce/log2(N):23/manual_time     423663 ns     435710 ns       1654 avg=3.136m bytes=8.38861M d0=3.264m d1=3.072m d2=3.072m d3=0   18.4404GB/s
+NCCL/ops/allReduce/log2(N):24/manual_time     786288 ns     798564 ns        891 avg=3.14667m bytes=16.7772M d0=3.296m d1=3.072m d2=3.072m d3=0   19.8718GB/s
+NCCL/ops/allReduce/log2(N):25/manual_time    1515941 ns    1527950 ns        462 avg=3.47733m bytes=33.5544M d0=3.264m d1=3.072m d2=4.096m d3=0   20.6143GB/s
+NCCL/ops/allReduce/log2(N):26/manual_time    2968546 ns    2980916 ns        236 avg=3.47733m bytes=67.1089M d0=3.264m d1=4.096m d2=3.072m d3=0   21.0541GB/s
+NCCL/ops/allReduce/log2(N):27/manual_time    5879980 ns    5892227 ns        119 avg=3.12533m bytes=134.218M d0=3.232m d1=3.072m d2=3.072m d3=0   21.2586GB/s
+NCCL/ops/allReduce/log2(N):28/manual_time   11676928 ns   11690129 ns         60 avg=3.47733m bytes=268.435M d0=3.264m d1=4.096m d2=3.072m d3=0   21.4097GB/s
+NCCL/ops/allReduce/log2(N):29/manual_time   23254596 ns   23267677 ns         30 avg=4.16m bytes=536.871M d0=3.264m d1=5.12m d2=4.096m d3=0   21.5011GB/s
+NCCL/ops/allReduce/log2(N):30/manual_time   46427887 ns   46440858 ns         15 avg=3.49867m bytes=1073.74M d0=3.328m d1=4.096m d2=3.072m d3=0   21.5388GB/s

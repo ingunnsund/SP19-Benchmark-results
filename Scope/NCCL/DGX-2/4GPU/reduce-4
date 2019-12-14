@@ -1,0 +1,58 @@
+# ./scope --benchmark_filter=NCCL/ops/reduce --ngpu=4 --benchmark_out_format=json --benchmark_out=benchmarks/nccl-reduce-4.json
+2019-12-14 16:19:57
+Running ./scope
+Run on (96 X 3700 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x48)
+  L1 Instruction 32K (x48)
+  L2 Unified 1024K (x48)
+  L3 Unified 33792K (x2)
+-----------------------------------------------------------------------------------------------------
+Benchmark                                              Time           CPU Iterations UserCounters...
+-----------------------------------------------------------------------------------------------------
+NCCL/ops/reduce/log2(N):8/manual_time              37072 ns      52911 ns      18899 avg=3.416m bytes=256 d0=3.424m d1=3.072m d2=4.096m d3=3.072m   6.58555MB/s
+NCCL/ops/reduce/log2(N):9/manual_time              38736 ns      54478 ns      18390 avg=3.656m bytes=512 d0=3.36m d1=4.096m d2=3.072m d3=4.096m   12.6055MB/s
+NCCL/ops/reduce/log2(N):10/manual_time             38128 ns      54031 ns      18386 avg=3.64m bytes=1024 d0=3.296m d1=4.096m d2=4.096m d3=3.072m   25.6129MB/s
+NCCL/ops/reduce/log2(N):11/manual_time             39588 ns      55569 ns      17799 avg=3.64m bytes=2.048k d0=3.296m d1=4.096m d2=3.072m d3=4.096m   49.3362MB/s
+NCCL/ops/reduce/log2(N):12/manual_time             40039 ns      57020 ns      17510 avg=3.376m bytes=4.096k d0=3.264m d1=3.072m d2=4.096m d3=3.072m   97.5605MB/s
+NCCL/ops/reduce/log2(N):13/manual_time             42687 ns      60228 ns      16335 avg=3.376m bytes=8.192k d0=3.264m d1=3.072m d2=4.096m d3=3.072m   183.019MB/s
+NCCL/ops/reduce/log2(N):14/manual_time             45603 ns      63112 ns      15248 avg=3.632m bytes=16.384k d0=3.264m d1=3.072m d2=4.096m d3=4.096m   342.631MB/s
+NCCL/ops/reduce/log2(N):15/manual_time             72133 ns      90034 ns       9607 avg=3.4m bytes=32.768k d0=3.36m d1=3.072m d2=4.096m d3=3.072m   433.227MB/s
+NCCL/ops/reduce/log2(N):16/manual_time             75002 ns      92681 ns       9142 avg=3.4m bytes=65.536k d0=3.36m d1=4.096m d2=3.072m d3=3.072m   833.312MB/s
+NCCL/ops/reduce/log2(N):17/manual_time             76410 ns      96687 ns       9090 avg=3.12m bytes=131.072k d0=3.264m d1=3.072m d2=3.072m d3=3.072m   1.59757GB/s
+NCCL/ops/reduce/log2(N):18/manual_time             83825 ns     106862 ns       8400 avg=3.912m bytes=262.144k d0=3.36m d1=4.096m d2=4.096m d3=4.096m   2.91252GB/s
+NCCL/ops/reduce/log2(N):19/manual_time            109177 ns     136779 ns       6464 avg=3.64m bytes=524.288k d0=3.296m d1=4.096m d2=3.072m d3=4.096m    4.4724GB/s
+NCCL/ops/reduce/log2(N):20/manual_time            156358 ns     193034 ns       4579 avg=3.456m bytes=1048.58k d0=3.584m d1=4.096m d2=3.072m d3=3.072m   6.24566GB/s
+NCCL/ops/reduce/log2(N):21/manual_time            221889 ns     270231 ns       3129 avg=3.12m bytes=2.09715M d0=3.264m d1=3.072m d2=3.072m d3=3.072m   8.80228GB/s
+NCCL/ops/reduce/log2(N):22/manual_time            292130 ns     341313 ns       2374 avg=3.128m bytes=4.1943M d0=3.296m d1=3.072m d2=3.072m d3=3.072m   13.3716GB/s
+NCCL/ops/reduce/log2(N):23/manual_time            431335 ns     479369 ns       1613 avg=3.392m bytes=8.38861M d0=3.328m d1=4.096m d2=3.072m d3=3.072m   18.1124GB/s
+NCCL/ops/reduce/log2(N):24/manual_time            704303 ns     752809 ns        998 avg=3.632m bytes=16.7772M d0=3.264m d1=4.096m d2=3.072m d3=4.096m   22.1851GB/s
+NCCL/ops/reduce/log2(N):25/manual_time           1251244 ns    1300187 ns        559 avg=4.488m bytes=33.5544M d0=3.616m d1=4.096m d2=4.096m d3=6.144m   24.9752GB/s
+NCCL/ops/reduce/log2(N):26/manual_time           2339573 ns    2388616 ns        299 avg=3.136m bytes=67.1089M d0=3.328m d1=3.072m d2=3.072m d3=3.072m   26.7143GB/s
+NCCL/ops/reduce/log2(N):27/manual_time           4522400 ns    4573042 ns        155 avg=3.408m bytes=134.218M d0=3.392m d1=4.096m d2=3.072m d3=3.072m   27.6402GB/s
+NCCL/ops/reduce/log2(N):28/manual_time           8872584 ns    8922945 ns         79 avg=3.128m bytes=268.435M d0=3.296m d1=3.072m d2=3.072m d3=3.072m   28.1767GB/s
+NCCL/ops/reduce/log2(N):29/manual_time          17575859 ns   17631249 ns         40 avg=3.376m bytes=536.871M d0=3.264m d1=3.072m d2=3.072m d3=4.096m   28.4481GB/s
+NCCL/ops/reduce/log2(N):30/manual_time          34981376 ns   35033503 ns         20 avg=3.392m bytes=1073.74M d0=3.328m d1=3.072m d2=4.096m d3=3.072m   28.5866GB/s
+NCCL/ops/reduceScatter/log2(N):8/manual_time       37931 ns      53251 ns      18447 avg=3.416m bytes=256 d0=3.424m d1=3.072m d2=4.096m d3=3.072m   6.43637MB/s
+NCCL/ops/reduceScatter/log2(N):9/manual_time       39707 ns      54706 ns      17873 avg=3.472m bytes=512 d0=3.648m d1=3.072m d2=4.096m d3=3.072m    12.297MB/s
+NCCL/ops/reduceScatter/log2(N):10/manual_time      40208 ns      54955 ns      17021 avg=3.64m bytes=1024 d0=3.296m d1=4.096m d2=3.072m d3=4.096m   24.2878MB/s
+NCCL/ops/reduceScatter/log2(N):11/manual_time      44162 ns      59070 ns      15998 avg=3.384m bytes=2.048k d0=3.296m d1=3.072m d2=4.096m d3=3.072m   44.2264MB/s
+NCCL/ops/reduceScatter/log2(N):12/manual_time      47004 ns      61852 ns      14773 avg=3.384m bytes=4.096k d0=3.296m d1=3.072m d2=4.096m d3=3.072m   83.1042MB/s
+NCCL/ops/reduceScatter/log2(N):13/manual_time      54894 ns      69732 ns      12540 avg=3.184m bytes=8.192k d0=3.52m d1=3.072m d2=3.072m d3=3.072m   142.319MB/s
+NCCL/ops/reduceScatter/log2(N):14/manual_time      65353 ns      79879 ns      10905 avg=3.408m bytes=16.384k d0=3.392m d1=3.072m d2=3.072m d3=4.096m   239.085MB/s
+NCCL/ops/reduceScatter/log2(N):15/manual_time      83562 ns      97324 ns       8416 avg=3.776m bytes=32.768k d0=3.84m d1=4.096m d2=4.096m d3=3.072m   373.973MB/s
+NCCL/ops/reduceScatter/log2(N):16/manual_time      92421 ns     105783 ns       7748 avg=3.792m bytes=65.536k d0=3.904m d1=4.096m d2=4.096m d3=3.072m   676.253MB/s
+NCCL/ops/reduceScatter/log2(N):17/manual_time     107861 ns     119072 ns       6474 avg=3.128m bytes=131.072k d0=3.296m d1=3.072m d2=3.072m d3=3.072m   1.13173GB/s
+NCCL/ops/reduceScatter/log2(N):18/manual_time     129749 ns     141036 ns       5126 avg=3.16m bytes=262.144k d0=3.424m d1=3.072m d2=3.072m d3=3.072m   1.88163GB/s
+NCCL/ops/reduceScatter/log2(N):19/manual_time     132565 ns     146814 ns       5263 avg=3.384m bytes=524.288k d0=3.296m d1=4.096m d2=3.072m d3=3.072m   3.68334GB/s
+NCCL/ops/reduceScatter/log2(N):20/manual_time     192761 ns     204268 ns       3652 avg=3.688m bytes=1048.58k d0=3.488m d1=3.072m d2=4.096m d3=4.096m   5.06619GB/s
+NCCL/ops/reduceScatter/log2(N):21/manual_time     310030 ns     321560 ns       2256 avg=3.12m bytes=2.09715M d0=3.264m d1=3.072m d2=3.072m d3=3.072m   6.29979GB/s
+NCCL/ops/reduceScatter/log2(N):22/manual_time     550460 ns     562831 ns       1272 avg=3.376m bytes=4.1943M d0=3.264m d1=3.072m d2=4.096m d3=3.072m   7.09634GB/s
+NCCL/ops/reduceScatter/log2(N):23/manual_time    1031381 ns    1044541 ns        677 avg=3.392m bytes=8.38861M d0=3.328m d1=4.096m d2=3.072m d3=3.072m   7.57479GB/s
+NCCL/ops/reduceScatter/log2(N):24/manual_time    1984080 ns    2000888 ns        353 avg=3.376m bytes=16.7772M d0=3.264m d1=3.072m d2=4.096m d3=3.072m   7.87519GB/s
+NCCL/ops/reduceScatter/log2(N):25/manual_time    3815592 ns    3840147 ns        183 avg=3.392m bytes=33.5544M d0=3.328m d1=3.072m d2=4.096m d3=3.072m   8.19008GB/s
+NCCL/ops/reduceScatter/log2(N):26/manual_time    7401698 ns    7427895 ns         95 avg=3.144m bytes=67.1089M d0=3.36m d1=3.072m d2=3.072m d3=3.072m   8.44401GB/s
+NCCL/ops/reduceScatter/log2(N):27/manual_time   14356647 ns   14379941 ns         49 avg=3.68m bytes=134.218M d0=3.456m d1=4.096m d2=3.072m d3=4.096m   8.70677GB/s
+NCCL/ops/reduceScatter/log2(N):28/manual_time   28029747 ns   28064200 ns         25 avg=3.656m bytes=268.435M d0=3.36m d1=3.072m d2=4.096m d3=4.096m    8.9191GB/s
+NCCL/ops/reduceScatter/log2(N):29/manual_time   54583296 ns   54606174 ns         13 avg=3.632m bytes=536.871M d0=3.264m d1=4.096m d2=3.072m d3=4.096m   9.16031GB/s
+NCCL/ops/reduceScatter/log2(N):30/manual_time  107844437 ns  107870835 ns          6 avg=3.456m bytes=1073.74M d0=3.584m d1=4.096m d2=3.072m d3=3.072m   9.27262GB/s

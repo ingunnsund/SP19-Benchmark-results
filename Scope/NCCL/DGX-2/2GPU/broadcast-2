@@ -1,0 +1,35 @@
+# ./scope --benchmark_filter=NCCL/ops/broadcast --ngpu=2 --benchmark_out_format=json --benchmark_out=benchmarks/nccl-broadcast-2.json
+2019-12-14 16:04:49
+Running ./scope
+Run on (96 X 3700 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x48)
+  L1 Instruction 32K (x48)
+  L2 Unified 1024K (x48)
+  L3 Unified 33792K (x2)
+-------------------------------------------------------------------------------------------------
+Benchmark                                          Time           CPU Iterations UserCounters...
+-------------------------------------------------------------------------------------------------
+NCCL/ops/broadcast/log2(N):8/manual_time       20448 ns      30784 ns      33581 avg=3.248m bytes=256 d0=3.424m d1=3.072m d2=0 d3=0   11.9398MB/s
+NCCL/ops/broadcast/log2(N):9/manual_time       20665 ns      31007 ns      33616 avg=3.216m bytes=512 d0=3.36m d1=3.072m d2=0 d3=0   23.6284MB/s
+NCCL/ops/broadcast/log2(N):10/manual_time      21029 ns      31422 ns      33305 avg=3.696m bytes=1024 d0=3.296m d1=4.096m d2=0 d3=0    46.439MB/s
+NCCL/ops/broadcast/log2(N):11/manual_time      22242 ns      32621 ns      31203 avg=3.184m bytes=2.048k d0=3.296m d1=3.072m d2=0 d3=0   87.8126MB/s
+NCCL/ops/broadcast/log2(N):12/manual_time      25846 ns      36178 ns      26958 avg=3.168m bytes=4.096k d0=3.264m d1=3.072m d2=0 d3=0   151.135MB/s
+NCCL/ops/broadcast/log2(N):13/manual_time      28665 ns      39055 ns      24491 avg=3.168m bytes=8.192k d0=3.264m d1=3.072m d2=0 d3=0   272.543MB/s
+NCCL/ops/broadcast/log2(N):14/manual_time      34223 ns      44651 ns      20508 avg=3.68m bytes=16.384k d0=3.264m d1=4.096m d2=0 d3=0   456.558MB/s
+NCCL/ops/broadcast/log2(N):15/manual_time      49094 ns      59524 ns      14168 avg=4m bytes=32.768k d0=3.904m d1=4.096m d2=0 d3=0   636.535MB/s
+NCCL/ops/broadcast/log2(N):16/manual_time      50935 ns      61403 ns      13721 avg=3.696m bytes=65.536k d0=3.296m d1=4.096m d2=0 d3=0    1.1983GB/s
+NCCL/ops/broadcast/log2(N):17/manual_time      55126 ns      65707 ns      12711 avg=3.68m bytes=131.072k d0=3.264m d1=4.096m d2=0 d3=0   2.21438GB/s
+NCCL/ops/broadcast/log2(N):18/manual_time      58977 ns      69598 ns      11765 avg=3.168m bytes=262.144k d0=3.264m d1=3.072m d2=0 d3=0   4.13959GB/s
+NCCL/ops/broadcast/log2(N):19/manual_time      70055 ns      80735 ns      10164 avg=3.68m bytes=524.288k d0=3.264m d1=4.096m d2=0 d3=0   6.97001GB/s
+NCCL/ops/broadcast/log2(N):20/manual_time      87712 ns      98399 ns       7944 avg=3.68m bytes=1048.58k d0=3.264m d1=4.096m d2=0 d3=0   11.1337GB/s
+NCCL/ops/broadcast/log2(N):21/manual_time     127329 ns     137990 ns       5496 avg=3.152m bytes=2.09715M d0=3.232m d1=3.072m d2=0 d3=0   15.3392GB/s
+NCCL/ops/broadcast/log2(N):22/manual_time     187026 ns     197684 ns       3742 avg=3.168m bytes=4.1943M d0=3.264m d1=3.072m d2=0 d3=0   20.8861GB/s
+NCCL/ops/broadcast/log2(N):23/manual_time     314194 ns     324872 ns       2218 avg=3.328m bytes=8.38861M d0=3.584m d1=3.072m d2=0 d3=0   24.8652GB/s
+NCCL/ops/broadcast/log2(N):24/manual_time     558076 ns     568753 ns       1256 avg=3.184m bytes=16.7772M d0=3.296m d1=3.072m d2=0 d3=0    27.998GB/s
+NCCL/ops/broadcast/log2(N):25/manual_time    1051665 ns    1062440 ns        665 avg=3.152m bytes=33.5544M d0=3.232m d1=3.072m d2=0 d3=0   29.7148GB/s
+NCCL/ops/broadcast/log2(N):26/manual_time    2030497 ns    2041100 ns        345 avg=3.2m bytes=67.1089M d0=3.328m d1=3.072m d2=0 d3=0   30.7806GB/s
+NCCL/ops/broadcast/log2(N):27/manual_time    3993863 ns    4004560 ns        175 avg=3.152m bytes=134.218M d0=3.232m d1=3.072m d2=0 d3=0    31.298GB/s
+NCCL/ops/broadcast/log2(N):28/manual_time    7928681 ns    7939365 ns         88 avg=3.68m bytes=268.435M d0=3.264m d1=4.096m d2=0 d3=0   31.5311GB/s
+NCCL/ops/broadcast/log2(N):29/manual_time   15795340 ns   15806162 ns         44 avg=3.168m bytes=536.871M d0=3.264m d1=3.072m d2=0 d3=0   31.6549GB/s
+NCCL/ops/broadcast/log2(N):30/manual_time   31565079 ns   31575743 ns         22 avg=3.216m bytes=1073.74M d0=3.36m d1=3.072m d2=0 d3=0   31.6806GB/s
