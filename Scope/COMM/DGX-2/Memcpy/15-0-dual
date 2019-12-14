@@ -1,0 +1,64 @@
+# ./scope --benchmark_filter=Memcpy_GPUToGPUPeer -c=15 -c=0 --benchmark_out_format=json --benchmark_out=memcpy/comm-memcpy-15-0-peer.json
+2019-12-14 19:11:13
+Running ./scope
+Run on (96 X 3700 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x48)
+  L1 Instruction 32K (x48)
+  L2 Unified 1024K (x48)
+  L3 Unified 33792K (x2)
+------------------------------------------------------------------------------------------------------------
+Benchmark                                                     Time           CPU Iterations UserCounters...
+------------------------------------------------------------------------------------------------------------
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):8/manual_time       15014 ns      27740 ns      46522 bytes=256 dst_gpu=0 src_gpu=15   16.2608MB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):9/manual_time       15545 ns      28281 ns      46673 bytes=512 dst_gpu=0 src_gpu=15   31.4115MB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):10/manual_time      15474 ns      28104 ns      45481 bytes=1024 dst_gpu=0 src_gpu=15   63.1083MB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):11/manual_time      15260 ns      27901 ns      45205 bytes=2.048k dst_gpu=0 src_gpu=15   127.987MB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):12/manual_time      15640 ns      28399 ns      46213 bytes=4.096k dst_gpu=0 src_gpu=15   249.753MB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):13/manual_time      15478 ns      28173 ns      44609 bytes=8.192k dst_gpu=0 src_gpu=15   504.751MB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):14/manual_time      15425 ns      28159 ns      46593 bytes=16.384k dst_gpu=0 src_gpu=15   1012.95MB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):15/manual_time      15559 ns      28354 ns      45578 bytes=32.768k dst_gpu=0 src_gpu=15    1.9614GB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):16/manual_time      15610 ns      28314 ns      45958 bytes=65.536k dst_gpu=0 src_gpu=15   3.91009GB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):17/manual_time      15449 ns      28141 ns      43822 bytes=131.072k dst_gpu=0 src_gpu=15   7.90175GB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):18/manual_time      17143 ns      29966 ns      41224 bytes=262.144k dst_gpu=0 src_gpu=15   14.2415GB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):19/manual_time      25696 ns      38583 ns      27254 bytes=524.288k dst_gpu=0 src_gpu=15   19.0022GB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):20/manual_time      26262 ns      39057 ns      26911 bytes=1048.58k dst_gpu=0 src_gpu=15    37.185GB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):21/manual_time      28578 ns      41339 ns      24131 bytes=2.09715M dst_gpu=0 src_gpu=15   68.3436GB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):22/manual_time      43235 ns      56014 ns      16239 bytes=4.1943M dst_gpu=0 src_gpu=15   90.3494GB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):23/manual_time      72152 ns      85215 ns       9678 bytes=8.38861M dst_gpu=0 src_gpu=15   108.278GB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):24/manual_time     129809 ns     142863 ns       5391 bytes=16.7772M dst_gpu=0 src_gpu=15   120.369GB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):25/manual_time     245202 ns     258173 ns       2855 bytes=33.5544M dst_gpu=0 src_gpu=15   127.446GB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):26/manual_time     476576 ns     489656 ns       1469 bytes=67.1089M dst_gpu=0 src_gpu=15   131.144GB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):27/manual_time     941364 ns     954516 ns        746 bytes=134.218M dst_gpu=0 src_gpu=15   132.786GB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):28/manual_time    1864917 ns    1878151 ns        376 bytes=268.435M dst_gpu=0 src_gpu=15   134.054GB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):29/manual_time    3705971 ns    3719666 ns        189 bytes=536.871M dst_gpu=0 src_gpu=15   134.917GB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):30/manual_time    7394620 ns    7413168 ns         95 bytes=1073.74M dst_gpu=0 src_gpu=15   135.233GB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):31/manual_time   14769608 ns   14818127 ns         47 bytes=2.14748G dst_gpu=0 src_gpu=15   135.413GB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):32/manual_time   29519565 ns   29685102 ns         24 bytes=4.29497G dst_gpu=0 src_gpu=15   135.503GB/s
+Comm_Memcpy_GPUToGPUPeer/15/0/log2(N):33/manual_time   59296464 ns   59977723 ns         12 bytes=8.58993G dst_gpu=0 src_gpu=15   134.915GB/s
+
+
+# ./scope --benchmark_filter=Duplex_Memcpy_GPUGPUPeer -c=15 -c=0 --benchmark_out_format=json --benchmark_out=memcpy/comm-memcpy-15-0-duplex.json
+2019-12-14 19:13:04
+Running ./scope
+Run on (96 X 3700 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x48)
+  L1 Instruction 32K (x48)
+  L2 Unified 1024K (x48)
+  L3 Unified 33792K (x2)
+-----------------------------------------------------------------------------------------------------------------
+Benchmark                                                          Time           CPU Iterations UserCounters...
+-----------------------------------------------------------------------------------------------------------------
+Comm_Duplex_Memcpy_GPUGPUPeer/15/0/log2(N):8/manual_time       24199 ns      46207 ns      29087 bytes=256 gpu0=15 gpu1=0   20.1774MB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/15/0/log2(N):10/manual_time      24188 ns      46205 ns      28875 bytes=1024 gpu0=15 gpu1=0   80.7484MB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/15/0/log2(N):12/manual_time      24303 ns      46342 ns      28950 bytes=4.096k gpu0=15 gpu1=0   321.465MB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/15/0/log2(N):14/manual_time      24326 ns      46280 ns      28941 bytes=16.384k gpu0=15 gpu1=0   1.25452GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/15/0/log2(N):16/manual_time      24346 ns      46325 ns      28871 bytes=65.536k gpu0=15 gpu1=0   5.01406GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/15/0/log2(N):18/manual_time      24471 ns      46393 ns      28786 bytes=262.144k gpu0=15 gpu1=0   19.9538GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/15/0/log2(N):20/manual_time      26552 ns      48497 ns      26124 bytes=1048.58k gpu0=15 gpu1=0    73.559GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/15/0/log2(N):22/manual_time      43147 ns      66330 ns      16112 bytes=4.1943M gpu0=15 gpu1=0   181.068GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/15/0/log2(N):24/manual_time     133343 ns     156660 ns       5247 bytes=16.7772M gpu0=15 gpu1=0   234.358GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/15/0/log2(N):26/manual_time     480109 ns     503497 ns       1457 bytes=67.1089M gpu0=15 gpu1=0   260.358GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/15/0/log2(N):28/manual_time    1865175 ns    1889179 ns        375 bytes=268.435M gpu0=15 gpu1=0   268.071GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/15/0/log2(N):30/manual_time    7392568 ns    7428200 ns         95 bytes=1073.74M gpu0=15 gpu1=0   270.542GB/s

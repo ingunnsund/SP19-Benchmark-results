@@ -1,0 +1,170 @@
+{
+  "context": {
+    "date": "2019-12-14 19:09:56",
+    "executable": "./scope",
+    "num_cpus": 96,
+    "mhz_per_cpu": 3700,
+    "cpu_scaling_enabled": false,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 32000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 32000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 1024000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 33792000000,
+        "num_sharing": 48
+      }
+    ],
+    "library_build_type": "release"
+  },
+  "benchmarks": [
+    {
+      "name": "Comm_Duplex_Memcpy_GPUGPUPeer/8/15/log2(N):8/manual_time",
+      "iterations": 28573,
+      "real_time": 2.4390656944596609e+04,
+      "cpu_time": 4.7415822874741905e+04,
+      "time_unit": "ns",
+      "bytes_per_second": 2.0991644512200236e+07,
+      "bytes": 2.5600000000000000e+02,
+      "gpu0": 8.0000000000000000e+00,
+      "gpu1": 1.5000000000000000e+01
+    },
+    {
+      "name": "Comm_Duplex_Memcpy_GPUGPUPeer/8/15/log2(N):10/manual_time",
+      "iterations": 28578,
+      "real_time": 2.4335808523763317e+04,
+      "cpu_time": 4.7326999335152934e+04,
+      "time_unit": "ns",
+      "bytes_per_second": 8.4155823218290791e+07,
+      "bytes": 1.0240000000000000e+03,
+      "gpu0": 8.0000000000000000e+00,
+      "gpu1": 1.5000000000000000e+01
+    },
+    {
+      "name": "Comm_Duplex_Memcpy_GPUGPUPeer/8/15/log2(N):12/manual_time",
+      "iterations": 28448,
+      "real_time": 2.4552040495925281e+04,
+      "cpu_time": 4.7541034519122615e+04,
+      "time_unit": "ns",
+      "bytes_per_second": 3.3365862203426903e+08,
+      "bytes": 4.0960000000000000e+03,
+      "gpu0": 8.0000000000000000e+00,
+      "gpu1": 1.5000000000000000e+01
+    },
+    {
+      "name": "Comm_Duplex_Memcpy_GPUGPUPeer/8/15/log2(N):14/manual_time",
+      "iterations": 28484,
+      "real_time": 2.4706049149661671e+04,
+      "cpu_time": 4.7713065475354531e+04,
+      "time_unit": "ns",
+      "bytes_per_second": 1.3263148551798592e+09,
+      "bytes": 1.6384000000000000e+04,
+      "gpu0": 8.0000000000000000e+00,
+      "gpu1": 1.5000000000000000e+01
+    },
+    {
+      "name": "Comm_Duplex_Memcpy_GPUGPUPeer/8/15/log2(N):16/manual_time",
+      "iterations": 28310,
+      "real_time": 2.4823897700113932e+04,
+      "cpu_time": 4.7908042352525626e+04,
+      "time_unit": "ns",
+      "bytes_per_second": 5.2800733222244310e+09,
+      "bytes": 6.5536000000000000e+04,
+      "gpu0": 8.0000000000000000e+00,
+      "gpu1": 1.5000000000000000e+01
+    },
+    {
+      "name": "Comm_Duplex_Memcpy_GPUGPUPeer/8/15/log2(N):18/manual_time",
+      "iterations": 28201,
+      "real_time": 2.5157074424636918e+04,
+      "cpu_time": 4.8181850608134373e+04,
+      "time_unit": "ns",
+      "bytes_per_second": 2.0840579121018635e+10,
+      "bytes": 2.6214400000000000e+05,
+      "gpu0": 8.0000000000000000e+00,
+      "gpu1": 1.5000000000000000e+01
+    },
+    {
+      "name": "Comm_Duplex_Memcpy_GPUGPUPeer/8/15/log2(N):20/manual_time",
+      "iterations": 27148,
+      "real_time": 2.5793267118387361e+04,
+      "cpu_time": 4.8856048806542050e+04,
+      "time_unit": "ns",
+      "bytes_per_second": 8.1306179258888611e+10,
+      "bytes": 1.0485760000000000e+06,
+      "gpu0": 8.0000000000000000e+00,
+      "gpu1": 1.5000000000000000e+01
+    },
+    {
+      "name": "Comm_Duplex_Memcpy_GPUGPUPeer/8/15/log2(N):22/manual_time",
+      "iterations": 16017,
+      "real_time": 4.3454493647813986e+04,
+      "cpu_time": 6.7585065992383054e+04,
+      "time_unit": "ns",
+      "bytes_per_second": 1.9304351048218915e+11,
+      "bytes": 4.1943040000000000e+06,
+      "gpu0": 8.0000000000000000e+00,
+      "gpu1": 1.5000000000000000e+01
+    },
+    {
+      "name": "Comm_Duplex_Memcpy_GPUGPUPeer/8/15/log2(N):24/manual_time",
+      "iterations": 5201,
+      "real_time": 1.3412837193605280e+05,
+      "cpu_time": 1.5843306691020975e+05,
+      "time_unit": "ns",
+      "bytes_per_second": 2.5016654952016754e+11,
+      "bytes": 1.6777216000000000e+07,
+      "gpu0": 8.0000000000000000e+00,
+      "gpu1": 1.5000000000000000e+01
+    },
+    {
+      "name": "Comm_Duplex_Memcpy_GPUGPUPeer/8/15/log2(N):26/manual_time",
+      "iterations": 1457,
+      "real_time": 4.8052388179137040e+05,
+      "cpu_time": 5.0486199794097512e+05,
+      "time_unit": "ns",
+      "bytes_per_second": 2.7931541612384094e+11,
+      "bytes": 6.7108864000000000e+07,
+      "gpu0": 8.0000000000000000e+00,
+      "gpu1": 1.5000000000000000e+01
+    },
+    {
+      "name": "Comm_Duplex_Memcpy_GPUGPUPeer/8/15/log2(N):28/manual_time",
+      "iterations": 375,
+      "real_time": 1.8642932061726849e+06,
+      "cpu_time": 1.8895978426666791e+06,
+      "time_unit": "ns",
+      "bytes_per_second": 2.8797557713691040e+11,
+      "bytes": 2.6843545600000000e+08,
+      "gpu0": 8.0000000000000000e+00,
+      "gpu1": 1.5000000000000000e+01
+    },
+    {
+      "name": "Comm_Duplex_Memcpy_GPUGPUPeer/8/15/log2(N):30/manual_time",
+      "iterations": 95,
+      "real_time": 7.3929953682971625e+06,
+      "cpu_time": 7.4297014105263473e+06,
+      "time_unit": "ns",
+      "bytes_per_second": 2.9047544885648053e+11,
+      "bytes": 1.0737418240000000e+09,
+      "gpu0": 8.0000000000000000e+00,
+      "gpu1": 1.5000000000000000e+01
+    }
+  ]
+}
