@@ -1,0 +1,248 @@
+# perl ./tools/driver.pl -s 4 -cuda -d 0,15
+--- Welcome To The SHOC Benchmark Suite version 1.1.5 --- 
+Hostname: 13a9b4b9bdeb 
+Platform selection not specified, default to platform #0
+Number of available platforms: 1 
+Number of available devices on platform 0 : 16
+Device 0: 'Tesla V100-SXM3-32GB'
+Device 1: 'Tesla V100-SXM3-32GB'
+Device 2: 'Tesla V100-SXM3-32GB'
+Device 3: 'Tesla V100-SXM3-32GB'
+Device 4: 'Tesla V100-SXM3-32GB'
+Device 5: 'Tesla V100-SXM3-32GB'
+Device 6: 'Tesla V100-SXM3-32GB'
+Device 7: 'Tesla V100-SXM3-32GB'
+Device 8: 'Tesla V100-SXM3-32GB'
+Device 9: 'Tesla V100-SXM3-32GB'
+Device 10: 'Tesla V100-SXM3-32GB'
+Device 11: 'Tesla V100-SXM3-32GB'
+Device 12: 'Tesla V100-SXM3-32GB'
+Device 13: 'Tesla V100-SXM3-32GB'
+Device 14: 'Tesla V100-SXM3-32GB'
+Device 15: 'Tesla V100-SXM3-32GB'
+Specified 2 device IDs: 0,15
+Using size class: 4
+
+--- Starting Benchmarks ---
+Running benchmark BusSpeedDownload
+    result for bspeed_download:                 11.6843 GB/sec
+Running benchmark BusSpeedReadback
+    result for bspeed_readback:                 13.1488 GB/sec
+Running benchmark MaxFlops
+    result for maxspflops:                    16214.8000 GFLOPS
+    result for maxdpflops:                    8149.0800 GFLOPS
+Running benchmark DeviceMemory
+    result for gmem_readbw:                    868.5290 GB/s
+    result for gmem_readbw_strided:            488.8840 GB/s
+    result for gmem_writebw:                   791.9370 GB/s
+    result for gmem_writebw_strided:            58.6490 GB/s
+    result for lmem_readbw:                   9901.2900 GB/s
+    result for lmem_writebw:                  10995.3000 GB/s
+    result for tex_readbw:                    1644.1300 GB/sec
+Skipping non-cuda benchmark KernelCompile
+Skipping non-cuda benchmark QueueDelay
+Running benchmark FFT
+    result for fft_sp:                        2492.3900 GFLOPS
+    result for fft_dp:                        1243.0800 GFLOPS
+Running benchmark GEMM
+    result for sgemm_n:                       15346.4000 GFlops
+    result for dgemm_n:                       6952.9700 GFlops
+Running benchmark MD
+    result for md_sp_flops:                   1075.5700 GFLOPS
+    result for md_dp_flops:                    907.6880 GFLOPS
+Running benchmark MD5Hash
+    result for md5hash:                         35.9147 GHash/s
+Running benchmark Reduction
+    result for reduction:                      323.2520 GB/s
+    result for reduction_dp:                   526.6520 GB/s
+Running benchmark Scan
+    result for scan:                           186.2190 GB/s
+    result for scan_dp:                        186.6510 GB/s
+Running benchmark Sort
+    result for sort:                            21.9200 GB/s
+Running benchmark Spmv
+    result for spmv_csr_scalar_sp:              74.5827 Gflop/s
+    result for spmv_csr_vector_sp:             167.6880 Gflop/s
+    result for spmv_ellpackr_sp:                86.1360 Gflop/s
+    result for spmv_csr_scalar_dp:              51.1772 Gflop/s
+    result for spmv_csr_vector_dp:             120.7460 Gflop/s
+    result for spmv_ellpackr_dp:                70.3511 Gflop/s
+Running benchmark Stencil2D
+    result for stencil:                       1035.0200 GFLOPS
+    result for stencil_dp:                     646.7290 GFLOPS
+Running benchmark Triad
+    result for triad_bw:                        14.8561 GB/s
+Running benchmark S3D
+    result for s3d:                            458.5930 GFLOPS
+    result for s3d_dp:                         242.3060 GFLOPS
+Running benchmark QTC
+    result for qtc:                              9.3530 s
+    result for qtc_kernel:                       8.6771 s
+# 
+
+
+# run 2
+# perl ./tools/driver.pl -s 4 -cuda -d 0,15
+--- Welcome To The SHOC Benchmark Suite version 1.1.5 --- 
+Hostname: 13a9b4b9bdeb 
+Platform selection not specified, default to platform #0
+Number of available platforms: 1 
+Number of available devices on platform 0 : 16
+Device 0: 'Tesla V100-SXM3-32GB'
+Device 1: 'Tesla V100-SXM3-32GB'
+Device 2: 'Tesla V100-SXM3-32GB'
+Device 3: 'Tesla V100-SXM3-32GB'
+Device 4: 'Tesla V100-SXM3-32GB'
+Device 5: 'Tesla V100-SXM3-32GB'
+Device 6: 'Tesla V100-SXM3-32GB'
+Device 7: 'Tesla V100-SXM3-32GB'
+Device 8: 'Tesla V100-SXM3-32GB'
+Device 9: 'Tesla V100-SXM3-32GB'
+Device 10: 'Tesla V100-SXM3-32GB'
+Device 11: 'Tesla V100-SXM3-32GB'
+Device 12: 'Tesla V100-SXM3-32GB'
+Device 13: 'Tesla V100-SXM3-32GB'
+Device 14: 'Tesla V100-SXM3-32GB'
+Device 15: 'Tesla V100-SXM3-32GB'
+Specified 2 device IDs: 0,15
+Using size class: 4
+
+--- Starting Benchmarks ---
+Running benchmark BusSpeedDownload
+    result for bspeed_download:                 11.6879 GB/sec
+Running benchmark BusSpeedReadback
+    result for bspeed_readback:                 13.1496 GB/sec
+Running benchmark MaxFlops
+    result for maxspflops:                    16215.2000 GFLOPS
+    result for maxdpflops:                    8148.6200 GFLOPS
+Running benchmark DeviceMemory
+    result for gmem_readbw:                    868.4950 GB/s
+    result for gmem_readbw_strided:            488.7770 GB/s
+    result for gmem_writebw:                   792.3510 GB/s
+    result for gmem_writebw_strided:            59.1096 GB/s
+    result for lmem_readbw:                   9901.4000 GB/s
+    result for lmem_writebw:                  10994.9000 GB/s
+    result for tex_readbw:                    1641.5900 GB/sec
+Skipping non-cuda benchmark KernelCompile
+Skipping non-cuda benchmark QueueDelay
+Running benchmark FFT
+    result for fft_sp:                        2494.3400 GFLOPS
+    result for fft_dp:                        1241.0700 GFLOPS
+Running benchmark GEMM
+    result for sgemm_n:                       15465.5000 GFlops
+    result for dgemm_n:                       7086.7700 GFlops
+Running benchmark MD
+    result for md_sp_flops:                   1003.5900 GFLOPS
+    result for md_dp_flops:                    909.6890 GFLOPS
+Running benchmark MD5Hash
+    result for md5hash:                         35.9165 GHash/s
+Running benchmark Reduction
+    result for reduction:                      323.3530 GB/s
+    result for reduction_dp:                   526.4000 GB/s
+Running benchmark Scan
+    result for scan:                           186.1320 GB/s
+    result for scan_dp:                        186.4910 GB/s
+Running benchmark Sort
+    result for sort:                            21.9088 GB/s
+Running benchmark Spmv
+    result for spmv_csr_scalar_sp:              74.5447 Gflop/s
+    result for spmv_csr_vector_sp:             167.7300 Gflop/s
+    result for spmv_ellpackr_sp:                85.8130 Gflop/s
+    result for spmv_csr_scalar_dp:              51.1769 Gflop/s
+    result for spmv_csr_vector_dp:             120.6130 Gflop/s
+    result for spmv_ellpackr_dp:                70.3297 Gflop/s
+Running benchmark Stencil2D
+    result for stencil:                       1035.0500 GFLOPS
+    result for stencil_dp:                     646.7950 GFLOPS
+Running benchmark Triad
+    result for triad_bw:                        14.8300 GB/s
+Running benchmark S3D
+    result for s3d:                            458.4530 GFLOPS
+    result for s3d_dp:                         242.1350 GFLOPS
+Running benchmark QTC
+    result for qtc:                              9.3296 s
+    result for qtc_kernel:                       8.6893 s
+# 
+
+# nr 3
+# perl ./tools/driver.pl -s 4 -cuda -d 0,15
+--- Welcome To The SHOC Benchmark Suite version 1.1.5 --- 
+Hostname: 13a9b4b9bdeb 
+Platform selection not specified, default to platform #0
+Number of available platforms: 1 
+Number of available devices on platform 0 : 16
+Device 0: 'Tesla V100-SXM3-32GB'
+Device 1: 'Tesla V100-SXM3-32GB'
+Device 2: 'Tesla V100-SXM3-32GB'
+Device 3: 'Tesla V100-SXM3-32GB'
+Device 4: 'Tesla V100-SXM3-32GB'
+Device 5: 'Tesla V100-SXM3-32GB'
+Device 6: 'Tesla V100-SXM3-32GB'
+Device 7: 'Tesla V100-SXM3-32GB'
+Device 8: 'Tesla V100-SXM3-32GB'
+Device 9: 'Tesla V100-SXM3-32GB'
+Device 10: 'Tesla V100-SXM3-32GB'
+Device 11: 'Tesla V100-SXM3-32GB'
+Device 12: 'Tesla V100-SXM3-32GB'
+Device 13: 'Tesla V100-SXM3-32GB'
+Device 14: 'Tesla V100-SXM3-32GB'
+Device 15: 'Tesla V100-SXM3-32GB'
+Specified 2 device IDs: 0,15
+Using size class: 4
+
+--- Starting Benchmarks ---
+Running benchmark BusSpeedDownload
+    result for bspeed_download:                 11.7130 GB/sec
+Running benchmark BusSpeedReadback
+    result for bspeed_readback:                 13.1486 GB/sec
+Running benchmark MaxFlops
+    result for maxspflops:                    16206.3000 GFLOPS
+    result for maxdpflops:                    8149.0600 GFLOPS
+Running benchmark DeviceMemory
+    result for gmem_readbw:                    868.4050 GB/s
+    result for gmem_readbw_strided:            488.7910 GB/s
+    result for gmem_writebw:                   792.7450 GB/s
+    result for gmem_writebw_strided:            58.3325 GB/s
+    result for lmem_readbw:                   9900.9200 GB/s
+    result for lmem_writebw:                  10995.5000 GB/s
+    result for tex_readbw:                    1641.8700 GB/sec
+Skipping non-cuda benchmark KernelCompile
+Skipping non-cuda benchmark QueueDelay
+Running benchmark FFT
+    result for fft_sp:                        2492.2200 GFLOPS
+    result for fft_dp:                        1241.0800 GFLOPS
+Running benchmark GEMM
+    result for sgemm_n:                       15333.3000 GFlops
+    result for dgemm_n:                       6934.1000 GFlops
+Running benchmark MD
+    result for md_sp_flops:                   1074.7200 GFLOPS
+    result for md_dp_flops:                    905.8310 GFLOPS
+Running benchmark MD5Hash
+    result for md5hash:                         35.9143 GHash/s
+Running benchmark Reduction
+    result for reduction:                      323.4730 GB/s
+    result for reduction_dp:                   526.3250 GB/s
+Running benchmark Scan
+    result for scan:                           186.1770 GB/s
+    result for scan_dp:                        186.5650 GB/s
+Running benchmark Sort
+    result for sort:                            21.9218 GB/s
+Running benchmark Spmv
+    result for spmv_csr_scalar_sp:              74.5582 Gflop/s
+    result for spmv_csr_vector_sp:             167.6520 Gflop/s
+    result for spmv_ellpackr_sp:                86.1203 Gflop/s
+    result for spmv_csr_scalar_dp:              51.1967 Gflop/s
+    result for spmv_csr_vector_dp:             120.6380 Gflop/s
+    result for spmv_ellpackr_dp:                70.4493 Gflop/s
+Running benchmark Stencil2D
+    result for stencil:                       1034.6500 GFLOPS
+    result for stencil_dp:                     646.8400 GFLOPS
+Running benchmark Triad
+    result for triad_bw:                        14.8271 GB/s
+Running benchmark S3D
+    result for s3d:                            460.7480 GFLOPS
+    result for s3d_dp:                         242.5600 GFLOPS
+Running benchmark QTC
+    result for qtc:                              9.3489 s
+    result for qtc_kernel:                       8.6777 s
+# 
