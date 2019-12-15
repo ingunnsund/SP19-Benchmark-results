@@ -1,0 +1,111 @@
+perl ./tools/driver.pl -s 4 -cuda -d 0
+-bash-4.2$ perl ./tools/driver.pl -s 4 -cuda -d 0
+--- Welcome To The SHOC Benchmark Suite version 1.1.5 ---
+Hostname: yme.idi.ntnu.no
+Platform selection not specified, default to platform #0
+Number of available platforms: 1
+Number of available devices on platform 0 : 4
+Device 0: 'Tesla V100-SXM2-32GB'
+Device 1: 'Tesla V100-SXM2-32GB'
+Device 2: 'Tesla V100-SXM2-32GB'
+Device 3: 'Tesla V100-SXM2-32GB'
+Specified 1 device IDs: 0
+Using size class: 4
+
+--- Starting Benchmarks ---
+Running benchmark BusSpeedDownload
+    result for bspeed_download:                 70.8237 GB/sec
+Running benchmark BusSpeedReadback
+    result for bspeed_readback:                 72.6437 GB/sec
+Running benchmark MaxFlops
+    result for maxspflops:                    15637.8000 GFLOPS
+    result for maxdpflops:                    7841.0500 GFLOPS
+Running benchmark DeviceMemory
+    result for gmem_readbw:                    789.0680 GB/s
+    result for gmem_readbw_strided:            478.4230 GB/s
+    result for gmem_writebw:                   695.5760 GB/s
+    result for gmem_writebw_strided:            54.1565 GB/s
+    result for lmem_readbw:                   9526.2300 GB/s
+    result for lmem_writebw:                  10580.2000 GB/s
+    result for tex_readbw:                    1546.4500 GB/sec
+Skipping non-cuda benchmark KernelCompile
+Skipping non-cuda benchmark QueueDelay
+Running benchmark BFS
+    result for bfs:                             10.7462 GB/s
+    result for bfs_pcie:                         8.5073 GB/s
+    result for bfs_teps:                      438380000.0000 Edges/s
+Running benchmark FFT
+    result for fft_sp:                        2286.4600 GFLOPS
+    result for fft_sp_pcie:                    339.4170 GFLOPS
+    result for ifft_sp:                       2268.3700 GFLOPS
+    result for ifft_sp_pcie:                   341.2320 GFLOPS
+    result for fft_dp:                        1143.0200 GFLOPS
+    result for fft_dp_pcie:                    158.0630 GFLOPS
+    result for ifft_dp:                       1131.7500 GFLOPS
+    result for ifft_dp_pcie:                   158.9350 GFLOPS
+Running benchmark GEMM
+    result for sgemm_n:                       14028.9000 GFlops
+    result for sgemm_t:                       14127.1000 GFlops
+    result for sgemm_n_pcie:                  10327.9000 GFlops
+    result for sgemm_t_pcie:                  10381.0000 GFlops
+    result for dgemm_n:                       6771.8300 GFlops
+    result for dgemm_t:                       6165.8300 GFlops
+    result for dgemm_n_pcie:                  4544.3600 GFlops
+    result for dgemm_t_pcie:                  4263.1800 GFlops
+Running benchmark MD
+    result for md_sp_flops:                    917.2320 GFLOPS
+    result for md_sp_bw:                       702.9380 GB/s
+    result for md_sp_flops_pcie:               219.2580 GFLOPS
+    result for md_sp_bw_pcie:                  168.0320 GB/s
+    result for md_dp_flops:                    834.2070 GFLOPS
+    result for md_dp_bw:                      1119.7200 GB/s
+    result for md_dp_flops_pcie:               207.3300 GFLOPS
+    result for md_dp_bw_pcie:                  278.2910 GB/s
+Running benchmark MD5Hash
+    result for md5hash:                         34.4075 GHash/s
+Running benchmark NeuralNet
+    result for nn_learning:                     BenchmarkError
+    result for nn_learning_pcie:                BenchmarkError
+Running benchmark Reduction
+    result for reduction:                      304.2340 GB/s
+    result for reduction_pcie:                  56.7290 GB/s
+    result for reduction_dp:                   512.3410 GB/s
+    result for reduction_dp_pcie:               61.3477 GB/s
+Running benchmark Scan
+    result for scan:                           173.8210 GB/s
+    result for scan_pcie:                       27.7930 GB/s
+    result for scan_dp:                        191.8910 GB/s
+    result for scan_dp_pcie:                    28.1709 GB/s
+Running benchmark Sort
+    result for sort:                            20.2829 GB/s
+    result for sort_pcie:                       12.5999 GB/s
+Running benchmark Spmv
+    result for spmv_csr_scalar_sp:              62.2522 Gflop/s
+    result for spmv_csr_scalar_sp_pcie:         10.5156 Gflop/s
+    result for spmv_csr_scalar_dp:              48.4900 Gflop/s
+    result for spmv_csr_scalar_dp_pcie:          8.1097 Gflop/s
+    result for spmv_csr_scalar_pad_sp:          70.2104 Gflop/s
+    result for spmv_csr_scalar_pad_sp_pcie:     11.9035 Gflop/s
+    result for spmv_csr_scalar_pad_dp:          57.2097 Gflop/s
+    result for spmv_csr_scalar_pad_dp_pcie:      8.6520 Gflop/s
+    result for spmv_csr_vector_sp:             148.3990 Gflop/s
+    result for spmv_csr_vector_sp_pcie:         11.6189 Gflop/s
+    result for spmv_csr_vector_dp:             109.1940 Gflop/s
+    result for spmv_csr_vector_dp_pcie:          8.8856 Gflop/s
+    result for spmv_csr_vector_pad_sp:         151.4930 Gflop/s
+    result for spmv_csr_vector_pad_sp_pcie:     13.0946 Gflop/s
+    result for spmv_csr_vector_pad_dp:         113.8270 Gflop/s
+    result for spmv_csr_vector_pad_dp_pcie:      9.3561 Gflop/s
+    result for spmv_ellpackr_sp:                76.6188 Gflop/s
+    result for spmv_ellpackr_dp:                67.9113 Gflop/s
+Running benchmark Stencil2D
+    result for stencil:                        618.6470 GFLOPS
+    result for stencil_dp:                     356.6940 GFLOPS
+Running benchmark Triad
+    result for triad_bw:                        55.2867 GB/s
+Running benchmark S3D
+    result for s3d:                            427.2150 GFLOPS
+    result for s3d_pcie:                       374.6100 GFLOPS
+    result for s3d_dp:                         224.9010 GFLOPS
+    result for s3d_dp_pcie:                    196.7880 GFLOPS
+-bash-4.2$

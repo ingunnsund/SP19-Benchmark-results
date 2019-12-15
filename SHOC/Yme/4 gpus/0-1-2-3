@@ -1,0 +1,71 @@
+perl ./tools/driver.pl -s 4 -cuda -d 1,2,3,4
+
+-bash-4.2$ perl ./tools/driver.pl -s 4 -cuda -d 1,2,3,4
+--- Welcome To The SHOC Benchmark Suite version 1.1.5 ---
+Hostname: yme.idi.ntnu.no
+Platform selection not specified, default to platform #0
+Number of available platforms: 1
+Number of available devices on platform 0 : 4
+Device 0: 'Tesla V100-SXM2-32GB'
+Device 1: 'Tesla V100-SXM2-32GB'
+Device 2: 'Tesla V100-SXM2-32GB'
+Device 3: 'Tesla V100-SXM2-32GB'
+Specified 4 device IDs: 1,2,3,4
+Using size class: 4
+
+--- Starting Benchmarks ---
+Running benchmark BusSpeedDownload
+    result for bspeed_download:                 46.5053 GB/sec
+Running benchmark BusSpeedReadback
+    result for bspeed_readback:                 47.3630 GB/sec
+Running benchmark MaxFlops
+    result for maxspflops:                    15581.4000 GFLOPS
+    result for maxdpflops:                    7828.8000 GFLOPS
+Running benchmark DeviceMemory
+    result for gmem_readbw:                    789.0480 GB/s
+    result for gmem_readbw_strided:            477.2210 GB/s
+    result for gmem_writebw:                   720.2670 GB/s
+    result for gmem_writebw_strided:            53.9936 GB/s
+    result for lmem_readbw:                   9513.9700 GB/s
+    result for lmem_writebw:                  10563.0000 GB/s
+    result for tex_readbw:                    1563.0900 GB/sec
+Skipping non-cuda benchmark KernelCompile
+Skipping non-cuda benchmark QueueDelay
+Running benchmark FFT
+    result for fft_sp:                        2282.5100 GFLOPS
+    result for fft_dp:                        1137.4000 GFLOPS
+Running benchmark GEMM
+    result for sgemm_n:                       14489.5000 GFlops
+    result for dgemm_n:                       6508.6400 GFlops
+Running benchmark MD
+    result for md_sp_flops:                    918.3580 GFLOPS
+    result for md_dp_flops:                    828.8590 GFLOPS
+Running benchmark MD5Hash
+    result for md5hash:                         34.4474 GHash/s
+Running benchmark Reduction
+    result for reduction:                      304.1760 GB/s
+    result for reduction_dp:                   512.5770 GB/s
+Running benchmark Scan
+    result for scan:                           174.1390 GB/s
+    result for scan_dp:                        186.8140 GB/s
+Running benchmark Sort
+    result for sort:                            20.3996 GB/s
+Running benchmark Spmv
+    result for spmv_csr_scalar_sp:              63.4292 Gflop/s
+    result for spmv_csr_vector_sp:             148.0060 Gflop/s
+    result for spmv_ellpackr_sp:                76.1227 Gflop/s
+    result for spmv_csr_scalar_dp:              48.2223 Gflop/s
+    result for spmv_csr_vector_dp:             110.1970 Gflop/s
+    result for spmv_ellpackr_dp:                67.9258 Gflop/s
+Running benchmark Stencil2D
+    result for stencil:                       1119.1400 GFLOPS
+    result for stencil_dp:                     800.2940 GFLOPS
+Running benchmark Triad
+    result for triad_bw:                        59.6668 GB/s
+Running benchmark S3D
+    result for s3d:                            428.1120 GFLOPS
+    result for s3d_dp:                         225.8770 GFLOPS
+Running benchmark QTC
+    result for qtc:                              5.4775 s
+    result for qtc_kernel:                       4.8023 s
+-bash-4.2$
