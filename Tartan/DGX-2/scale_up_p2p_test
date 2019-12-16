@@ -1,0 +1,390 @@
+root@406d88f2f173:/usr/src/tartan/microbenchmark/scale_up_p2p_test# ./p2pTest 
+[P2P (Peer-to-Peer) GPU Bandwidth Latency Test]
+Device: 0, Tesla V100-SXM3-32GB, pciBusID: 34, pciDeviceID: 0, pciDomainID:0
+Device: 1, Tesla V100-SXM3-32GB, pciBusID: 36, pciDeviceID: 0, pciDomainID:0
+Device: 2, Tesla V100-SXM3-32GB, pciBusID: 39, pciDeviceID: 0, pciDomainID:0
+Device: 3, Tesla V100-SXM3-32GB, pciBusID: 3b, pciDeviceID: 0, pciDomainID:0
+Device: 4, Tesla V100-SXM3-32GB, pciBusID: 57, pciDeviceID: 0, pciDomainID:0
+Device: 5, Tesla V100-SXM3-32GB, pciBusID: 59, pciDeviceID: 0, pciDomainID:0
+Device: 6, Tesla V100-SXM3-32GB, pciBusID: 5c, pciDeviceID: 0, pciDomainID:0
+Device: 7, Tesla V100-SXM3-32GB, pciBusID: 5e, pciDeviceID: 0, pciDomainID:0
+Device: 8, Tesla V100-SXM3-32GB, pciBusID: b7, pciDeviceID: 0, pciDomainID:0
+Device: 9, Tesla V100-SXM3-32GB, pciBusID: b9, pciDeviceID: 0, pciDomainID:0
+Device: 10, Tesla V100-SXM3-32GB, pciBusID: bc, pciDeviceID: 0, pciDomainID:0
+Device: 11, Tesla V100-SXM3-32GB, pciBusID: be, pciDeviceID: 0, pciDomainID:0
+Device: 12, Tesla V100-SXM3-32GB, pciBusID: e0, pciDeviceID: 0, pciDomainID:0
+Device: 13, Tesla V100-SXM3-32GB, pciBusID: e2, pciDeviceID: 0, pciDomainID:0
+Device: 14, Tesla V100-SXM3-32GB, pciBusID: e5, pciDeviceID: 0, pciDomainID:0
+Device: 15, Tesla V100-SXM3-32GB, pciBusID: e7, pciDeviceID: 0, pciDomainID:0
+Device=0 CAN Access Peer Device=1
+Device=0 CAN Access Peer Device=2
+Device=0 CAN Access Peer Device=3
+Device=0 CAN Access Peer Device=4
+Device=0 CAN Access Peer Device=5
+Device=0 CAN Access Peer Device=6
+Device=0 CAN Access Peer Device=7
+Device=0 CAN Access Peer Device=8
+Device=0 CAN Access Peer Device=9
+Device=0 CAN Access Peer Device=10
+Device=0 CAN Access Peer Device=11
+Device=0 CAN Access Peer Device=12
+Device=0 CAN Access Peer Device=13
+Device=0 CAN Access Peer Device=14
+Device=0 CAN Access Peer Device=15
+Device=1 CAN Access Peer Device=0
+Device=1 CAN Access Peer Device=2
+Device=1 CAN Access Peer Device=3
+Device=1 CAN Access Peer Device=4
+Device=1 CAN Access Peer Device=5
+Device=1 CAN Access Peer Device=6
+Device=1 CAN Access Peer Device=7
+Device=1 CAN Access Peer Device=8
+Device=1 CAN Access Peer Device=9
+Device=1 CAN Access Peer Device=10
+Device=1 CAN Access Peer Device=11
+Device=1 CAN Access Peer Device=12
+Device=1 CAN Access Peer Device=13
+Device=1 CAN Access Peer Device=14
+Device=1 CAN Access Peer Device=15
+Device=2 CAN Access Peer Device=0
+Device=2 CAN Access Peer Device=1
+Device=2 CAN Access Peer Device=3
+Device=2 CAN Access Peer Device=4
+Device=2 CAN Access Peer Device=5
+Device=2 CAN Access Peer Device=6
+Device=2 CAN Access Peer Device=7
+Device=2 CAN Access Peer Device=8
+Device=2 CAN Access Peer Device=9
+Device=2 CAN Access Peer Device=10
+Device=2 CAN Access Peer Device=11
+Device=2 CAN Access Peer Device=12
+Device=2 CAN Access Peer Device=13
+Device=2 CAN Access Peer Device=14
+Device=2 CAN Access Peer Device=15
+Device=3 CAN Access Peer Device=0
+Device=3 CAN Access Peer Device=1
+Device=3 CAN Access Peer Device=2
+Device=3 CAN Access Peer Device=4
+Device=3 CAN Access Peer Device=5
+Device=3 CAN Access Peer Device=6
+Device=3 CAN Access Peer Device=7
+Device=3 CAN Access Peer Device=8
+Device=3 CAN Access Peer Device=9
+Device=3 CAN Access Peer Device=10
+Device=3 CAN Access Peer Device=11
+Device=3 CAN Access Peer Device=12
+Device=3 CAN Access Peer Device=13
+Device=3 CAN Access Peer Device=14
+Device=3 CAN Access Peer Device=15
+Device=4 CAN Access Peer Device=0
+Device=4 CAN Access Peer Device=1
+Device=4 CAN Access Peer Device=2
+Device=4 CAN Access Peer Device=3
+Device=4 CAN Access Peer Device=5
+Device=4 CAN Access Peer Device=6
+Device=4 CAN Access Peer Device=7
+Device=4 CAN Access Peer Device=8
+Device=4 CAN Access Peer Device=9
+Device=4 CAN Access Peer Device=10
+Device=4 CAN Access Peer Device=11
+Device=4 CAN Access Peer Device=12
+Device=4 CAN Access Peer Device=13
+Device=4 CAN Access Peer Device=14
+Device=4 CAN Access Peer Device=15
+Device=5 CAN Access Peer Device=0
+Device=5 CAN Access Peer Device=1
+Device=5 CAN Access Peer Device=2
+Device=5 CAN Access Peer Device=3
+Device=5 CAN Access Peer Device=4
+Device=5 CAN Access Peer Device=6
+Device=5 CAN Access Peer Device=7
+Device=5 CAN Access Peer Device=8
+Device=5 CAN Access Peer Device=9
+Device=5 CAN Access Peer Device=10
+Device=5 CAN Access Peer Device=11
+Device=5 CAN Access Peer Device=12
+Device=5 CAN Access Peer Device=13
+Device=5 CAN Access Peer Device=14
+Device=5 CAN Access Peer Device=15
+Device=6 CAN Access Peer Device=0
+Device=6 CAN Access Peer Device=1
+Device=6 CAN Access Peer Device=2
+Device=6 CAN Access Peer Device=3
+Device=6 CAN Access Peer Device=4
+Device=6 CAN Access Peer Device=5
+Device=6 CAN Access Peer Device=7
+Device=6 CAN Access Peer Device=8
+Device=6 CAN Access Peer Device=9
+Device=6 CAN Access Peer Device=10
+Device=6 CAN Access Peer Device=11
+Device=6 CAN Access Peer Device=12
+Device=6 CAN Access Peer Device=13
+Device=6 CAN Access Peer Device=14
+Device=6 CAN Access Peer Device=15
+Device=7 CAN Access Peer Device=0
+Device=7 CAN Access Peer Device=1
+Device=7 CAN Access Peer Device=2
+Device=7 CAN Access Peer Device=3
+Device=7 CAN Access Peer Device=4
+Device=7 CAN Access Peer Device=5
+Device=7 CAN Access Peer Device=6
+Device=7 CAN Access Peer Device=8
+Device=7 CAN Access Peer Device=9
+Device=7 CAN Access Peer Device=10
+Device=7 CAN Access Peer Device=11
+Device=7 CAN Access Peer Device=12
+Device=7 CAN Access Peer Device=13
+Device=7 CAN Access Peer Device=14
+Device=7 CAN Access Peer Device=15
+Device=8 CAN Access Peer Device=0
+Device=8 CAN Access Peer Device=1
+Device=8 CAN Access Peer Device=2
+Device=8 CAN Access Peer Device=3
+Device=8 CAN Access Peer Device=4
+Device=8 CAN Access Peer Device=5
+Device=8 CAN Access Peer Device=6
+Device=8 CAN Access Peer Device=7
+Device=8 CAN Access Peer Device=9
+Device=8 CAN Access Peer Device=10
+Device=8 CAN Access Peer Device=11
+Device=8 CAN Access Peer Device=12
+Device=8 CAN Access Peer Device=13
+Device=8 CAN Access Peer Device=14
+Device=8 CAN Access Peer Device=15
+Device=9 CAN Access Peer Device=0
+Device=9 CAN Access Peer Device=1
+Device=9 CAN Access Peer Device=2
+Device=9 CAN Access Peer Device=3
+Device=9 CAN Access Peer Device=4
+Device=9 CAN Access Peer Device=5
+Device=9 CAN Access Peer Device=6
+Device=9 CAN Access Peer Device=7
+Device=9 CAN Access Peer Device=8
+Device=9 CAN Access Peer Device=10
+Device=9 CAN Access Peer Device=11
+Device=9 CAN Access Peer Device=12
+Device=9 CAN Access Peer Device=13
+Device=9 CAN Access Peer Device=14
+Device=9 CAN Access Peer Device=15
+Device=10 CAN Access Peer Device=0
+Device=10 CAN Access Peer Device=1
+Device=10 CAN Access Peer Device=2
+Device=10 CAN Access Peer Device=3
+Device=10 CAN Access Peer Device=4
+Device=10 CAN Access Peer Device=5
+Device=10 CAN Access Peer Device=6
+Device=10 CAN Access Peer Device=7
+Device=10 CAN Access Peer Device=8
+Device=10 CAN Access Peer Device=9
+Device=10 CAN Access Peer Device=11
+Device=10 CAN Access Peer Device=12
+Device=10 CAN Access Peer Device=13
+Device=10 CAN Access Peer Device=14
+Device=10 CAN Access Peer Device=15
+Device=11 CAN Access Peer Device=0
+Device=11 CAN Access Peer Device=1
+Device=11 CAN Access Peer Device=2
+Device=11 CAN Access Peer Device=3
+Device=11 CAN Access Peer Device=4
+Device=11 CAN Access Peer Device=5
+Device=11 CAN Access Peer Device=6
+Device=11 CAN Access Peer Device=7
+Device=11 CAN Access Peer Device=8
+Device=11 CAN Access Peer Device=9
+Device=11 CAN Access Peer Device=10
+Device=11 CAN Access Peer Device=12
+Device=11 CAN Access Peer Device=13
+Device=11 CAN Access Peer Device=14
+Device=11 CAN Access Peer Device=15
+Device=12 CAN Access Peer Device=0
+Device=12 CAN Access Peer Device=1
+Device=12 CAN Access Peer Device=2
+Device=12 CAN Access Peer Device=3
+Device=12 CAN Access Peer Device=4
+Device=12 CAN Access Peer Device=5
+Device=12 CAN Access Peer Device=6
+Device=12 CAN Access Peer Device=7
+Device=12 CAN Access Peer Device=8
+Device=12 CAN Access Peer Device=9
+Device=12 CAN Access Peer Device=10
+Device=12 CAN Access Peer Device=11
+Device=12 CAN Access Peer Device=13
+Device=12 CAN Access Peer Device=14
+Device=12 CAN Access Peer Device=15
+Device=13 CAN Access Peer Device=0
+Device=13 CAN Access Peer Device=1
+Device=13 CAN Access Peer Device=2
+Device=13 CAN Access Peer Device=3
+Device=13 CAN Access Peer Device=4
+Device=13 CAN Access Peer Device=5
+Device=13 CAN Access Peer Device=6
+Device=13 CAN Access Peer Device=7
+Device=13 CAN Access Peer Device=8
+Device=13 CAN Access Peer Device=9
+Device=13 CAN Access Peer Device=10
+Device=13 CAN Access Peer Device=11
+Device=13 CAN Access Peer Device=12
+Device=13 CAN Access Peer Device=14
+Device=13 CAN Access Peer Device=15
+Device=14 CAN Access Peer Device=0
+Device=14 CAN Access Peer Device=1
+Device=14 CAN Access Peer Device=2
+Device=14 CAN Access Peer Device=3
+Device=14 CAN Access Peer Device=4
+Device=14 CAN Access Peer Device=5
+Device=14 CAN Access Peer Device=6
+Device=14 CAN Access Peer Device=7
+Device=14 CAN Access Peer Device=8
+Device=14 CAN Access Peer Device=9
+Device=14 CAN Access Peer Device=10
+Device=14 CAN Access Peer Device=11
+Device=14 CAN Access Peer Device=12
+Device=14 CAN Access Peer Device=13
+Device=14 CAN Access Peer Device=15
+Device=15 CAN Access Peer Device=0
+Device=15 CAN Access Peer Device=1
+Device=15 CAN Access Peer Device=2
+Device=15 CAN Access Peer Device=3
+Device=15 CAN Access Peer Device=4
+Device=15 CAN Access Peer Device=5
+Device=15 CAN Access Peer Device=6
+Device=15 CAN Access Peer Device=7
+Device=15 CAN Access Peer Device=8
+Device=15 CAN Access Peer Device=9
+Device=15 CAN Access Peer Device=10
+Device=15 CAN Access Peer Device=11
+Device=15 CAN Access Peer Device=12
+Device=15 CAN Access Peer Device=13
+Device=15 CAN Access Peer Device=14
+
+***NOTE: In case a device doesn't have P2P access to other one, it falls back to normal memcopy procedure.
+So you can see lesser Bandwidth (GB/s) in those cases.
+
+P2P Connectivity Matrix
+     D\D     0     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15
+     0	     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     1	     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     2	     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     3	     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     4	     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     5	     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     6	     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     7	     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     8	     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+     9	     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+    10	     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+    11	     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+    12	     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+    13	     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+    14	     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+    15	     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+Unidirectional P2P=Disabled Bandwidth Matrix (GB/s)
+   D\D     0      1      2      3      4      5      6      7      8      9     10     11     12     13     14     15 
+     0 794.96   8.39   9.52   9.55  10.95  11.01  10.95  10.90  10.61  10.64  10.60  10.59  10.57  10.62  10.61  10.57 
+     1   8.39 795.57   9.45   9.50  10.85  10.90  10.89  10.91  10.58  10.57  10.59  10.60  10.57  10.60  10.58  10.58 
+     2   9.50   9.51 789.14   9.49  10.93  10.94  10.92  10.92  10.57  10.58  10.55  10.57  10.57  10.55  10.56  10.57 
+     3   9.49   9.52   9.51 792.34  10.99  11.00  10.89  10.93  10.61  10.56  10.57  10.54  10.53  10.55  10.56  10.55 
+     4  10.87  10.88  10.87  10.90 793.95   8.37   9.60   9.61  10.57  10.54  10.61  10.59  10.55  10.59  10.54  10.59 
+     5  10.91  10.92  10.87  10.91   8.39 795.57   9.50   9.49  10.61  10.63  10.61  10.61  10.58  10.61  10.59  10.58 
+     6  10.92  10.93  10.90  10.91   9.45   9.49 789.14   9.47  10.53  10.56  10.56  10.59  10.56  10.56  10.55  10.57 
+     7  10.89  10.93  10.88  10.90   9.50   9.49   9.50 797.19  10.57  10.55  10.59  10.54  10.56  10.54  10.57  10.58 
+     8  10.77  10.77  10.76  10.77  10.77  10.78  10.75  10.75 790.74   8.28   9.07   9.04  10.51  10.50  10.50  10.48 
+     9  10.83  10.84  10.81  10.82  10.86  10.84  10.84  10.83   8.34 793.95   9.08   9.10  10.52  10.49  10.51  10.50 
+    10  10.92  10.83  10.82  10.85  10.83  10.84  10.81  10.84   9.10   9.10 793.95   9.23  10.53  10.53  10.53  10.54 
+    11  10.82  10.83  10.74  10.77  10.80  10.81  10.77  10.78   9.07   9.09   9.25 798.82  10.48  10.51  10.51  10.48 
+    12  10.89  10.89  10.89  10.81  10.85  10.79  10.79  10.86  10.53  10.51  10.53  10.53 793.95   8.32   9.11   9.11 
+    13  10.90  10.90  10.87  10.93  10.85  10.84  10.84  10.83  10.51  10.51  10.52  10.51   8.34 797.19   9.09   9.07 
+    14  10.84  10.87  10.82  10.82  10.81  10.80  10.78  10.81  10.53  10.53  10.54  10.46   9.09   9.08 791.84   9.23 
+    15  10.91  10.88  10.87  10.85  10.87  10.86  10.86  10.78  10.50  10.49  10.47  10.52   9.10   9.09   9.26 797.35 
+Unidirectional P2P=Enabled Bandwidth Matrix (GB/s)
+   D\D     0      1      2      3      4      5      6      7      8      9     10     11     12     13     14     15 
+     0 789.64 137.86 138.09 138.28 138.01 138.16 138.18 138.23 138.30 138.10 138.07 138.31 138.38 138.35 137.80 138.27 
+     1 138.10 795.57 138.28 138.24 138.14 137.97 138.12 138.16 138.27 138.10 138.24 138.17 137.96 138.09 138.19 137.41 
+     2 138.11 137.30 792.34 138.37 138.19 138.23 137.91 138.20 137.77 138.35 137.50 137.82 137.80 137.56 137.41 137.89 
+     3 137.85 138.07 138.37 795.57 137.87 138.32 138.16 138.26 138.32 137.99 138.41 138.10 138.28 138.37 138.01 137.76 
+     4 138.44 137.82 137.98 138.16 790.74 137.83 137.80 137.93 137.82 137.95 138.02 138.19 137.87 137.69 137.73 137.53 
+     5 138.10 138.12 138.14 138.49 138.19 795.57 138.55 138.16 138.09 138.09 137.59 138.21 138.10 137.83 138.26 138.19 
+     6 137.61 137.65 138.11 138.11 137.70 137.82 792.34 137.56 138.09 138.15 138.17 137.90 137.83 138.10 137.91 138.19 
+     7 137.73 137.93 137.69 138.02 138.00 137.79 137.90 795.57 137.75 137.58 137.97 137.83 137.77 137.96 138.22 138.05 
+     8 138.09 137.76 137.44 138.30 137.50 137.40 137.87 137.46 789.14 138.38 137.61 137.66 137.96 137.69 138.64 137.74 
+     9 138.52 137.96 138.46 138.57 138.50 137.91 138.50 137.63 138.37 798.82 138.55 138.39 138.42 138.82 138.21 138.02 
+    10 137.97 138.39 138.38 138.19 138.42 138.38 138.69 138.34 138.16 138.49 793.95 138.43 138.29 138.05 138.08 138.44 
+    11 137.92 137.93 138.62 138.62 138.42 138.58 138.23 138.44 138.23 138.32 138.78 797.19 138.51 138.49 138.52 138.59 
+    12 138.49 138.28 138.34 138.35 138.05 138.27 138.52 138.35 138.50 138.55 137.72 138.42 792.34 138.29 137.97 138.56 
+    13 138.21 138.25 138.21 138.14 137.95 138.29 137.81 138.65 138.56 138.45 138.38 138.61 138.54 798.82 138.47 137.81 
+    14 138.43 138.44 138.58 138.19 138.31 138.38 138.73 138.15 138.44 138.48 138.44 137.94 138.65 138.62 793.80 137.72 
+    15 138.36 137.96 138.15 137.92 137.80 138.07 138.05 138.02 138.30 138.01 138.06 137.95 137.97 138.28 137.98 798.77 
+Bidirectional P2P=Disabled Bandwidth Matrix (GB/s)
+   D\D     0      1      2      3      4      5      6      7      8      9     10     11     12     13     14     15 
+     0 799.74   8.75  10.25  10.26  16.67  16.67  17.27  17.17  16.60  16.60  17.18  17.16  16.61  16.61  17.13  17.26 
+     1   8.78 812.11  10.26  10.31  16.66  16.68  17.33  17.21  16.62  16.64  17.22  17.23  16.62  16.65  17.22  17.26 
+     2  10.31  10.29 805.41  10.29  17.16  17.20  18.60  18.58  17.30  17.25  18.23  17.98  17.27  17.28  18.20  18.12 
+     3  10.30  10.31  10.33 815.50  17.41  17.36  18.60  18.63  17.30  17.25  18.19  18.17  17.25  17.32  17.98  18.10 
+     4  16.61  16.62  17.13  17.26 810.43   8.78  10.28  10.28  16.63  16.61  17.18  17.15  16.61  16.63  17.19  17.11 
+     5  16.58  16.64  17.16  17.17   8.79 820.64  10.28  10.28  16.60  16.67  17.20  17.12  16.63  16.63  17.18  17.16 
+     6  17.32  17.27  18.26  18.26  10.29  10.31 811.27  10.28  17.27  17.30  18.08  18.10  17.29  17.38  18.07  18.15 
+     7  17.31  17.34  18.28  18.27  10.29  10.28  10.30 812.11  17.09  17.23  18.03  18.07  17.27  17.39  18.06  18.13 
+     8  16.58  16.54  17.05  17.05  16.56  16.57  17.07  17.02 812.11   8.76  10.22  10.23  16.56  16.54  16.94  16.86 
+     9  16.58  16.54  17.08  17.14  16.58  16.68  17.13  17.11   8.77 807.08  10.24  10.26  16.56  16.56  16.90  16.88 
+    10  17.23  17.29  18.01  17.95  17.35  17.30  18.23  18.19  10.28  10.28 814.65  10.24  16.88  16.90  17.24  17.16 
+    11  17.26  17.22  17.94  17.93  17.26  17.25  17.94  17.90  10.27  10.27  10.30 808.75  16.88  16.85  17.24  17.32 
+    12  16.57  16.56  17.08  17.08  16.55  16.54  17.14  17.12  16.56  16.60  16.93  16.97 808.75   8.75  10.27  10.29 
+    13  16.53  16.57  17.01  17.08  16.52  16.56  17.15  17.12  16.50  16.52  16.89  16.96   8.76 808.75  10.23  10.26 
+    14  17.30  17.27  17.96  17.91  17.34  17.34  18.13  18.05  16.96  16.96  17.15  17.33  10.27  10.27 812.77  10.27 
+    15  17.23  17.25  17.90  18.16  17.35  17.35  18.20  18.15  16.95  16.93  17.20  17.19  10.27  10.27  10.29 812.32 
+Bidirectional P2P=Enabled Bandwidth Matrix (GB/s)
+   D\D     0      1      2      3      4      5      6      7      8      9     10     11     12     13     14     15 
+     0 803.57 254.66 257.69 256.42 256.61 258.80 255.54 258.50 254.67 254.47 258.49 256.04 255.45 256.00 256.95 260.88 
+     1 257.67 812.96 258.86 258.52 256.82 260.42 257.16 256.82 253.98 254.81 257.84 255.81 256.15 254.15 257.50 259.38 
+     2 257.16 256.15 812.11 259.04 258.35 258.86 255.81 260.59 255.64 256.65 258.01 256.15 256.15 256.15 259.72 260.76 
+     3 259.04 255.64 259.55 807.08 258.35 259.55 258.52 260.59 256.65 256.32 259.21 257.50 256.99 255.98 259.72 259.55 
+     4 255.31 256.65 259.72 258.86 811.27 260.59 257.16 258.86 256.48 257.16 258.52 257.33 256.65 255.98 259.72 260.07 
+     5 257.33 256.65 260.42 259.21 259.55 809.59 257.16 260.42 255.98 257.16 259.90 257.50 257.33 258.18 260.42 259.72 
+     6 258.01 256.65 257.84 258.69 257.67 257.16 815.50 255.98 254.15 255.48 258.86 257.67 255.64 254.64 257.16 257.67 
+     7 257.50 256.99 259.55 259.90 258.52 259.04 255.64 815.50 255.81 257.67 258.69 257.50 255.81 255.48 257.33 259.21 
+     8 256.82 254.48 258.86 258.01 258.52 259.38 254.81 257.16 808.75 255.64 258.86 257.16 254.48 255.31 256.99 258.69 
+     9 254.98 254.15 257.33 256.32 258.69 258.35 255.14 257.67 255.14 813.80 258.01 255.64 255.14 255.31 258.18 260.07 
+    10 257.33 256.15 258.18 259.55 259.55 260.07 257.67 258.86 257.50 257.67 814.65 257.33 255.98 255.14 259.90 260.76 
+    11 256.82 256.99 258.52 256.99 257.84 259.04 257.33 259.21 255.98 257.50 258.86 805.41 254.81 253.16 259.90 259.55 
+    12 256.99 255.31 259.21 257.50 258.18 259.04 255.48 258.35 255.31 256.32 258.86 255.31 812.11 255.64 256.82 258.01 
+    13 258.69 256.48 256.48 259.04 255.81 260.94 257.33 259.55 254.98 255.81 257.67 256.65 255.64 807.08 257.84 259.21 
+    14 257.20 257.03 260.57 260.15 259.28 261.94 257.13 258.16 257.64 259.01 261.64 257.69 255.92 258.05 814.04 259.42 
+    15 258.43 255.84 260.53 259.45 258.57 259.33 257.57 260.39 257.15 259.09 260.53 257.83 256.29 254.99 259.92 813.30 
+P2P=Disabled Latency Matrix (us)
+   D\D     0      1      2      3      4      5      6      7      8      9     10     11     12     13     14     15 
+     0   3.26  24.27  23.76  24.30  24.47  24.36  24.29  23.73  24.25  24.23  24.35  24.26  24.35  24.49  24.66  24.56 
+     1  23.62   3.27  23.45  24.06  24.46  24.05  23.96  23.63  24.32  24.08  24.07  24.07  24.16  24.44  24.17  24.26 
+     2  23.54  24.29   3.24  23.90  24.24  24.11  23.89  23.56  24.12  24.15  24.27  24.04  24.18  24.25  24.26  24.17 
+     3  23.56  24.16  23.41   3.26  24.51  23.93  23.85  23.47  23.97  23.88  23.95  23.83  24.14  24.18  24.37  24.15 
+     4  23.86  24.19  23.76  24.16   3.30  23.98  24.00  23.71  24.04  23.95  24.06  24.02  24.01  24.31  24.27  24.13 
+     5  24.21  24.33  23.99  24.17  24.46   3.30  23.87  24.00  24.30  24.20  24.17  24.15  24.19  24.35  24.37  24.32 
+     6  24.21  24.38  24.18  24.13  24.24  24.17   3.26  23.93  24.24  24.23  24.30  24.13  24.34  24.17  24.11  24.18 
+     7  24.05  24.27  24.03  23.91  24.25  24.13  23.98   3.24  24.15  24.10  24.29  23.95  24.20  24.14  24.07  24.03 
+     8  24.17  24.53  24.12  24.29  24.78  24.37  24.43  24.37   3.54  25.13  25.06  25.12  25.28  25.31  25.26  25.41 
+     9  24.28  24.69  24.37  24.19  24.92  24.32  24.30  24.30  24.78   3.55  24.72  24.73  25.05  25.07  25.12  25.22 
+    10  24.87  25.09  24.70  24.73  25.24  24.76  24.82  24.78  25.38  25.00   3.57  25.20  25.47  25.46  25.45  25.73 
+    11  25.03  25.38  24.74  24.75  25.31  24.75  24.80  24.86  25.35  25.19  24.69   3.61  25.43  25.39  25.40  25.55 
+    12  25.01  24.90  24.77  24.86  25.18  24.90  24.75  24.78  25.50  25.54  25.34  25.13   3.70  25.51  25.40  25.56 
+    13  25.15  25.09  24.79  24.75  25.15  24.97  24.87  24.96  25.71  25.84  25.53  25.22  24.97   3.53  25.42  25.56 
+    14  25.11  25.35  25.01  24.90  25.50  24.80  24.90  25.17  25.57  25.59  25.35  24.94  24.84  24.85   3.59  25.45 
+    15  24.99  24.85  24.53  24.57  24.89  24.76  24.78  24.85  25.32  25.39  25.13  24.93  24.65  24.66  24.57   3.55 
+P2P=Enabled Latency Matrix (us)
+   D\D     0      1      2      3      4      5      6      7      8      9     10     11     12     13     14     15 
+     0   3.21   9.78   9.69   9.76   9.57   9.56   9.54   9.55   9.78   9.88   9.57   9.77   9.87   9.56   9.48   9.87 
+     1   9.70   3.21   9.55   9.77   9.50   9.51   9.48   9.53   9.73   9.70   9.55   9.71   9.66   9.66   9.54   9.66 
+     2   9.66   9.80   3.29   9.58   9.50   9.47   9.35   9.44   9.48   9.57   9.54   9.55   9.61   9.63   9.63   9.54 
+     3   9.65   9.77   9.51   3.22   9.46   9.43   9.35   9.43   9.50   9.53   9.55   9.54   9.53   9.53   9.52   9.52 
+     4   9.68   9.46   9.44   9.32   3.22   9.51   9.45   9.52   9.66   9.60   9.54   9.52   9.65   9.59   9.57   9.61 
+     5   9.69   9.78   9.54   9.54   9.49   3.22   9.51   9.60   9.76   9.78   9.67   9.62   9.76   9.52   9.57   9.71 
+     6   9.66   9.63   9.64   9.36   9.48   9.53   3.34   9.55   9.76   9.82   9.61   9.59   9.84   9.50   9.65   9.78 
+     7   9.66   9.64   9.47   9.35   9.49   9.53   9.45   3.24   9.71   9.83   9.57   9.54   9.73   9.55   9.65   9.72 
+     8  10.23  10.28   9.96   9.90  10.10   9.90   9.93   9.87   3.53   9.88   9.84   9.89   9.85   9.89   9.92   9.85 
+     9  10.18  10.10   9.83   9.79  10.00   9.82   9.81   9.79   9.79   3.52   9.77   9.83   9.82   9.89   9.88   9.80 
+    10  10.17  10.18   9.83   9.81   9.98   9.82   9.81   9.74   9.78   9.75   3.56   9.80   9.78   9.81   9.84   9.76 
+    11   9.83   9.98   9.79   9.82  10.00   9.81   9.81   9.80   9.78   9.77   9.78   3.59   9.78   9.79   9.85   9.78 
+    12   9.80  10.04   9.80   9.81  10.05   9.89   9.82   9.87   9.79   9.78   9.81   9.79   3.58   9.98   9.85   9.78 
+    13   9.83  10.05   9.78   9.82  10.06   9.89   9.81   9.88   9.78   9.78   9.81   9.79   9.78   3.60   9.82   9.77 
+    14   9.82  10.01   9.83   9.85  10.08   9.86   9.88   9.83   9.83   9.83   9.82   9.82   9.79   9.85   3.55   9.80 
+    15   9.82  10.00   9.77   9.77  10.01   9.95   9.77   9.91   9.77   9.78   9.80   9.76   9.79   9.98   9.86   3.51 
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
