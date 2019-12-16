@@ -1,0 +1,725 @@
+===== 1 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.00   0.00 
+     1   0.00   0.00 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.00   0.00 
+     1   0.00   0.00 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.00   0.00 
+     1   0.00   0.00 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.00   0.00 
+     1   0.00   0.00 
+PCIe-Latency
+   D\D     0      1 
+     0   2.65  14.03 
+     1  13.40   2.55 
+NVLink-Latency
+   D\D     0      1 
+     0   2.65  12.30 
+     1  12.79   2.56 
+===== 2 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.00   0.00 
+     1   0.00   0.00 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.00   0.00 
+     1   0.00   0.00 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.00   0.00 
+     1   0.00   0.00 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.00   0.00 
+     1   0.00   0.00 
+PCIe-Latency
+   D\D     0      1 
+     0   2.65  13.40 
+     1  13.41   2.55 
+NVLink-Latency
+   D\D     0      1 
+     0   2.65  12.25 
+     1  12.50   2.56 
+===== 4 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.00   0.00 
+     1   0.00   0.00 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.00   0.00 
+     1   0.00   0.00 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.00   0.00 
+     1   0.00   0.00 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.00   0.00 
+     1   0.00   0.00 
+PCIe-Latency
+   D\D     0      1 
+     0   2.65  13.99 
+     1  13.84   2.54 
+NVLink-Latency
+   D\D     0      1 
+     0   2.53  12.26 
+     1  12.69   2.56 
+===== 8 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.01   0.00 
+     1   0.00   0.01 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.01   0.00 
+     1   0.00   0.01 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.01   0.00 
+     1   0.00   0.01 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.01   0.00 
+     1   0.00   0.01 
+PCIe-Latency
+   D\D     0      1 
+     0   2.54  13.86 
+     1  13.45   2.55 
+NVLink-Latency
+   D\D     0      1 
+     0   2.53  12.23 
+     1  12.45   2.56 
+===== 16 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.01   0.00 
+     1   0.00   0.01 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.01   0.00 
+     1   0.00   0.01 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.01   0.00 
+     1   0.00   0.01 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.01   0.00 
+     1   0.01   0.01 
+PCIe-Latency
+   D\D     0      1 
+     0   2.53  12.53 
+     1  12.62   2.33 
+NVLink-Latency
+   D\D     0      1 
+     0   2.53  12.27 
+     1  12.67   2.33 
+===== 32 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.02   0.00 
+     1   0.00   0.02 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.02   0.00 
+     1   0.00   0.02 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.03   0.00 
+     1   0.00   0.03 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.03   0.01 
+     1   0.01   0.03 
+PCIe-Latency
+   D\D     0      1 
+     0   2.30  12.44 
+     1  12.76   2.33 
+NVLink-Latency
+   D\D     0      1 
+     0   2.30  12.22 
+     1  12.71   2.34 
+===== 64 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.05   0.00 
+     1   0.00   0.05 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.05   0.01 
+     1   0.01   0.05 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.06   0.01 
+     1   0.01   0.05 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.06   0.02 
+     1   0.02   0.05 
+PCIe-Latency
+   D\D     0      1 
+     0   2.30  12.45 
+     1  12.74   2.32 
+NVLink-Latency
+   D\D     0      1 
+     0   2.30  12.14 
+     1  12.59   2.33 
+===== 128 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.10   0.01 
+     1   0.01   0.10 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.10   0.01 
+     1   0.01   0.10 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.12   0.01 
+     1   0.01   0.11 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.12   0.03 
+     1   0.03   0.11 
+PCIe-Latency
+   D\D     0      1 
+     0   2.30  12.44 
+     1  12.57   2.21 
+NVLink-Latency
+   D\D     0      1 
+     0   2.30  12.23 
+     1  12.43   2.22 
+===== 256 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.20   0.02 
+     1   0.02   0.20 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.20   0.02 
+     1   0.02   0.19 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.24   0.03 
+     1   0.03   0.22 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.23   0.06 
+     1   0.09   0.22 
+PCIe-Latency
+   D\D     0      1 
+     0   2.30  12.43 
+     1  12.58   2.21 
+NVLink-Latency
+   D\D     0      1 
+     0   2.30  12.22 
+     1  12.65   2.23 
+===== 512 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.39   0.04 
+     1   0.03   0.42 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.39   0.04 
+     1   0.05   0.39 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.47   0.05 
+     1   0.07   0.43 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.48   0.12 
+     1   0.19   0.45 
+PCIe-Latency
+   D\D     0      1 
+     0   2.30  12.39 
+     1  12.75   2.22 
+NVLink-Latency
+   D\D     0      1 
+     0   2.30  12.23 
+     1  12.81   2.22 
+===== 1024 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.77   0.07 
+     1   0.08   0.83 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.77   0.08 
+     1   0.10   0.77 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0   0.95   0.10 
+     1   0.11   0.90 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0   0.91   0.23 
+     1   0.37   0.86 
+PCIe-Latency
+   D\D     0      1 
+     0   2.30  12.38 
+     1  12.55   2.21 
+NVLink-Latency
+   D\D     0      1 
+     0   2.30  12.25 
+     1  12.97   2.21 
+===== 2048 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0   1.54   0.14 
+     1   0.15   1.61 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0   1.61   0.18 
+     1   0.16   1.54 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0   1.89   0.18 
+     1   0.26   1.82 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0   1.82   0.53 
+     1   0.53   1.67 
+PCIe-Latency
+   D\D     0      1 
+     0   2.30  12.40 
+     1  12.57   2.21 
+NVLink-Latency
+   D\D     0      1 
+     0   2.30  12.24 
+     1  12.74   2.22 
+===== 4096 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0   3.03   0.18 
+     1   0.27   3.08 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0   2.92   0.36 
+     1   0.34   3.08 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0   3.70   0.48 
+     1   0.52   3.48 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0   3.81   1.03 
+     1   1.12   3.35 
+PCIe-Latency
+   D\D     0      1 
+     0   2.31  12.40 
+     1  12.58   2.21 
+NVLink-Latency
+   D\D     0      1 
+     0   2.30  12.25 
+     1  13.24   2.21 
+===== 8192 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0   6.04   0.56 
+     1   0.60   5.74 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0   6.17   0.72 
+     1   0.65   5.86 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0   7.32   0.89 
+     1   0.88   6.97 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0   7.27   1.92 
+     1   2.25   6.71 
+PCIe-Latency
+   D\D     0      1 
+     0   2.30  12.44 
+     1  12.56   2.36 
+NVLink-Latency
+   D\D     0      1 
+     0   2.31  12.27 
+     1  13.24   2.36 
+===== 16384 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0  11.74   0.79 
+     1   1.15  12.93 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0  11.72   1.42 
+     1   1.29  12.05 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0  15.08   1.55 
+     1   1.82  13.51 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0  14.73   3.22 
+     1   4.50  13.33 
+PCIe-Latency
+   D\D     0      1 
+     0   2.31  12.46 
+     1  13.63   2.35 
+NVLink-Latency
+   D\D     0      1 
+     0   2.31  12.25 
+     1  13.22   2.35 
+===== 32768 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0  24.62   1.35 
+     1   2.28  24.67 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0  23.59   2.78 
+     1   2.57  23.38 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0  27.94   3.33 
+     1   3.37  27.83 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0  29.30   4.64 
+     1   5.84  27.71 
+PCIe-Latency
+   D\D     0      1 
+     0   2.31  12.65 
+     1  13.86   2.41 
+NVLink-Latency
+   D\D     0      1 
+     0   2.30  12.23 
+     1  13.32   2.42 
+===== 65536 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0  49.23   4.19 
+     1   3.91  49.23 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0  46.65   5.21 
+     1   4.89  46.23 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0  60.41   5.57 
+     1   6.34  55.20 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0  60.24   9.91 
+     1   9.96  52.11 
+PCIe-Latency
+   D\D     0      1 
+     0   2.39  13.41 
+     1  17.04   2.42 
+NVLink-Latency
+   D\D     0      1 
+     0   2.38  13.27 
+     1  13.71   2.42 
+===== 131072 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0  95.48   5.22 
+     1   5.34  96.38 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0  92.67   9.56 
+     1   9.14  91.43 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0 115.22  10.49 
+     1  12.28 107.51 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0 116.53  16.41 
+     1  19.10 106.39 
+PCIe-Latency
+   D\D     0      1 
+     0   2.53  23.55 
+     1  22.47   2.42 
+NVLink-Latency
+   D\D     0      1 
+     0   2.52  14.30 
+     1  15.30   2.43 
+===== 262144 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0 171.74   9.88 
+     1   9.16 173.56 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0 177.32  16.01 
+     1  15.39 170.67 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0 222.31  19.07 
+     1  17.67 212.50 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0 221.41  24.15 
+     1  24.62 204.80 
+PCIe-Latency
+   D\D     0      1 
+     0   2.74  24.88 
+     1  28.22   2.63 
+NVLink-Latency
+   D\D     0      1 
+     0   2.74  16.46 
+     1  17.41   2.63 
+===== 524288 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0 316.29  12.84 
+     1  13.70 304.54 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0 305.10  24.09 
+     1  23.39 302.85 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0 409.60  22.86 
+     1  24.50 393.85 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0 426.67  31.22 
+     1  31.62 399.12 
+PCIe-Latency
+   D\D     0      1 
+     0   3.04  39.29 
+     1  37.70   3.06 
+NVLink-Latency
+   D\D     0      1 
+     0   3.05  21.78 
+     1  22.40   3.06 
+===== 1048576 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0 568.89  16.15 
+     1  18.04 564.97 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0 564.97  31.36 
+     1  30.61 568.89 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0 818.18  30.57 
+     1  32.32 758.52 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0 787.69  34.95 
+     1  33.94 735.53 
+PCIe-Latency
+   D\D     0      1 
+     0   3.40  62.57 
+     1  59.35   3.27 
+NVLink-Latency
+   D\D     0      1 
+     0   3.40  33.21 
+     1  34.10   3.27 
+===== 2097152 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0 930.91  21.88 
+     1  22.45 934.89 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0 965.18  35.64 
+     1  35.42 932.23 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0 1412.41  37.27 
+     1  38.21 1403.34 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0 1375.36  36.53 
+     1  35.85 1369.61 
+PCIe-Latency
+   D\D     0      1 
+     0   4.08  95.00 
+     1  93.38   4.07 
+NVLink-Latency
+   D\D     0      1 
+     0   4.08  58.30 
+     1  58.93   4.09 
+===== 4194304 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0 1443.52  26.80 
+     1  25.25 1412.41 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0 1423.15  38.48 
+     1  38.27 1418.53 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0 2214.05  42.15 
+     1  43.94 2048.00 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0 2221.56  38.91 
+     1  38.61 2069.01 
+PCIe-Latency
+   D\D     0      1 
+     0   5.43 158.56 
+     1 164.25   5.39 
+NVLink-Latency
+   D\D     0      1 
+     0   5.43 108.82 
+     1 109.29   5.42 
+===== 8388608 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0 660.65  28.47 
+     1  26.94 657.66 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0 651.45  40.27 
+     1  40.08 655.85 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0 763.27  45.95 
+     1  43.87 772.83 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0 765.61  38.87 
+     1  38.88 776.49 
+PCIe-Latency
+   D\D     0      1 
+     0  24.51 293.12 
+     1 307.59  24.52 
+NVLink-Latency
+   D\D     0      1 
+     0  24.55 207.40 
+     1 208.97  24.50 
+===== 16777216 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0 712.35  29.79 
+     1  28.11 715.46 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0 712.35  40.96 
+     1  40.69 711.19 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0 775.12  47.71 
+     1  46.42 782.75 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0 773.46  39.82 
+     1  39.61 783.51 
+PCIe-Latency
+   D\D     0      1 
+     0  45.78 557.53 
+     1 597.18  45.78 
+NVLink-Latency
+   D\D     0      1 
+     0  45.75 409.47 
+     1 411.55  45.72 
+===== 33554432 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0 753.23  30.78 
+     1  28.63 754.37 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0 751.67  41.09 
+     1  41.04 753.56 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0 785.83  48.12 
+     1  48.12 790.54 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0 784.72  39.51 
+     1  39.60 790.54 
+PCIe-Latency
+   D\D     0      1 
+     0  87.88 1090.43 
+     1 1172.78  87.79 
+NVLink-Latency
+   D\D     0      1 
+     0  87.81 814.63 
+     1 815.92  87.81 
+===== 67108864 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0 773.34  31.19 
+     1  28.80 774.66 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0 773.57  41.49 
+     1  41.39 774.66 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0 790.57  48.39 
+     1  48.60 792.90 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0 790.38  39.78 
+     1  39.99 792.72 
+PCIe-Latency
+   D\D     0      1 
+     0 172.20 2148.51 
+     1 2322.24 172.14 
+NVLink-Latency
+   D\D     0      1 
+     0 172.21 1620.12 
+     1 1621.18 172.13 
+===== 134217728 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0 784.86  31.37 
+     1  28.98 785.20 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0 785.33  41.65 
+     1  41.62 784.67 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0 792.97  49.12 
+     1  48.87 793.94 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0 793.19  39.89 
+     1  39.86 793.86 
+PCIe-Latency
+   D\D     0      1 
+     0 340.74 4265.96 
+     1 4626.52 340.81 
+NVLink-Latency
+   D\D     0      1 
+     0 340.79 3218.50 
+     1 3224.30 340.89 
+===== 268435456 =====
+Uni-PCIe-Bandwidth
+   D\D     0      1 
+     0 790.27  31.55 
+     1  29.10 790.36 
+Uni-NVLink-Bandwidth
+   D\D     0      1 
+     0 790.54  41.83 
+     1  41.74 790.36 
+Bi-PCIe-Bandwidth
+   D\D     0      1 
+     0 794.61  48.95 
+     1  49.14 794.97 
+Bi-NVLink-Bandwidth
+   D\D     0      1 
+     0 794.27  40.00 
+     1  39.90 794.95 
+PCIe-Latency
+   D\D     0      1 
+     0 678.00 8498.42 
+     1 9218.05 678.04 
+NVLink-Latency
+   D\D     0      1 
+     0 677.94 6427.35 
+     1 6429.71 677.98 
