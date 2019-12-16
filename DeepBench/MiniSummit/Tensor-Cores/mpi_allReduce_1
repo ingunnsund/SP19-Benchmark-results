@@ -1,0 +1,9 @@
+ NCCL MPI AllReduce 
+ Num Ranks: 1
+----------------------------------------------------------------------------------------------------
+    # of floats    bytes transferred    Avg Time (msec)    Max Time (msec)
+----------------------------------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+-------------------------------------------------------
