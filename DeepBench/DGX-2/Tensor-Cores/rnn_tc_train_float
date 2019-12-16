@@ -1,0 +1,57 @@
+                  Running training benchmark 
+                         Times
+-------------------------------------------------------------------------------------------------------------------
+    type    hidden   N     timesteps   precision   fwd_time (usec)   bwd_inputs_time (usec)  bwd_params_time (usec)
+ vanilla    1760      16      50         float              4363                3367                 624
+ vanilla    1760      32      50         float              4697                3468                 966
+ vanilla    1760      64      50         float              5159                4164                1644
+ vanilla    1760     128      50         float              6593                5406                3111
+ vanilla    2048      16      50         float              4489                3369                 779
+ vanilla    2048      32      50         float              4847                3568                1292
+ vanilla    2048      64      50         float              5263                4443                2142
+ vanilla    2048     128      50         float              6910                6413                3967
+ vanilla    2560      16      50         float              4903                3654                1114
+ vanilla    2560      32      50         float              5219                3875                1740
+ vanilla    2560      64      50         float              5363                5051                3498
+ vanilla    2560     128      50         float              8528                7690                5612
+    lstm     512      16      25         float               940                1198                 229
+    lstm     512      32      25         float              1105                1236                 322
+    lstm     512      64      25         float              1474                1339                 484
+    lstm     512     128      25         float              1678                1839                 738
+    lstm    1024      16      25         float              1887                1873                 492
+    lstm    1024      32      25         float              2044                1867                 738
+    lstm    1024      64      25         float              2419                2239                1190
+    lstm    1024     128      25         float              3340                3194                2112
+    lstm    2048      16      25         float              3548                3258                1287
+    lstm    2048      32      25         float              3575                3382                2161
+    lstm    2048      64      25         float              5613                4959                4022
+    lstm    2048     128      25         float              9166                8309                7607
+    lstm    4096      16      25         float              9846                9024                4151
+    lstm    4096      32      25         float             10091                9467                7406
+    lstm    4096      64      25         float             16079               14992               14147
+    lstm    4096     128      25         float             30375               29076               27476
+    lstm    1536       8      50         float              4963                4726                 851
+    lstm    1536      16      50         float              5099                4728                1345
+    lstm    1536      32      50         float              5348                5229                2447
+    lstm     256      16     150         float              5851                4695                 284
+    lstm     256      32     150         float              6230                5314                 436
+    lstm     256      64     150         float              6804                7191                 647
+     gru    2816      32    1500         float            218777              324305              150037
+     gru    2816      32     750         float            111616              163808               75328
+     gru    2816      32     375         float             63317               82798               37903
+     gru    2816      32     187         float             31756               44367               19058
+     gru    2048      32    1500         float            142931              140717               76765
+     gru    2048      32     750         float             73076               71498               38564
+     gru    2048      32     375         float             37950               37245               19537
+     gru    2048      32     187         float             23862               21868                9919
+     gru    1536      32    1500         float             86626              103380               44460
+     gru    1536      32     750         float             44832               53289               22447
+     gru    1536      32     375         float             24182               27814               11455
+     gru    1536      32     187         float             17500               16547                5770
+     gru    2560      32    1500         float            196400              186581              121811
+     gru    2560      32     750         float            100644               94571               61154
+     gru    2560      32     375         float             61080               48725               30839
+     gru    2560      32     187         float             30967               27403               15734
+     gru     512      32       1         float                78                  89                  72
+     gru    1024      32    1500         float             60280               68784               19409
+     gru    1024      64    1500         float             81380               86838               38359
