@@ -1,0 +1,36 @@
+root@52d302bdaa74:/opt/scope/build# ./scope --benchmark_filter=NCCL/ops/broadcast --ngpu=1 --benchmark_out_format=json --benchmark_out=results/nccl-broadcast.json
+2019-12-16 20:40:12
+Running ./scope
+Run on (16 X 5000 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x8)
+  L1 Instruction 32K (x8)
+  L2 Unified 256K (x8)
+  L3 Unified 16384K (x1)
+***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
+-------------------------------------------------------------------------------------------------
+Benchmark                                          Time           CPU Iterations UserCounters...
+-------------------------------------------------------------------------------------------------
+NCCL/ops/broadcast/log2(N):8/manual_time        5885 ns       9820 ns      96322 avg=2.656m bytes=256 d0=2.656m d1=0 d2=0 d3=0   41.4886MB/s
+NCCL/ops/broadcast/log2(N):9/manual_time        5608 ns       9486 ns     123621 avg=2.72m bytes=512 d0=2.72m d1=0 d2=0 d3=0   87.0763MB/s
+NCCL/ops/broadcast/log2(N):10/manual_time       5632 ns       9524 ns     123062 avg=3.584m bytes=1024 d0=3.584m d1=0 d2=0 d3=0    173.38MB/s
+NCCL/ops/broadcast/log2(N):11/manual_time       5660 ns       9521 ns     122798 avg=2.144m bytes=2.048k d0=2.144m d1=0 d2=0 d3=0   345.063MB/s
+NCCL/ops/broadcast/log2(N):12/manual_time       5610 ns       9468 ns     123247 avg=3.072m bytes=4.096k d0=3.072m d1=0 d2=0 d3=0     696.3MB/s
+NCCL/ops/broadcast/log2(N):13/manual_time       5653 ns       9543 ns     122486 avg=2.496m bytes=8.192k d0=2.496m d1=0 d2=0 d3=0   1.34969GB/s
+NCCL/ops/broadcast/log2(N):14/manual_time       5658 ns       9518 ns     122079 avg=3.328m bytes=16.384k d0=3.328m d1=0 d2=0 d3=0   2.69697GB/s
+NCCL/ops/broadcast/log2(N):15/manual_time       5716 ns       9594 ns     122035 avg=2.464m bytes=32.768k d0=2.464m d1=0 d2=0 d3=0   5.33877GB/s
+NCCL/ops/broadcast/log2(N):16/manual_time       5847 ns       9753 ns     118730 avg=2.368m bytes=65.536k d0=2.368m d1=0 d2=0 d3=0   10.4382GB/s
+NCCL/ops/broadcast/log2(N):17/manual_time       6917 ns      10800 ns      98708 avg=5.92m bytes=131.072k d0=5.92m d1=0 d2=0 d3=0   17.6477GB/s
+NCCL/ops/broadcast/log2(N):18/manual_time       7308 ns      11199 ns      93584 avg=5.344m bytes=262.144k d0=5.344m d1=0 d2=0 d3=0   33.4062GB/s
+NCCL/ops/broadcast/log2(N):19/manual_time       7620 ns      11543 ns      91286 avg=4.864m bytes=524.288k d0=4.864m d1=0 d2=0 d3=0   64.0794GB/s
+NCCL/ops/broadcast/log2(N):20/manual_time      21513 ns      25499 ns      32576 avg=0.019488 bytes=1048.58k d0=0.019488 d1=0 d2=0 d3=0    45.394GB/s
+NCCL/ops/broadcast/log2(N):21/manual_time      36710 ns      40755 ns      19092 avg=0.033536 bytes=2.09715M d0=0.033536 d1=0 d2=0 d3=0   53.2043GB/s
+NCCL/ops/broadcast/log2(N):22/manual_time      66880 ns      70925 ns      10446 avg=0.063776 bytes=4.1943M d0=0.063776 d1=0 d2=0 d3=0   58.4071GB/s
+NCCL/ops/broadcast/log2(N):23/manual_time     127438 ns     131527 ns       5479 avg=0.12432 bytes=8.38861M d0=0.12432 d1=0 d2=0 d3=0   61.3041GB/s
+NCCL/ops/broadcast/log2(N):24/manual_time     248651 ns     252701 ns       2814 avg=0.245952 bytes=16.7772M d0=0.245952 d1=0 d2=0 d3=0   62.8391GB/s
+NCCL/ops/broadcast/log2(N):25/manual_time     490795 ns     494852 ns       1427 avg=0.488416 bytes=33.5544M d0=0.488416 d1=0 d2=0 d3=0   63.6722GB/s
+NCCL/ops/broadcast/log2(N):26/manual_time     974412 ns     978547 ns        718 avg=0.9728 bytes=67.1089M d0=0.9728 d1=0 d2=0 d3=0   64.1412GB/s
+NCCL/ops/broadcast/log2(N):27/manual_time    1944762 ns    1948872 ns        360 avg=1.94285 bytes=134.218M d0=1.94285 d1=0 d2=0 d3=0   64.2752GB/s
+NCCL/ops/broadcast/log2(N):28/manual_time    3892392 ns    3896445 ns        179 avg=3.87606 bytes=268.435M d0=3.87606 d1=0 d2=0 d3=0   64.2279GB/s
+NCCL/ops/broadcast/log2(N):29/manual_time    7823862 ns    7828051 ns         83 avg=7.74896 bytes=536.871M d0=7.74896 d1=0 d2=0 d3=0   63.9071GB/s
+NCCL/ops/broadcast/log2(N):30/manual_time   15793998 ns   15798402 ns         41 avg=15.4874 bytes=1073.74M d0=15.4874 d1=0 d2=0 d3=0   63.3152GB/s
