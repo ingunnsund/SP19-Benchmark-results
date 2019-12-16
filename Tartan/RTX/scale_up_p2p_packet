@@ -1,0 +1,555 @@
+root@520ba7a69a0a:/usr/src/tartan/microbenchmark/scale_up_p2p_packet# ls
+Makefile  README.md  dgx-1_packet.txt  p2pBandwidthLatencyTest.cu  p2pPacket  result.txt
+root@520ba7a69a0a:/usr/src/tartan/microbenchmark/scale_up_p2p_packet# cat result.txt 
+===== 1 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0   0.00 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0   0.00 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0   0.00 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0   0.00 
+PCIe-Latency
+   D\D     0 
+     0   1.78 
+NVLink-Latency
+   D\D     0 
+     0   1.79 
+===== 2 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0   0.00 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0   0.00 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0   0.00 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0   0.00 
+PCIe-Latency
+   D\D     0 
+     0   1.78 
+NVLink-Latency
+   D\D     0 
+     0   1.79 
+===== 4 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0   0.00 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0   0.00 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0   0.00 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0   0.00 
+PCIe-Latency
+   D\D     0 
+     0   1.78 
+NVLink-Latency
+   D\D     0 
+     0   1.86 
+===== 8 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0   0.01 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0   0.01 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0   0.01 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0   0.01 
+PCIe-Latency
+   D\D     0 
+     0   1.77 
+NVLink-Latency
+   D\D     0 
+     0   1.85 
+===== 16 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0   0.01 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0   0.01 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0   0.02 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0   0.02 
+PCIe-Latency
+   D\D     0 
+     0   1.78 
+NVLink-Latency
+   D\D     0 
+     0   1.86 
+===== 32 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0   0.03 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0   0.03 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0   0.04 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0   0.04 
+PCIe-Latency
+   D\D     0 
+     0   1.78 
+NVLink-Latency
+   D\D     0 
+     0   1.86 
+===== 64 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0   0.06 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0   0.06 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0   0.07 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0   0.07 
+PCIe-Latency
+   D\D     0 
+     0   1.79 
+NVLink-Latency
+   D\D     0 
+     0   1.89 
+===== 128 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0   0.11 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0   0.11 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0   0.15 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0   0.14 
+PCIe-Latency
+   D\D     0 
+     0   1.78 
+NVLink-Latency
+   D\D     0 
+     0   1.85 
+===== 256 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0   0.24 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0   0.22 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0   0.28 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0   0.29 
+PCIe-Latency
+   D\D     0 
+     0   1.78 
+NVLink-Latency
+   D\D     0 
+     0   1.78 
+===== 512 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0   0.43 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0   0.42 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0   0.55 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0   0.55 
+PCIe-Latency
+   D\D     0 
+     0   1.91 
+NVLink-Latency
+   D\D     0 
+     0   1.91 
+===== 1024 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0   0.93 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0   0.98 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0   1.14 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0   1.17 
+PCIe-Latency
+   D\D     0 
+     0   1.94 
+NVLink-Latency
+   D\D     0 
+     0   1.94 
+===== 2048 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0   1.73 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0   1.91 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0   2.40 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0   2.25 
+PCIe-Latency
+   D\D     0 
+     0   1.94 
+NVLink-Latency
+   D\D     0 
+     0   1.93 
+===== 4096 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0   3.87 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0   3.57 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0   4.89 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0   4.51 
+PCIe-Latency
+   D\D     0 
+     0   1.95 
+NVLink-Latency
+   D\D     0 
+     0   1.95 
+===== 8192 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0   7.09 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0   7.05 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0   9.03 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0   9.36 
+PCIe-Latency
+   D\D     0 
+     0   1.95 
+NVLink-Latency
+   D\D     0 
+     0   1.97 
+===== 16384 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0  13.33 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0  15.33 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0  18.22 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0  18.89 
+PCIe-Latency
+   D\D     0 
+     0   1.95 
+NVLink-Latency
+   D\D     0 
+     0   1.97 
+===== 32768 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0  27.75 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0  27.38 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0  37.72 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0  39.84 
+PCIe-Latency
+   D\D     0 
+     0   1.97 
+NVLink-Latency
+   D\D     0 
+     0   1.96 
+===== 65536 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0  62.82 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0  61.50 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0  91.02 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0  91.22 
+PCIe-Latency
+   D\D     0 
+     0   1.36 
+NVLink-Latency
+   D\D     0 
+     0   1.37 
+===== 131072 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0 158.15 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0 158.76 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0 182.04 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0 181.64 
+PCIe-Latency
+   D\D     0 
+     0   1.38 
+NVLink-Latency
+   D\D     0 
+     0   1.37 
+===== 262144 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0 320.00 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0 309.13 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0 356.95 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0 344.93 
+PCIe-Latency
+   D\D     0 
+     0   1.50 
+NVLink-Latency
+   D\D     0 
+     0   1.51 
+===== 524288 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0 492.01 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0 492.01 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0 588.29 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0 563.99 
+PCIe-Latency
+   D\D     0 
+     0   1.90 
+NVLink-Latency
+   D\D     0 
+     0   1.90 
+===== 1048576 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0 941.61 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0 864.59 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0 1133.84 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0 1141.74 
+PCIe-Latency
+   D\D     0 
+     0   2.09 
+NVLink-Latency
+   D\D     0 
+     0   2.11 
+===== 2097152 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0 1287.54 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0 1280.00 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0 1840.90 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0 1807.89 
+PCIe-Latency
+   D\D     0 
+     0   2.98 
+NVLink-Latency
+   D\D     0 
+     0   2.99 
+===== 4194304 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0 1152.79 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0 1151.77 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0 1780.87 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0 1799.20 
+PCIe-Latency
+   D\D     0 
+     0   4.67 
+NVLink-Latency
+   D\D     0 
+     0   4.67 
+===== 8388608 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0 520.54 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0 535.53 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0 557.28 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0 554.80 
+PCIe-Latency
+   D\D     0 
+     0  32.13 
+NVLink-Latency
+   D\D     0 
+     0  32.17 
+===== 16777216 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0 544.60 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0 545.51 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0 555.74 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0 556.69 
+PCIe-Latency
+   D\D     0 
+     0  62.28 
+NVLink-Latency
+   D\D     0 
+     0  62.26 
+===== 33554432 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0 551.24 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0 551.33 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0 555.42 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0 554.77 
+PCIe-Latency
+   D\D     0 
+     0 122.61 
+NVLink-Latency
+   D\D     0 
+     0 122.61 
+===== 67108864 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0 553.60 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0 553.62 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0 555.14 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0 554.02 
+PCIe-Latency
+   D\D     0 
+     0 243.30 
+NVLink-Latency
+   D\D     0 
+     0 243.30 
+===== 134217728 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0 554.94 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0 554.92 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0 554.73 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0 554.73 
+PCIe-Latency
+   D\D     0 
+     0 484.64 
+NVLink-Latency
+   D\D     0 
+     0 484.68 
+===== 268435456 =====
+Uni-PCIe-Bandwidth
+   D\D     0 
+     0 555.39 
+Uni-NVLink-Bandwidth
+   D\D     0 
+     0 539.54 
+Bi-PCIe-Bandwidth
+   D\D     0 
+     0 546.72 
+Bi-NVLink-Bandwidth
+   D\D     0 
+     0 546.65 
+PCIe-Latency
+   D\D     0 
+     0 968.80 
+NVLink-Latency
+   D\D     0 
+     0 968.86 
+root@520ba7a69a0a:/usr/src/tartan/microbenchmark/scale_up_p2p_packet# 
