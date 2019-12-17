@@ -1,0 +1,62 @@
+root@0e5811195a80:/opt/scope/build# ./scope --benchmark_filter=Latency -c=0 --benchmark_out_format=json --benchmark_out=results/comm-latency.json
+2019-12-17 22:29:09
+Running ./scope
+Run on (8 X 4200 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x4)
+  L1 Instruction 32K (x4)
+  L2 Unified 256K (x4)
+  L3 Unified 8192K (x1)
+***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
+[2019-12-17 22:29:09.539] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/gpu_to_host.cu::85 In operator():(cudaMemPrefetchAsync(ptr, bytes, cuda_id)) FAILED
+------------------------------------------------------------------------------------------
+Benchmark                                                   Time           CPU Iterations
+------------------------------------------------------------------------------------------
+Comm_UM_Latency_GPUToHost/0/log2(N):8              ERROR OCCURRED: 'Comm_UM_Latency_GPUToHost failed prefetch to device'
+[2019-12-17 22:29:09.592] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/gpu_to_host.cu::85 In operator():(cudaMemPrefetchAsync(ptr, bytes, cuda_id)) FAILED
+Comm_UM_Latency_GPUToHost/0/log2(N):10             ERROR OCCURRED: 'Comm_UM_Latency_GPUToHost failed prefetch to device'
+[2019-12-17 22:29:09.645] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/gpu_to_host.cu::85 In operator():(cudaMemPrefetchAsync(ptr, bytes, cuda_id)) FAILED
+Comm_UM_Latency_GPUToHost/0/log2(N):12             ERROR OCCURRED: 'Comm_UM_Latency_GPUToHost failed prefetch to device'
+[2019-12-17 22:29:09.698] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/gpu_to_host.cu::85 In operator():(cudaMemPrefetchAsync(ptr, bytes, cuda_id)) FAILED
+Comm_UM_Latency_GPUToHost/0/log2(N):14             ERROR OCCURRED: 'Comm_UM_Latency_GPUToHost failed prefetch to device'
+[2019-12-17 22:29:09.751] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/gpu_to_host.cu::85 In operator():(cudaMemPrefetchAsync(ptr, bytes, cuda_id)) FAILED
+Comm_UM_Latency_GPUToHost/0/log2(N):16             ERROR OCCURRED: 'Comm_UM_Latency_GPUToHost failed prefetch to device'
+[2019-12-17 22:29:09.805] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/gpu_to_host.cu::85 In operator():(cudaMemPrefetchAsync(ptr, bytes, cuda_id)) FAILED
+Comm_UM_Latency_GPUToHost/0/log2(N):18             ERROR OCCURRED: 'Comm_UM_Latency_GPUToHost failed prefetch to device'
+[2019-12-17 22:29:09.859] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/gpu_to_host.cu::85 In operator():(cudaMemPrefetchAsync(ptr, bytes, cuda_id)) FAILED
+Comm_UM_Latency_GPUToHost/0/log2(N):20             ERROR OCCURRED: 'Comm_UM_Latency_GPUToHost failed prefetch to device'
+[2019-12-17 22:29:09.913] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/gpu_to_host.cu::85 In operator():(cudaMemPrefetchAsync(ptr, bytes, cuda_id)) FAILED
+Comm_UM_Latency_GPUToHost/0/log2(N):22             ERROR OCCURRED: 'Comm_UM_Latency_GPUToHost failed prefetch to device'
+[2019-12-17 22:29:09.968] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/gpu_to_host.cu::85 In operator():(cudaMemPrefetchAsync(ptr, bytes, cuda_id)) FAILED
+Comm_UM_Latency_GPUToHost/0/log2(N):24             ERROR OCCURRED: 'Comm_UM_Latency_GPUToHost failed prefetch to device'
+[2019-12-17 22:29:10.023] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/gpu_to_host.cu::85 In operator():(cudaMemPrefetchAsync(ptr, bytes, cuda_id)) FAILED
+Comm_UM_Latency_GPUToHost/0/log2(N):26             ERROR OCCURRED: 'Comm_UM_Latency_GPUToHost failed prefetch to device'
+[2019-12-17 22:29:10.079] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/gpu_to_host.cu::85 In operator():(cudaMemPrefetchAsync(ptr, bytes, cuda_id)) FAILED
+Comm_UM_Latency_GPUToHost/0/log2(N):28             ERROR OCCURRED: 'Comm_UM_Latency_GPUToHost failed prefetch to device'
+[2019-12-17 22:29:10.135] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/gpu_to_host.cu::85 In operator():(cudaMemPrefetchAsync(ptr, bytes, cuda_id)) FAILED
+Comm_UM_Latency_GPUToHost/0/log2(N):30             ERROR OCCURRED: 'Comm_UM_Latency_GPUToHost failed prefetch to device'
+[2019-12-17 22:29:10.188] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/host_to_gpu.cu::97 In operator():(cudaMemPrefetchAsync(ptr, bytes, cudaCpuDeviceId)) FAILED
+Comm_UM_Latency_HostToGPU/0/log2(N):8/manual_time  ERROR OCCURRED: 'Comm_UM_Latency_HostToGPU failed to prefetch to CPU'
+[2019-12-17 22:29:10.241] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/host_to_gpu.cu::97 In operator():(cudaMemPrefetchAsync(ptr, bytes, cudaCpuDeviceId)) FAILED
+Comm_UM_Latency_HostToGPU/0/log2(N):10/manual_time ERROR OCCURRED: 'Comm_UM_Latency_HostToGPU failed to prefetch to CPU'
+[2019-12-17 22:29:10.293] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/host_to_gpu.cu::97 In operator():(cudaMemPrefetchAsync(ptr, bytes, cudaCpuDeviceId)) FAILED
+Comm_UM_Latency_HostToGPU/0/log2(N):12/manual_time ERROR OCCURRED: 'Comm_UM_Latency_HostToGPU failed to prefetch to CPU'
+[2019-12-17 22:29:10.346] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/host_to_gpu.cu::97 In operator():(cudaMemPrefetchAsync(ptr, bytes, cudaCpuDeviceId)) FAILED
+Comm_UM_Latency_HostToGPU/0/log2(N):14/manual_time ERROR OCCURRED: 'Comm_UM_Latency_HostToGPU failed to prefetch to CPU'
+[2019-12-17 22:29:10.399] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/host_to_gpu.cu::97 In operator():(cudaMemPrefetchAsync(ptr, bytes, cudaCpuDeviceId)) FAILED
+Comm_UM_Latency_HostToGPU/0/log2(N):16/manual_time ERROR OCCURRED: 'Comm_UM_Latency_HostToGPU failed to prefetch to CPU'
+[2019-12-17 22:29:10.453] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/host_to_gpu.cu::97 In operator():(cudaMemPrefetchAsync(ptr, bytes, cudaCpuDeviceId)) FAILED
+Comm_UM_Latency_HostToGPU/0/log2(N):18/manual_time ERROR OCCURRED: 'Comm_UM_Latency_HostToGPU failed to prefetch to CPU'
+[2019-12-17 22:29:10.507] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/host_to_gpu.cu::97 In operator():(cudaMemPrefetchAsync(ptr, bytes, cudaCpuDeviceId)) FAILED
+Comm_UM_Latency_HostToGPU/0/log2(N):20/manual_time ERROR OCCURRED: 'Comm_UM_Latency_HostToGPU failed to prefetch to CPU'
+[2019-12-17 22:29:10.562] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/host_to_gpu.cu::97 In operator():(cudaMemPrefetchAsync(ptr, bytes, cudaCpuDeviceId)) FAILED
+Comm_UM_Latency_HostToGPU/0/log2(N):22/manual_time ERROR OCCURRED: 'Comm_UM_Latency_HostToGPU failed to prefetch to CPU'
+[2019-12-17 22:29:10.617] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/host_to_gpu.cu::97 In operator():(cudaMemPrefetchAsync(ptr, bytes, cudaCpuDeviceId)) FAILED
+Comm_UM_Latency_HostToGPU/0/log2(N):24/manual_time ERROR OCCURRED: 'Comm_UM_Latency_HostToGPU failed to prefetch to CPU'
+[2019-12-17 22:29:10.672] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/host_to_gpu.cu::97 In operator():(cudaMemPrefetchAsync(ptr, bytes, cudaCpuDeviceId)) FAILED
+Comm_UM_Latency_HostToGPU/0/log2(N):26/manual_time ERROR OCCURRED: 'Comm_UM_Latency_HostToGPU failed to prefetch to CPU'
+[2019-12-17 22:29:10.727] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/host_to_gpu.cu::97 In operator():(cudaMemPrefetchAsync(ptr, bytes, cudaCpuDeviceId)) FAILED
+Comm_UM_Latency_HostToGPU/0/log2(N):28/manual_time ERROR OCCURRED: 'Comm_UM_Latency_HostToGPU failed to prefetch to CPU'
+[2019-12-17 22:29:10.783] [./scope] [critical] ERROR[invalid device ordinal] on /opt/scope/scopes/comm_scope/src/latency/host_to_gpu.cu::97 In operator():(cudaMemPrefetchAsync(ptr, bytes, cudaCpuDeviceId)) FAILED
+Comm_UM_Latency_HostToGPU/0/log2(N):30/manual_time ERROR OCCURRED: 'Comm_UM_Latency_HostToGPU failed to prefetch to CPU'
+root@0e5811195a80:/opt/scope/build#

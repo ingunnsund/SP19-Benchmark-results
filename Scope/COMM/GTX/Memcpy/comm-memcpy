@@ -1,0 +1,126 @@
+root@0e5811195a80:/opt/scope/build# ./scope --benchmark_filter=Memcpy -c=0 --benchmark_out_format=json --benchmark_out=results/comm-memcpy.json
+2019-12-17 22:29:55
+Running ./scope
+Run on (8 X 4200 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x4)
+  L1 Instruction 32K (x4)
+  L2 Unified 256K (x4)
+  L3 Unified 8192K (x1)
+***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
+----------------------------------------------------------------------------------------------------
+Benchmark                                             Time           CPU Iterations UserCounters...
+----------------------------------------------------------------------------------------------------
+Comm_Memcpy_GPUToHost/log2(N):8/manual_time        5557 ns      10360 ns     125157 bytes=256 cuda_id=0   43.9337MB/s
+Comm_Memcpy_GPUToHost/log2(N):9/manual_time        5727 ns      10592 ns     124285 bytes=512 cuda_id=0   85.2633MB/s
+Comm_Memcpy_GPUToHost/log2(N):10/manual_time       5812 ns      10656 ns     120962 bytes=1024 cuda_id=0   168.024MB/s
+Comm_Memcpy_GPUToHost/log2(N):11/manual_time       5814 ns      10718 ns     120011 bytes=2.048k cuda_id=0   335.921MB/s
+Comm_Memcpy_GPUToHost/log2(N):12/manual_time       6093 ns      10997 ns     116589 bytes=4.096k cuda_id=0   641.124MB/s
+Comm_Memcpy_GPUToHost/log2(N):13/manual_time       6936 ns      11868 ns     102635 bytes=8.192k cuda_id=0   1.10004GB/s
+Comm_Memcpy_GPUToHost/log2(N):14/manual_time       7626 ns      12503 ns      90690 bytes=16.384k cuda_id=0    2.0008GB/s
+Comm_Memcpy_GPUToHost/log2(N):15/manual_time      10892 ns      15843 ns      64759 bytes=32.768k cuda_id=0   2.80193GB/s
+Comm_Memcpy_GPUToHost/log2(N):16/manual_time      16137 ns      21113 ns      42589 bytes=65.536k cuda_id=0   3.78233GB/s
+Comm_Memcpy_GPUToHost/log2(N):17/manual_time      26038 ns      31129 ns      26606 bytes=131.072k cuda_id=0   4.68822GB/s
+Comm_Memcpy_GPUToHost/log2(N):18/manual_time      46410 ns      51889 ns      15011 bytes=262.144k cuda_id=0   5.26047GB/s
+Comm_Memcpy_GPUToHost/log2(N):19/manual_time      89092 ns      94593 ns       7989 bytes=524.288k cuda_id=0   5.48063GB/s
+Comm_Memcpy_GPUToHost/log2(N):20/manual_time     170792 ns     176211 ns       4100 bytes=1048.58k cuda_id=0   5.71784GB/s
+Comm_Memcpy_GPUToHost/log2(N):21/manual_time     297997 ns     304217 ns       2369 bytes=2.09715M cuda_id=0   6.55418GB/s
+Comm_Memcpy_GPUToHost/log2(N):22/manual_time     542370 ns     548349 ns       1257 bytes=4.1943M cuda_id=0   7.20218GB/s
+Comm_Memcpy_GPUToHost/log2(N):23/manual_time    1033976 ns    1040120 ns        662 bytes=8.38861M cuda_id=0   7.55579GB/s
+Comm_Memcpy_GPUToHost/log2(N):24/manual_time    2027496 ns    2034414 ns        339 bytes=16.7772M cuda_id=0   7.70655GB/s
+Comm_Memcpy_GPUToHost/log2(N):25/manual_time    4034801 ns    4042875 ns        171 bytes=33.5544M cuda_id=0   7.74512GB/s
+Comm_Memcpy_GPUToHost/log2(N):26/manual_time    8378054 ns    8390563 ns         71 bytes=67.1089M cuda_id=0   7.45997GB/s
+Comm_Memcpy_GPUToHost/log2(N):27/manual_time   17220421 ns   17249075 ns         36 bytes=134.218M cuda_id=0   7.25882GB/s
+Comm_Memcpy_GPUToHost/log2(N):28/manual_time   36667552 ns   36767578 ns         16 bytes=268.435M cuda_id=0   6.81802GB/s
+Comm_Memcpy_GPUToHost/log2(N):29/manual_time   91021905 ns   91533015 ns          6 bytes=536.871M cuda_id=0   5.49318GB/s
+Comm_Memcpy_GPUToHost/log2(N):30/manual_time  323634319 ns  326652267 ns          2 bytes=1073.74M cuda_id=0   3.08991GB/s
+Comm_Memcpy_GPUToHost/log2(N):31/manual_time 1015718460 ns 1027743140 ns          1 bytes=2.14748G cuda_id=0   1.96905GB/s
+[2019-12-17 22:30:28.290] [./scope] [critical] ERROR[out of memory] on /opt/scope/scopes/comm_scope/src/memcpy/gpu_to_host.cpp::33 In Comm_Memcpy_GPUToHost:(cudaMalloc(&src, bytes)) FAILED
+Comm_Memcpy_GPUToHost/log2(N):32/manual_time ERROR OCCURRED: 'Comm/Memcpy/GpuToHost failed to perform cudaMalloc'
+[2019-12-17 22:30:28.348] [./scope] [critical] ERROR[out of memory] on /opt/scope/scopes/comm_scope/src/memcpy/gpu_to_host.cpp::33 In Comm_Memcpy_GPUToHost:(cudaMalloc(&src, bytes)) FAILED
+Comm_Memcpy_GPUToHost/log2(N):33/manual_time ERROR OCCURRED: 'Comm/Memcpy/GpuToHost failed to perform cudaMalloc'
+Comm_Memcpy_GPUToWC/log2(N):8/manual_time          2141 ns       7138 ns     324325 bytes=256 cuda_id=0   114.021MB/s
+Comm_Memcpy_GPUToWC/log2(N):9/manual_time          2150 ns       7158 ns     325995 bytes=512 cuda_id=0   227.156MB/s
+Comm_Memcpy_GPUToWC/log2(N):10/manual_time         2177 ns       7170 ns     311743 bytes=1024 cuda_id=0   448.644MB/s
+Comm_Memcpy_GPUToWC/log2(N):11/manual_time         2217 ns       7148 ns     310163 bytes=2.048k cuda_id=0   881.111MB/s
+Comm_Memcpy_GPUToWC/log2(N):12/manual_time         2369 ns       7289 ns     294863 bytes=4.096k cuda_id=0   1.61047GB/s
+Comm_Memcpy_GPUToWC/log2(N):13/manual_time         2608 ns       7497 ns     265573 bytes=8.192k cuda_id=0   2.92547GB/s
+Comm_Memcpy_GPUToWC/log2(N):14/manual_time         3179 ns       8051 ns     220350 bytes=16.384k cuda_id=0   4.79942GB/s
+Comm_Memcpy_GPUToWC/log2(N):15/manual_time         4436 ns       9701 ns     158258 bytes=32.768k cuda_id=0   6.87974GB/s
+Comm_Memcpy_GPUToWC/log2(N):16/manual_time         6980 ns      12153 ns     101407 bytes=65.536k cuda_id=0   8.74372GB/s
+Comm_Memcpy_GPUToWC/log2(N):17/manual_time        11868 ns      16941 ns      59003 bytes=131.072k cuda_id=0   10.2861GB/s
+Comm_Memcpy_GPUToWC/log2(N):18/manual_time        21872 ns      26814 ns      32096 bytes=262.144k cuda_id=0   11.1622GB/s
+Comm_Memcpy_GPUToWC/log2(N):19/manual_time        41740 ns      47321 ns      16753 bytes=524.288k cuda_id=0   11.6981GB/s
+Comm_Memcpy_GPUToWC/log2(N):20/manual_time        81950 ns      87476 ns       8531 bytes=1048.58k cuda_id=0   11.9166GB/s
+Comm_Memcpy_GPUToWC/log2(N):21/manual_time       163554 ns     169391 ns       4281 bytes=2.09715M cuda_id=0   11.9417GB/s
+Comm_Memcpy_GPUToWC/log2(N):22/manual_time       322967 ns     328525 ns       2167 bytes=4.1943M cuda_id=0   12.0949GB/s
+Comm_Memcpy_GPUToWC/log2(N):23/manual_time       641450 ns     647056 ns       1090 bytes=8.38861M cuda_id=0   12.1794GB/s
+Comm_Memcpy_GPUToWC/log2(N):24/manual_time      1278512 ns    1284249 ns        547 bytes=16.7772M cuda_id=0   12.2212GB/s
+Comm_Memcpy_GPUToWC/log2(N):25/manual_time      2552724 ns    2559087 ns        274 bytes=33.5544M cuda_id=0   12.2418GB/s
+Comm_Memcpy_GPUToWC/log2(N):26/manual_time      5100581 ns    5108555 ns        137 bytes=67.1089M cuda_id=0   12.2535GB/s
+Comm_Memcpy_GPUToWC/log2(N):27/manual_time     10196403 ns   10213129 ns         69 bytes=134.218M cuda_id=0   12.2592GB/s
+Comm_Memcpy_GPUToWC/log2(N):28/manual_time     20389074 ns   20439526 ns         34 bytes=268.435M cuda_id=0   12.2615GB/s
+Comm_Memcpy_GPUToWC/log2(N):29/manual_time     40770659 ns   40953823 ns         17 bytes=536.871M cuda_id=0   12.2637GB/s
+Comm_Memcpy_GPUToWC/log2(N):30/manual_time     81536401 ns   82211125 ns          9 bytes=1073.74M cuda_id=0   12.2645GB/s
+Comm_Memcpy_GPUToWC/log2(N):31/manual_time    163066074 ns  166079202 ns          4 bytes=2.14748G cuda_id=0    12.265GB/s
+[2019-12-17 22:31:16.183] [./scope] [critical] ERROR[out of memory] on /opt/scope/scopes/comm_scope/src/memcpy/gpu_to_wc.cpp::32 In Comm_Memcpy_GPUToWC:(cudaMalloc(&src, bytes)) FAILED
+Comm_Memcpy_GPUToWC/log2(N):32/manual_time   ERROR OCCURRED: 'Comm/Memcpy/GPUToWC failed to perform cudaMalloc'
+[2019-12-17 22:31:16.237] [./scope] [critical] ERROR[out of memory] on /opt/scope/scopes/comm_scope/src/memcpy/gpu_to_wc.cpp::32 In Comm_Memcpy_GPUToWC:(cudaMalloc(&src, bytes)) FAILED
+Comm_Memcpy_GPUToWC/log2(N):33/manual_time   ERROR OCCURRED: 'Comm/Memcpy/GPUToWC failed to perform cudaMalloc'
+Comm_Memcpy_HostToGPU/log2(N):8/manual_time        1762 ns       6788 ns     394164 bytes=256 cuda_id=0   138.571MB/s
+Comm_Memcpy_HostToGPU/log2(N):9/manual_time        1824 ns       6795 ns     391271 bytes=512 cuda_id=0   267.659MB/s
+Comm_Memcpy_HostToGPU/log2(N):10/manual_time       1863 ns       6803 ns     379763 bytes=1024 cuda_id=0   524.088MB/s
+Comm_Memcpy_HostToGPU/log2(N):11/manual_time       2078 ns       7002 ns     333654 bytes=2.048k cuda_id=0   939.925MB/s
+Comm_Memcpy_HostToGPU/log2(N):12/manual_time       2452 ns       7677 ns     284371 bytes=4.096k cuda_id=0   1.55554GB/s
+Comm_Memcpy_HostToGPU/log2(N):13/manual_time       2868 ns       7959 ns     245312 bytes=8.192k cuda_id=0   2.66017GB/s
+Comm_Memcpy_HostToGPU/log2(N):14/manual_time       4000 ns       9205 ns     174336 bytes=16.384k cuda_id=0   3.81471GB/s
+Comm_Memcpy_HostToGPU/log2(N):15/manual_time       6453 ns      11741 ns     109674 bytes=32.768k cuda_id=0   4.72887GB/s
+Comm_Memcpy_HostToGPU/log2(N):16/manual_time      11266 ns      16507 ns      61569 bytes=65.536k cuda_id=0   5.41746GB/s
+Comm_Memcpy_HostToGPU/log2(N):17/manual_time      17324 ns      22418 ns      40283 bytes=131.072k cuda_id=0   7.04614GB/s
+Comm_Memcpy_HostToGPU/log2(N):18/manual_time      32247 ns      37538 ns      21712 bytes=262.144k cuda_id=0   7.57102GB/s
+Comm_Memcpy_HostToGPU/log2(N):19/manual_time      61783 ns      66984 ns      11281 bytes=524.288k cuda_id=0   7.90318GB/s
+Comm_Memcpy_HostToGPU/log2(N):20/manual_time     120162 ns     125296 ns       5799 bytes=1048.58k cuda_id=0   8.12706GB/s
+Comm_Memcpy_HostToGPU/log2(N):21/manual_time     209869 ns     215078 ns       3377 bytes=2.09715M cuda_id=0   9.30639GB/s
+Comm_Memcpy_HostToGPU/log2(N):22/manual_time     386048 ns     391291 ns       1810 bytes=4.1943M cuda_id=0   10.1186GB/s
+Comm_Memcpy_HostToGPU/log2(N):23/manual_time     796158 ns     802366 ns        870 bytes=8.38861M cuda_id=0   9.81275GB/s
+Comm_Memcpy_HostToGPU/log2(N):24/manual_time    1827716 ns    1834234 ns        371 bytes=16.7772M cuda_id=0   8.54892GB/s
+Comm_Memcpy_HostToGPU/log2(N):25/manual_time    3759768 ns    3767207 ns        184 bytes=33.5544M cuda_id=0   8.31168GB/s
+Comm_Memcpy_HostToGPU/log2(N):26/manual_time    7622331 ns    7632978 ns         92 bytes=67.1089M cuda_id=0   8.19959GB/s
+Comm_Memcpy_HostToGPU/log2(N):27/manual_time   15359996 ns   15382823 ns         46 bytes=134.218M cuda_id=0   8.13802GB/s
+Comm_Memcpy_HostToGPU/log2(N):28/manual_time   30700067 ns   30772578 ns         23 bytes=268.435M cuda_id=0    8.1433GB/s
+Comm_Memcpy_HostToGPU/log2(N):29/manual_time   61016923 ns   61296127 ns         11 bytes=536.871M cuda_id=0   8.19445GB/s
+Comm_Memcpy_HostToGPU/log2(N):30/manual_time  122701482 ns  123711827 ns          6 bytes=1073.74M cuda_id=0   8.14986GB/s
+Comm_Memcpy_HostToGPU/log2(N):31/manual_time  249226063 ns  253240330 ns          3 bytes=2.14748G cuda_id=0   8.02484GB/s
+[2019-12-17 22:32:05.787] [./scope] [critical] ERROR[out of memory] on /opt/scope/scopes/comm_scope/src/memcpy/host_to_gpu.cpp::35 In Comm_Memcpy_HostToGPU:(cudaMalloc(&dst, bytes)) FAILED
+Comm_Memcpy_HostToGPU/log2(N):32/manual_time ERROR OCCURRED: 'Comm/Memcpy/HostToGPU failed to perform cudaMalloc'
+[2019-12-17 22:32:08.673] [./scope] [critical] ERROR[out of memory] on /opt/scope/scopes/comm_scope/src/memcpy/host_to_gpu.cpp::35 In Comm_Memcpy_HostToGPU:(cudaMalloc(&dst, bytes)) FAILED
+Comm_Memcpy_HostToGPU/log2(N):33/manual_time ERROR OCCURRED: 'Comm/Memcpy/HostToGPU failed to perform cudaMalloc'
+Comm_Memcpy_WCToGPU/log2(N):8/manual_time          2460 ns       7330 ns     279893 bytes=256 cuda_id=0   99.2339MB/s
+Comm_Memcpy_WCToGPU/log2(N):9/manual_time          2476 ns       7284 ns     282685 bytes=512 cuda_id=0   197.176MB/s
+Comm_Memcpy_WCToGPU/log2(N):10/manual_time         2509 ns       7264 ns     280230 bytes=1024 cuda_id=0   389.179MB/s
+Comm_Memcpy_WCToGPU/log2(N):11/manual_time         2658 ns       7613 ns     265066 bytes=2.048k cuda_id=0   734.677MB/s
+Comm_Memcpy_WCToGPU/log2(N):12/manual_time         2773 ns       7797 ns     251191 bytes=4.096k cuda_id=0   1.37571GB/s
+Comm_Memcpy_WCToGPU/log2(N):13/manual_time         3031 ns       8087 ns     230327 bytes=8.192k cuda_id=0   2.51718GB/s
+Comm_Memcpy_WCToGPU/log2(N):14/manual_time         3689 ns       8868 ns     189358 bytes=16.384k cuda_id=0   4.13592GB/s
+Comm_Memcpy_WCToGPU/log2(N):15/manual_time         4920 ns       9907 ns     141871 bytes=32.768k cuda_id=0   6.20252GB/s
+Comm_Memcpy_WCToGPU/log2(N):16/manual_time         7439 ns      12543 ns      93962 bytes=65.536k cuda_id=0   8.20485GB/s
+Comm_Memcpy_WCToGPU/log2(N):17/manual_time        12530 ns      17499 ns      55935 bytes=131.072k cuda_id=0   9.74248GB/s
+Comm_Memcpy_WCToGPU/log2(N):18/manual_time        22731 ns      27668 ns      30802 bytes=262.144k cuda_id=0   10.7406GB/s
+Comm_Memcpy_WCToGPU/log2(N):19/manual_time        43138 ns      48173 ns      16221 bytes=524.288k cuda_id=0   11.3191GB/s
+Comm_Memcpy_WCToGPU/log2(N):20/manual_time        84111 ns      89101 ns       8315 bytes=1048.58k cuda_id=0   11.6104GB/s
+Comm_Memcpy_WCToGPU/log2(N):21/manual_time       167566 ns     172544 ns       4177 bytes=2.09715M cuda_id=0   11.6559GB/s
+Comm_Memcpy_WCToGPU/log2(N):22/manual_time       330899 ns     335917 ns       2115 bytes=4.1943M cuda_id=0    11.805GB/s
+Comm_Memcpy_WCToGPU/log2(N):23/manual_time       657568 ns     662680 ns       1064 bytes=8.38861M cuda_id=0   11.8809GB/s
+Comm_Memcpy_WCToGPU/log2(N):24/manual_time      1310886 ns    1316027 ns        534 bytes=16.7772M cuda_id=0   11.9194GB/s
+Comm_Memcpy_WCToGPU/log2(N):25/manual_time      2617523 ns    2622690 ns        267 bytes=33.5544M cuda_id=0   11.9388GB/s
+Comm_Memcpy_WCToGPU/log2(N):26/manual_time      5230867 ns    5236152 ns        134 bytes=67.1089M cuda_id=0   11.9483GB/s
+Comm_Memcpy_WCToGPU/log2(N):27/manual_time     10457121 ns   10462557 ns         67 bytes=134.218M cuda_id=0   11.9536GB/s
+Comm_Memcpy_WCToGPU/log2(N):28/manual_time     20909526 ns   20915276 ns         33 bytes=268.435M cuda_id=0   11.9563GB/s
+Comm_Memcpy_WCToGPU/log2(N):29/manual_time     41815204 ns   41821555 ns         17 bytes=536.871M cuda_id=0   11.9574GB/s
+Comm_Memcpy_WCToGPU/log2(N):30/manual_time     83624303 ns   83632211 ns          8 bytes=1073.74M cuda_id=0   11.9582GB/s
+Comm_Memcpy_WCToGPU/log2(N):31/manual_time    167245504 ns  167255397 ns          4 bytes=2.14748G cuda_id=0   11.9585GB/s
+[2019-12-17 22:32:56.208] [./scope] [critical] ERROR[out of memory] on /opt/scope/scopes/comm_scope/src/memcpy/wc_to_gpu.cpp::32 In Comm_Memcpy_WCToGPU:(cudaMalloc(&dst, bytes)) FAILED
+Comm_Memcpy_WCToGPU/log2(N):32/manual_time   ERROR OCCURRED: 'Comm/Memcpy/WCToGPU failed to perform cudaMalloc'
+[2019-12-17 22:32:56.262] [./scope] [critical] ERROR[out of memory] on /opt/scope/scopes/comm_scope/src/memcpy/wc_to_gpu.cpp::32 In Comm_Memcpy_WCToGPU:(cudaMalloc(&dst, bytes)) FAILED
+Comm_Memcpy_WCToGPU/log2(N):33/manual_time   ERROR OCCURRED: 'Comm/Memcpy/WCToGPU failed to perform cudaMalloc'
+root@0e5811195a80:/opt/scope/build#

@@ -1,0 +1,254 @@
+{
+  "context": {
+    "date": "2019-12-17 22:46:24",
+    "executable": "./scope",
+    "num_cpus": 8,
+    "mhz_per_cpu": 4200,
+    "cpu_scaling_enabled": true,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 32000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 32000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 256000000,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 8192000000,
+        "num_sharing": 8
+      }
+    ],
+    "library_build_type": "release"
+  },
+  "benchmarks": [
+    {
+      "name": "Comm_UM_Latency_GPUToHost/0/log2(N):8",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_GPUToHost failed prefetch to device",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToHost/0/log2(N):10",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_GPUToHost failed prefetch to device",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToHost/0/log2(N):12",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_GPUToHost failed prefetch to device",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToHost/0/log2(N):14",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_GPUToHost failed prefetch to device",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToHost/0/log2(N):16",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_GPUToHost failed prefetch to device",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToHost/0/log2(N):18",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_GPUToHost failed prefetch to device",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToHost/0/log2(N):20",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_GPUToHost failed prefetch to device",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToHost/0/log2(N):22",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_GPUToHost failed prefetch to device",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToHost/0/log2(N):24",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_GPUToHost failed prefetch to device",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToHost/0/log2(N):26",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_GPUToHost failed prefetch to device",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToHost/0/log2(N):28",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_GPUToHost failed prefetch to device",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_GPUToHost/0/log2(N):30",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_GPUToHost failed prefetch to device",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_HostToGPU/0/log2(N):8/manual_time",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_HostToGPU failed to prefetch to CPU",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_HostToGPU/0/log2(N):10/manual_time",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_HostToGPU failed to prefetch to CPU",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_HostToGPU/0/log2(N):12/manual_time",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_HostToGPU failed to prefetch to CPU",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_HostToGPU/0/log2(N):14/manual_time",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_HostToGPU failed to prefetch to CPU",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_HostToGPU/0/log2(N):16/manual_time",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_HostToGPU failed to prefetch to CPU",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_HostToGPU/0/log2(N):18/manual_time",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_HostToGPU failed to prefetch to CPU",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_HostToGPU/0/log2(N):20/manual_time",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_HostToGPU failed to prefetch to CPU",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_HostToGPU/0/log2(N):22/manual_time",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_HostToGPU failed to prefetch to CPU",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_HostToGPU/0/log2(N):24/manual_time",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_HostToGPU failed to prefetch to CPU",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_HostToGPU/0/log2(N):26/manual_time",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_HostToGPU failed to prefetch to CPU",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_HostToGPU/0/log2(N):28/manual_time",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_HostToGPU failed to prefetch to CPU",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    },
+    {
+      "name": "Comm_UM_Latency_HostToGPU/0/log2(N):30/manual_time",
+      "error_occurred": true,
+      "error_message": "Comm_UM_Latency_HostToGPU failed to prefetch to CPU",
+      "iterations": 1,
+      "real_time": 0.0000000000000000e+00,
+      "cpu_time": 0.0000000000000000e+00,
+      "time_unit": "ns"
+    }
+  ]
+}
