@@ -1,0 +1,36 @@
+-bash-4.2$ ./scope --benchmark_filter=NCCL/ops/broadcast --ngpu=2 --benchmark_out_format=json --benchmark_out=results/nccl-broadcast-2.json
+2019-12-17 20:52:50
+Running ./scope
+Run on (128 X 3800 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x32)
+  L1 Instruction 32K (x32)
+  L2 Unified 512K (x16)
+  L3 Unified 10240K (x16)
+-------------------------------------------------------------------------------------------------
+Benchmark                                          Time           CPU Iterations UserCounters...
+-------------------------------------------------------------------------------------------------
+NCCL/ops/broadcast/log2(N):8/manual_time       32532 ns      45006 ns      21480 avg=3.456m bytes=256 d0=3.808m d1=3.104m d2=0 d3=0   7.50468MB/s
+NCCL/ops/broadcast/log2(N):9/manual_time       32635 ns      45169 ns      21366 avg=3.952m bytes=512 d0=3.808m d1=4.096m d2=0 d3=0   14.9619MB/s
+NCCL/ops/broadcast/log2(N):10/manual_time      32815 ns      45036 ns      21278 avg=3.392m bytes=1024 d0=3.712m d1=3.072m d2=0 d3=0   29.7593MB/s
+NCCL/ops/broadcast/log2(N):11/manual_time      34662 ns      46016 ns      20253 avg=3.488m bytes=2.048k d0=3.904m d1=3.072m d2=0 d3=0    56.348MB/s
+NCCL/ops/broadcast/log2(N):12/manual_time      35871 ns      47165 ns      19532 avg=3.904m bytes=4.096k d0=3.712m d1=4.096m d2=0 d3=0   108.896MB/s
+NCCL/ops/broadcast/log2(N):13/manual_time      37204 ns      48392 ns      18884 avg=4.048m bytes=8.192k d0=4m d1=4.096m d2=0 d3=0   209.991MB/s
+NCCL/ops/broadcast/log2(N):14/manual_time      47880 ns      60296 ns      13719 avg=3.584m bytes=16.384k d0=3.904m d1=3.264m d2=0 d3=0   326.336MB/s
+NCCL/ops/broadcast/log2(N):15/manual_time      48117 ns      59206 ns      14573 avg=3.92m bytes=32.768k d0=3.872m d1=3.968m d2=0 d3=0   649.458MB/s
+NCCL/ops/broadcast/log2(N):16/manual_time      50902 ns      61851 ns      13706 avg=3.52m bytes=65.536k d0=3.968m d1=3.072m d2=0 d3=0   1.19907GB/s
+NCCL/ops/broadcast/log2(N):17/manual_time      53991 ns      64990 ns      12922 avg=3.648m bytes=131.072k d0=4.032m d1=3.264m d2=0 d3=0   2.26094GB/s
+NCCL/ops/broadcast/log2(N):18/manual_time      60249 ns      71974 ns      11551 avg=3.968m bytes=262.144k d0=3.904m d1=4.032m d2=0 d3=0   4.05217GB/s
+NCCL/ops/broadcast/log2(N):19/manual_time      79535 ns      91720 ns       8786 avg=3.6m bytes=524.288k d0=3.904m d1=3.296m d2=0 d3=0   6.13918GB/s
+NCCL/ops/broadcast/log2(N):20/manual_time     122480 ns     134992 ns       5726 avg=3.44m bytes=1048.58k d0=3.808m d1=3.072m d2=0 d3=0   7.97321GB/s
+NCCL/ops/broadcast/log2(N):21/manual_time     184655 ns     195875 ns       3789 avg=4.048m bytes=2.09715M d0=4m d1=4.096m d2=0 d3=0   10.5771GB/s
+NCCL/ops/broadcast/log2(N):22/manual_time     312177 ns     323358 ns       2242 avg=3.472m bytes=4.1943M d0=3.84m d1=3.104m d2=0 d3=0    12.513GB/s
+NCCL/ops/broadcast/log2(N):23/manual_time     556294 ns     567543 ns       1256 avg=3.424m bytes=8.38861M d0=3.776m d1=3.072m d2=0 d3=0   14.0438GB/s
+NCCL/ops/broadcast/log2(N):24/manual_time    1048767 ns    1060093 ns        667 avg=3.36m bytes=16.7772M d0=3.648m d1=3.072m d2=0 d3=0   14.8984GB/s
+NCCL/ops/broadcast/log2(N):25/manual_time    2022489 ns    2034353 ns        345 avg=3.44m bytes=33.5544M d0=3.808m d1=3.072m d2=0 d3=0   15.4513GB/s
+NCCL/ops/broadcast/log2(N):26/manual_time    3982135 ns    3993506 ns        176 avg=3.296m bytes=67.1089M d0=3.52m d1=3.072m d2=0 d3=0   15.6951GB/s
+NCCL/ops/broadcast/log2(N):27/manual_time    7892674 ns    7904320 ns         89 avg=3.424m bytes=134.218M d0=3.648m d1=3.2m d2=0 d3=0   15.8375GB/s
+NCCL/ops/broadcast/log2(N):28/manual_time   15720435 ns   15732432 ns         45 avg=3.712m bytes=268.435M d0=4.128m d1=3.296m d2=0 d3=0   15.9029GB/s
+NCCL/ops/broadcast/log2(N):29/manual_time   31369488 ns   31382092 ns         22 avg=3.536m bytes=536.871M d0=4m d1=3.072m d2=0 d3=0   15.9391GB/s
+NCCL/ops/broadcast/log2(N):30/manual_time   62659577 ns   62673325 ns         11 avg=4.112m bytes=1073.74M d0=4.128m d1=4.096m d2=0 d3=0   15.9593GB/s
+-bash-4.2$ 

@@ -1,0 +1,36 @@
+-bash-4.2$ ./scope --benchmark_filter=NCCL/ops/allReduce --ngpu=2 --benchmark_out_format=json --benchmark_out=results/nccl-allreduce-2.json
+2019-12-17 20:51:22
+Running ./scope
+Run on (128 X 3800 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x32)
+  L1 Instruction 32K (x32)
+  L2 Unified 512K (x16)
+  L3 Unified 10240K (x16)
+-------------------------------------------------------------------------------------------------
+Benchmark                                          Time           CPU Iterations UserCounters...
+-------------------------------------------------------------------------------------------------
+NCCL/ops/allReduce/log2(N):8/manual_time       34252 ns      48609 ns      20432 avg=3.424m bytes=256 d0=3.776m d1=3.072m d2=0 d3=0   7.12772MB/s
+NCCL/ops/allReduce/log2(N):9/manual_time       34765 ns      49092 ns      20195 avg=4.032m bytes=512 d0=3.968m d1=4.096m d2=0 d3=0   14.0451MB/s
+NCCL/ops/allReduce/log2(N):10/manual_time      36636 ns      50461 ns      19101 avg=3.408m bytes=1024 d0=3.744m d1=3.072m d2=0 d3=0   26.6557MB/s
+NCCL/ops/allReduce/log2(N):11/manual_time      38204 ns      52026 ns      18378 avg=3.952m bytes=2.048k d0=3.808m d1=4.096m d2=0 d3=0    51.123MB/s
+NCCL/ops/allReduce/log2(N):12/manual_time      38909 ns      52975 ns      18029 avg=3.408m bytes=4.096k d0=3.744m d1=3.072m d2=0 d3=0   100.395MB/s
+NCCL/ops/allReduce/log2(N):13/manual_time      40089 ns      54178 ns      17565 avg=4.016m bytes=8.192k d0=3.936m d1=4.096m d2=0 d3=0   194.879MB/s
+NCCL/ops/allReduce/log2(N):14/manual_time      42693 ns      56137 ns      16309 avg=4.016m bytes=16.384k d0=3.968m d1=4.064m d2=0 d3=0   365.982MB/s
+NCCL/ops/allReduce/log2(N):15/manual_time      56466 ns      68000 ns      11647 avg=3.568m bytes=32.768k d0=3.936m d1=3.2m d2=0 d3=0   553.434MB/s
+NCCL/ops/allReduce/log2(N):16/manual_time      58825 ns      69831 ns      11832 avg=4.048m bytes=65.536k d0=4m d1=4.096m d2=0 d3=0   1062.48MB/s
+NCCL/ops/allReduce/log2(N):17/manual_time      68469 ns      79577 ns      10161 avg=3.632m bytes=131.072k d0=3.968m d1=3.296m d2=0 d3=0   1.78285GB/s
+NCCL/ops/allReduce/log2(N):18/manual_time      84340 ns      95615 ns       8257 avg=3.984m bytes=262.144k d0=3.872m d1=4.096m d2=0 d3=0   2.89472GB/s
+NCCL/ops/allReduce/log2(N):19/manual_time     118003 ns     129218 ns       5927 avg=4m bytes=524.288k d0=3.904m d1=4.096m d2=0 d3=0   4.13787GB/s
+NCCL/ops/allReduce/log2(N):20/manual_time     180939 ns     192401 ns       3864 avg=4.128m bytes=1048.58k d0=4.16m d1=4.096m d2=0 d3=0   5.39718GB/s
+NCCL/ops/allReduce/log2(N):21/manual_time     306974 ns     318509 ns       2274 avg=4.08m bytes=2.09715M d0=4.064m d1=4.096m d2=0 d3=0   6.36252GB/s
+NCCL/ops/allReduce/log2(N):22/manual_time     304762 ns     318722 ns       2299 avg=3.968m bytes=4.1943M d0=3.936m d1=4m d2=0 d3=0   12.8174GB/s
+NCCL/ops/allReduce/log2(N):23/manual_time     559054 ns     573404 ns       1252 avg=3.968m bytes=8.38861M d0=3.968m d1=3.968m d2=0 d3=0   13.9745GB/s
+NCCL/ops/allReduce/log2(N):24/manual_time    1057261 ns    1072110 ns        662 avg=4m bytes=16.7772M d0=3.904m d1=4.096m d2=0 d3=0   14.7788GB/s
+NCCL/ops/allReduce/log2(N):25/manual_time    2056039 ns    2070967 ns        340 avg=4.128m bytes=33.5544M d0=4.16m d1=4.096m d2=0 d3=0   15.1991GB/s
+NCCL/ops/allReduce/log2(N):26/manual_time    4028558 ns    4043302 ns        174 avg=4.112m bytes=67.1089M d0=4.128m d1=4.096m d2=0 d3=0   15.5142GB/s
+NCCL/ops/allReduce/log2(N):27/manual_time    7959032 ns    7975262 ns         88 avg=4.096m bytes=134.218M d0=4.288m d1=3.904m d2=0 d3=0   15.7054GB/s
+NCCL/ops/allReduce/log2(N):28/manual_time   15784693 ns   15801630 ns         44 avg=3.808m bytes=268.435M d0=4.384m d1=3.232m d2=0 d3=0   15.8381GB/s
+NCCL/ops/allReduce/log2(N):29/manual_time   31447636 ns   31465528 ns         22 avg=4.32m bytes=536.871M d0=4.544m d1=4.096m d2=0 d3=0   15.8994GB/s
+NCCL/ops/allReduce/log2(N):30/manual_time   62709199 ns   62728240 ns         11 avg=4.144m bytes=1073.74M d0=4.192m d1=4.096m d2=0 d3=0   15.9466GB/s
+-bash-4.2$ 

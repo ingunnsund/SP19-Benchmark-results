@@ -1,0 +1,25 @@
+-bash-4.2$ ./scope --benchmark_filter=Duplex_Memcpy_GPUGPUPeer -c=0 -c=2 --benchmark_out_format=json --benchmark_out=results/comm-memcpy-0-2-duplex.json
+2019-12-17 20:14:17
+Running ./scope
+Run on (128 X 3800 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x32)
+  L1 Instruction 32K (x32)
+  L2 Unified 512K (x16)
+  L3 Unified 10240K (x16)
+----------------------------------------------------------------------------------------------------------------
+Benchmark                                                         Time           CPU Iterations UserCounters...
+----------------------------------------------------------------------------------------------------------------
+Comm_Duplex_Memcpy_GPUGPUPeer/0/2/log2(N):8/manual_time       26457 ns      58314 ns      26221 bytes=256 gpu0=0 gpu1=2   18.4556MB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/0/2/log2(N):10/manual_time      26477 ns      58254 ns      26315 bytes=1024 gpu0=0 gpu1=2   73.7656MB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/0/2/log2(N):12/manual_time      26486 ns      58281 ns      26215 bytes=4.096k gpu0=0 gpu1=2   294.963MB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/0/2/log2(N):14/manual_time      26689 ns      58649 ns      26056 bytes=16.384k gpu0=0 gpu1=2   1.14346GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/0/2/log2(N):16/manual_time      26632 ns      58446 ns      25883 bytes=65.536k gpu0=0 gpu1=2   4.58362GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/0/2/log2(N):18/manual_time      28687 ns      60543 ns      24252 bytes=262.144k gpu0=0 gpu1=2   17.0208GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/0/2/log2(N):20/manual_time      48021 ns      82726 ns      14196 bytes=1048.58k gpu0=0 gpu1=2    40.672GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/0/2/log2(N):22/manual_time     146306 ns     181430 ns       4762 bytes=4.1943M gpu0=0 gpu1=2   53.3983GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/0/2/log2(N):24/manual_time     523919 ns     558836 ns       1336 bytes=16.7772M gpu0=0 gpu1=2   59.6466GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/0/2/log2(N):26/manual_time    2028787 ns    2064113 ns        345 bytes=67.1089M gpu0=0 gpu1=2   61.6132GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/0/2/log2(N):28/manual_time    8056632 ns    8095900 ns         87 bytes=268.435M gpu0=0 gpu1=2   62.0607GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/0/2/log2(N):30/manual_time   32126929 ns   32221297 ns         22 bytes=1073.74M gpu0=0 gpu1=2   62.2531GB/s
+-bash-4.2$ 

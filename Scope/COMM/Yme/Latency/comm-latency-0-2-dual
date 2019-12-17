@@ -1,0 +1,25 @@
+-bash-4.2$ ./scope --benchmark_filter=Latency_GPUToGPU -c=0 -c=2 --benchmark_out_format=json --benchmark_out=results/comm-latency-0-2-dual.json
+2019-12-17 20:41:47
+Running ./scope
+Run on (128 X 3800 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x32)
+  L1 Instruction 32K (x32)
+  L2 Unified 512K (x16)
+  L3 Unified 10240K (x16)
+-----------------------------------------------------------------------------------------------------------
+Benchmark                                                    Time           CPU Iterations UserCounters...
+-----------------------------------------------------------------------------------------------------------
+Comm_UM_Latency_GPUToGPU/0/2/log2(N):8/manual_time      368538 ns     459667 ns       1884 dst_gpu=2 src_gpu=0 strides=8
+Comm_UM_Latency_GPUToGPU/0/2/log2(N):10/manual_time     458271 ns     560032 ns       1151 dst_gpu=2 src_gpu=0 strides=10
+Comm_UM_Latency_GPUToGPU/0/2/log2(N):12/manual_time     523360 ns     637484 ns       1147 dst_gpu=2 src_gpu=0 strides=12
+Comm_UM_Latency_GPUToGPU/0/2/log2(N):14/manual_time     605192 ns     729900 ns        914 dst_gpu=2 src_gpu=0 strides=14
+Comm_UM_Latency_GPUToGPU/0/2/log2(N):16/manual_time     666871 ns     805569 ns        925 dst_gpu=2 src_gpu=0 strides=16
+Comm_UM_Latency_GPUToGPU/0/2/log2(N):18/manual_time     759570 ns     908793 ns        767 dst_gpu=2 src_gpu=0 strides=18
+Comm_UM_Latency_GPUToGPU/0/2/log2(N):20/manual_time     846238 ns    1006939 ns        730 dst_gpu=2 src_gpu=0 strides=20
+Comm_UM_Latency_GPUToGPU/0/2/log2(N):22/manual_time     909368 ns    1081522 ns        681 dst_gpu=2 src_gpu=0 strides=22
+Comm_UM_Latency_GPUToGPU/0/2/log2(N):24/manual_time     984081 ns    1169525 ns        597 dst_gpu=2 src_gpu=0 strides=24
+Comm_UM_Latency_GPUToGPU/0/2/log2(N):26/manual_time    1070811 ns    1266220 ns        642 dst_gpu=2 src_gpu=0 strides=26
+Comm_UM_Latency_GPUToGPU/0/2/log2(N):28/manual_time    1126089 ns    1333292 ns        622 dst_gpu=2 src_gpu=0 strides=28
+Comm_UM_Latency_GPUToGPU/0/2/log2(N):30/manual_time    1246386 ns    1464880 ns        494 dst_gpu=2 src_gpu=0 strides=30
+-bash-4.2$ 

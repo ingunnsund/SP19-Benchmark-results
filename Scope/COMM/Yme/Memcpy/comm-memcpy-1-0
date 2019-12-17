@@ -1,0 +1,155 @@
+-bash-4.2$ ./scope --benchmark_filter=Memcpy -c=1 -c=0 --benchmark_out_format=json --benchmark_out=results/comm-memcpy-1-0.json
+2019-12-17 19:51:39
+Running ./scope
+Run on (128 X 3800 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x32)
+  L1 Instruction 32K (x32)
+  L2 Unified 512K (x16)
+  L3 Unified 10240K (x16)
+----------------------------------------------------------------------------------------------------------------
+Benchmark                                                         Time           CPU Iterations UserCounters...
+----------------------------------------------------------------------------------------------------------------
+Comm_Memcpy_GPUToHost/log2(N):8/manual_time                   14490 ns      30999 ns      48337 bytes=256 cuda_id=1   16.8487MB/s
+Comm_Memcpy_GPUToHost/log2(N):9/manual_time                   14466 ns      30952 ns      48262 bytes=512 cuda_id=1   33.7531MB/s
+Comm_Memcpy_GPUToHost/log2(N):10/manual_time                  14456 ns      31001 ns      47929 bytes=1024 cuda_id=1   67.5537MB/s
+Comm_Memcpy_GPUToHost/log2(N):11/manual_time                  14504 ns      30913 ns      47998 bytes=2.048k cuda_id=1   134.662MB/s
+Comm_Memcpy_GPUToHost/log2(N):12/manual_time                  14675 ns      31086 ns      47344 bytes=4.096k cuda_id=1    266.19MB/s
+Comm_Memcpy_GPUToHost/log2(N):13/manual_time                  15137 ns      31704 ns      46241 bytes=8.192k cuda_id=1   516.124MB/s
+Comm_Memcpy_GPUToHost/log2(N):14/manual_time                  15231 ns      31609 ns      45446 bytes=16.384k cuda_id=1   1025.87MB/s
+Comm_Memcpy_GPUToHost/log2(N):15/manual_time                  16384 ns      32833 ns      41601 bytes=32.768k cuda_id=1   1.86268GB/s
+Comm_Memcpy_GPUToHost/log2(N):16/manual_time                  19528 ns      36022 ns      35742 bytes=65.536k cuda_id=1   3.12555GB/s
+Comm_Memcpy_GPUToHost/log2(N):17/manual_time                  25953 ns      42356 ns      26714 bytes=131.072k cuda_id=1   4.70344GB/s
+Comm_Memcpy_GPUToHost/log2(N):18/manual_time                  38013 ns      54423 ns      18172 bytes=262.144k cuda_id=1   6.42257GB/s
+Comm_Memcpy_GPUToHost/log2(N):19/manual_time                  61018 ns      77541 ns      11593 bytes=524.288k cuda_id=1   8.00223GB/s
+Comm_Memcpy_GPUToHost/log2(N):20/manual_time                 105112 ns     121611 ns       6574 bytes=1048.58k cuda_id=1   9.29067GB/s
+Comm_Memcpy_GPUToHost/log2(N):21/manual_time                 174488 ns     191080 ns       4052 bytes=2.09715M cuda_id=1   11.1935GB/s
+Comm_Memcpy_GPUToHost/log2(N):22/manual_time                 312540 ns     329037 ns       2258 bytes=4.1943M cuda_id=1   12.4984GB/s
+Comm_Memcpy_GPUToHost/log2(N):23/manual_time                 579382 ns     596097 ns       1164 bytes=8.38861M cuda_id=1   13.4842GB/s
+Comm_Memcpy_GPUToHost/log2(N):24/manual_time                1226752 ns    1244145 ns        573 bytes=16.7772M cuda_id=1   12.7369GB/s
+Comm_Memcpy_GPUToHost/log2(N):25/manual_time                2401441 ns    2418890 ns        291 bytes=33.5544M cuda_id=1    13.013GB/s
+Comm_Memcpy_GPUToHost/log2(N):26/manual_time                4735807 ns    4754221 ns        140 bytes=67.1089M cuda_id=1   13.1973GB/s
+Comm_Memcpy_GPUToHost/log2(N):27/manual_time                9512928 ns    9533333 ns         70 bytes=134.218M cuda_id=1     13.14GB/s
+Comm_Memcpy_GPUToHost/log2(N):28/manual_time               19271999 ns   19299344 ns         35 bytes=268.435M cuda_id=1   12.9722GB/s
+Comm_Memcpy_GPUToHost/log2(N):29/manual_time               38825909 ns   38878556 ns         18 bytes=536.871M cuda_id=1    12.878GB/s
+Comm_Memcpy_GPUToHost/log2(N):30/manual_time               79924697 ns   80076797 ns          9 bytes=1073.74M cuda_id=1   12.5118GB/s
+Comm_Memcpy_GPUToHost/log2(N):31/manual_time              176130349 ns  176947275 ns          3 bytes=2.14748G cuda_id=1   11.3552GB/s
+Comm_Memcpy_GPUToHost/log2(N):32/manual_time              383242294 ns  385660239 ns          2 bytes=4.29497G cuda_id=1   10.4373GB/s
+Comm_Memcpy_GPUToHost/log2(N):33/manual_time              922383428 ns  931994352 ns          1 bytes=8.58993G cuda_id=1   8.67318GB/s
+Comm_Memcpy_GPUToWC/log2(N):8/manual_time                      6108 ns      22133 ns     114369 bytes=256 cuda_id=1   39.9679MB/s
+Comm_Memcpy_GPUToWC/log2(N):9/manual_time                      6151 ns      22510 ns     113314 bytes=512 cuda_id=1   79.3767MB/s
+Comm_Memcpy_GPUToWC/log2(N):10/manual_time                     6147 ns      22504 ns     113034 bytes=1024 cuda_id=1   158.877MB/s
+Comm_Memcpy_GPUToWC/log2(N):11/manual_time                     6160 ns      22552 ns     113009 bytes=2.048k cuda_id=1   317.075MB/s
+Comm_Memcpy_GPUToWC/log2(N):12/manual_time                     6165 ns      22450 ns     113021 bytes=4.096k cuda_id=1   633.649MB/s
+Comm_Memcpy_GPUToWC/log2(N):13/manual_time                     6196 ns      22513 ns     112627 bytes=8.192k cuda_id=1    1.2314GB/s
+Comm_Memcpy_GPUToWC/log2(N):14/manual_time                     6156 ns      22365 ns     112887 bytes=16.384k cuda_id=1   2.47867GB/s
+Comm_Memcpy_GPUToWC/log2(N):15/manual_time                     5874 ns      23074 ns     118816 bytes=32.768k cuda_id=1   5.19516GB/s
+Comm_Memcpy_GPUToWC/log2(N):16/manual_time                     6273 ns      24269 ns     110662 bytes=65.536k cuda_id=1   9.72964GB/s
+Comm_Memcpy_GPUToWC/log2(N):17/manual_time                     8583 ns      29776 ns      84928 bytes=131.072k cuda_id=1   14.2221GB/s
+Comm_Memcpy_GPUToWC/log2(N):18/manual_time                    16373 ns      36920 ns      42675 bytes=262.144k cuda_id=1   14.9111GB/s
+Comm_Memcpy_GPUToWC/log2(N):19/manual_time                    32270 ns      53038 ns      21602 bytes=524.288k cuda_id=1   15.1312GB/s
+Comm_Memcpy_GPUToWC/log2(N):20/manual_time                    64248 ns      85061 ns      10924 bytes=1048.58k cuda_id=1   15.1998GB/s
+Comm_Memcpy_GPUToWC/log2(N):21/manual_time                   128416 ns     149509 ns       5472 bytes=2.09715M cuda_id=1   15.2093GB/s
+Comm_Memcpy_GPUToWC/log2(N):22/manual_time                   241630 ns     262900 ns       2811 bytes=4.1943M cuda_id=1   16.1663GB/s
+Comm_Memcpy_GPUToWC/log2(N):23/manual_time                   389294 ns     410795 ns       1779 bytes=8.38861M cuda_id=1   20.0684GB/s
+Comm_Memcpy_GPUToWC/log2(N):24/manual_time                   527720 ns     549406 ns       1327 bytes=16.7772M cuda_id=1   29.6085GB/s
+Comm_Memcpy_GPUToWC/log2(N):25/manual_time                   802813 ns     824278 ns        868 bytes=33.5544M cuda_id=1   38.9256GB/s
+Comm_Memcpy_GPUToWC/log2(N):26/manual_time                  1285574 ns    1307023 ns        547 bytes=67.1089M cuda_id=1   48.6164GB/s
+Comm_Memcpy_GPUToWC/log2(N):27/manual_time                  2187189 ns    2209768 ns        321 bytes=134.218M cuda_id=1    57.151GB/s
+Comm_Memcpy_GPUToWC/log2(N):28/manual_time                  3967578 ns    3991337 ns        176 bytes=268.435M cuda_id=1   63.0107GB/s
+Comm_Memcpy_GPUToWC/log2(N):29/manual_time                  7559200 ns    7588648 ns         93 bytes=536.871M cuda_id=1   66.1446GB/s
+Comm_Memcpy_GPUToWC/log2(N):30/manual_time                 14759395 ns   14805322 ns         47 bytes=1073.74M cuda_id=1   67.7535GB/s
+Comm_Memcpy_GPUToWC/log2(N):31/manual_time                 29506327 ns   29625830 ns         24 bytes=2.14748G cuda_id=1   67.7821GB/s
+Comm_Memcpy_GPUToWC/log2(N):32/manual_time                 59006806 ns   59427017 ns         12 bytes=4.29497G cuda_id=1   67.7888GB/s
+Comm_Memcpy_GPUToWC/log2(N):33/manual_time                118690363 ns  120312048 ns          6 bytes=8.58993G cuda_id=1   67.4023GB/s
+Comm_Memcpy_HostToGPU/log2(N):8/manual_time                    6382 ns      21743 ns     107935 bytes=256 cuda_id=1   38.2551MB/s
+Comm_Memcpy_HostToGPU/log2(N):9/manual_time                    6431 ns      22273 ns     102353 bytes=512 cuda_id=1   75.9215MB/s
+Comm_Memcpy_HostToGPU/log2(N):10/manual_time                   6460 ns      22398 ns     108017 bytes=1024 cuda_id=1   151.162MB/s
+Comm_Memcpy_HostToGPU/log2(N):11/manual_time                   6220 ns      21850 ns     111941 bytes=2.048k cuda_id=1   314.017MB/s
+Comm_Memcpy_HostToGPU/log2(N):12/manual_time                   6305 ns      21927 ns     110901 bytes=4.096k cuda_id=1   619.509MB/s
+Comm_Memcpy_HostToGPU/log2(N):13/manual_time                   6655 ns      22290 ns     104820 bytes=8.192k cuda_id=1   1.14643GB/s
+Comm_Memcpy_HostToGPU/log2(N):14/manual_time                   7757 ns      23556 ns      89974 bytes=16.384k cuda_id=1   1.96707GB/s
+Comm_Memcpy_HostToGPU/log2(N):15/manual_time                   9625 ns      25080 ns      68881 bytes=32.768k cuda_id=1   3.17076GB/s
+Comm_Memcpy_HostToGPU/log2(N):16/manual_time                  13880 ns      29397 ns      49871 bytes=65.536k cuda_id=1   4.39737GB/s
+Comm_Memcpy_HostToGPU/log2(N):17/manual_time                  14280 ns      31647 ns      48633 bytes=131.072k cuda_id=1   8.54825GB/s
+Comm_Memcpy_HostToGPU/log2(N):18/manual_time                  20170 ns      37816 ns      34764 bytes=262.144k cuda_id=1   12.1044GB/s
+Comm_Memcpy_HostToGPU/log2(N):19/manual_time                  31179 ns      48929 ns      22520 bytes=524.288k cuda_id=1   15.6608GB/s
+Comm_Memcpy_HostToGPU/log2(N):20/manual_time                  52243 ns      70529 ns      13196 bytes=1048.58k cuda_id=1   18.6927GB/s
+Comm_Memcpy_HostToGPU/log2(N):21/manual_time                  88334 ns     106657 ns       7917 bytes=2.09715M cuda_id=1   22.1107GB/s
+Comm_Memcpy_HostToGPU/log2(N):22/manual_time                 160349 ns     178689 ns       4362 bytes=4.1943M cuda_id=1    24.361GB/s
+Comm_Memcpy_HostToGPU/log2(N):23/manual_time                 386199 ns     404877 ns       1851 bytes=8.38861M cuda_id=1   20.2292GB/s
+Comm_Memcpy_HostToGPU/log2(N):24/manual_time                 974639 ns     993898 ns        703 bytes=16.7772M cuda_id=1   16.0316GB/s
+Comm_Memcpy_HostToGPU/log2(N):25/manual_time                2143096 ns    2162504 ns        328 bytes=33.5544M cuda_id=1   14.5817GB/s
+Comm_Memcpy_HostToGPU/log2(N):26/manual_time                5000005 ns    5020501 ns        100 bytes=67.1089M cuda_id=1      12.5GB/s
+Comm_Memcpy_HostToGPU/log2(N):27/manual_time                9949770 ns    9971694 ns         70 bytes=134.218M cuda_id=1   12.5631GB/s
+Comm_Memcpy_HostToGPU/log2(N):28/manual_time               19616739 ns   19645156 ns         36 bytes=268.435M cuda_id=1   12.7442GB/s
+Comm_Memcpy_HostToGPU/log2(N):29/manual_time               39275138 ns   39329895 ns         18 bytes=536.871M cuda_id=1   12.7307GB/s
+Comm_Memcpy_HostToGPU/log2(N):30/manual_time               78523172 ns   78676284 ns          9 bytes=1073.74M cuda_id=1   12.7351GB/s
+Comm_Memcpy_HostToGPU/log2(N):31/manual_time              156848185 ns  157469847 ns          4 bytes=2.14748G cuda_id=1   12.7512GB/s
+Comm_Memcpy_HostToGPU/log2(N):32/manual_time              315438420 ns  317856120 ns          2 bytes=4.29497G cuda_id=1   12.6808GB/s
+Comm_Memcpy_HostToGPU/log2(N):33/manual_time              627008855 ns  636629966 ns          1 bytes=8.58993G cuda_id=1    12.759GB/s
+Comm_Memcpy_WCToGPU/log2(N):8/manual_time                      6186 ns      22256 ns     113580 bytes=256 cuda_id=1   39.4648MB/s
+Comm_Memcpy_WCToGPU/log2(N):9/manual_time                      6245 ns      22493 ns     111854 bytes=512 cuda_id=1   78.1844MB/s
+Comm_Memcpy_WCToGPU/log2(N):10/manual_time                     6272 ns      22535 ns     111736 bytes=1024 cuda_id=1   155.707MB/s
+Comm_Memcpy_WCToGPU/log2(N):11/manual_time                     6225 ns      22445 ns     111781 bytes=2.048k cuda_id=1   313.777MB/s
+Comm_Memcpy_WCToGPU/log2(N):12/manual_time                     6222 ns      22515 ns     111587 bytes=4.096k cuda_id=1   627.797MB/s
+Comm_Memcpy_WCToGPU/log2(N):13/manual_time                     6293 ns      22558 ns     111354 bytes=8.192k cuda_id=1   1.21237GB/s
+Comm_Memcpy_WCToGPU/log2(N):14/manual_time                     6234 ns      22514 ns     111650 bytes=16.384k cuda_id=1   2.44783GB/s
+Comm_Memcpy_WCToGPU/log2(N):15/manual_time                     5896 ns      23306 ns     117697 bytes=32.768k cuda_id=1   5.17589GB/s
+Comm_Memcpy_WCToGPU/log2(N):16/manual_time                     6402 ns      24127 ns     108461 bytes=65.536k cuda_id=1   9.53424GB/s
+Comm_Memcpy_WCToGPU/log2(N):17/manual_time                     7727 ns      25083 ns      87969 bytes=131.072k cuda_id=1   15.7982GB/s
+Comm_Memcpy_WCToGPU/log2(N):18/manual_time                     9804 ns      27133 ns      71530 bytes=262.144k cuda_id=1   24.9033GB/s
+Comm_Memcpy_WCToGPU/log2(N):19/manual_time                    14255 ns      31698 ns      49187 bytes=524.288k cuda_id=1   34.2533GB/s
+Comm_Memcpy_WCToGPU/log2(N):20/manual_time                    23166 ns      41134 ns      30150 bytes=1048.58k cuda_id=1   42.1556GB/s
+Comm_Memcpy_WCToGPU/log2(N):21/manual_time                    40710 ns      58810 ns      17167 bytes=2.09715M cuda_id=1   47.9768GB/s
+Comm_Memcpy_WCToGPU/log2(N):22/manual_time                    75316 ns      93640 ns       9284 bytes=4.1943M cuda_id=1   51.8651GB/s
+Comm_Memcpy_WCToGPU/log2(N):23/manual_time                   137130 ns     156161 ns       5094 bytes=8.38861M cuda_id=1   56.9713GB/s
+Comm_Memcpy_WCToGPU/log2(N):24/manual_time                   250803 ns     269853 ns       2785 bytes=16.7772M cuda_id=1      62.3GB/s
+Comm_Memcpy_WCToGPU/log2(N):25/manual_time                   483469 ns     502513 ns       1447 bytes=33.5544M cuda_id=1    64.637GB/s
+Comm_Memcpy_WCToGPU/log2(N):26/manual_time                   945592 ns     964480 ns        739 bytes=67.1089M cuda_id=1   66.0962GB/s
+Comm_Memcpy_WCToGPU/log2(N):27/manual_time                  1868191 ns    1887428 ns        374 bytes=134.218M cuda_id=1   66.9096GB/s
+Comm_Memcpy_WCToGPU/log2(N):28/manual_time                  3715130 ns    3734747 ns        188 bytes=268.435M cuda_id=1   67.2924GB/s
+Comm_Memcpy_WCToGPU/log2(N):29/manual_time                  7405911 ns    7425965 ns         94 bytes=536.871M cuda_id=1   67.5136GB/s
+Comm_Memcpy_WCToGPU/log2(N):30/manual_time                 14788778 ns   14809493 ns         47 bytes=1073.74M cuda_id=1   67.6188GB/s
+Comm_Memcpy_WCToGPU/log2(N):31/manual_time                 29554531 ns   29576072 ns         24 bytes=2.14748G cuda_id=1   67.6715GB/s
+Comm_Memcpy_WCToGPU/log2(N):32/manual_time                 59086592 ns   59109445 ns         12 bytes=4.29497G cuda_id=1   67.6973GB/s
+Comm_Memcpy_WCToGPU/log2(N):33/manual_time                118608424 ns  118633839 ns          6 bytes=8.58993G cuda_id=1   67.4488GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):8/manual_time            14817 ns      29490 ns      46964 bytes=256 dst_gpu=0 src_gpu=1   16.4775MB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):9/manual_time            14889 ns      29555 ns      46859 bytes=512 dst_gpu=0 src_gpu=1   32.7942MB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):10/manual_time           14845 ns      29523 ns      46758 bytes=1024 dst_gpu=0 src_gpu=1   65.7836MB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):11/manual_time           14833 ns      29518 ns      46901 bytes=2.048k dst_gpu=0 src_gpu=1   131.676MB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):12/manual_time           14909 ns      29544 ns      47000 bytes=4.096k dst_gpu=0 src_gpu=1   262.004MB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):13/manual_time           15129 ns      29949 ns      46401 bytes=8.192k dst_gpu=0 src_gpu=1   516.385MB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):14/manual_time           15025 ns      29680 ns      46548 bytes=16.384k dst_gpu=0 src_gpu=1   1039.95MB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):15/manual_time           14999 ns      29676 ns      46431 bytes=32.768k dst_gpu=0 src_gpu=1   2.03458GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):16/manual_time           15003 ns      29689 ns      46664 bytes=65.536k dst_gpu=0 src_gpu=1    4.0682GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):17/manual_time           15010 ns      29676 ns      46477 bytes=131.072k dst_gpu=0 src_gpu=1   8.13262GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):18/manual_time           15672 ns      30320 ns      44415 bytes=262.144k dst_gpu=0 src_gpu=1    15.578GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):19/manual_time           25685 ns      40415 ns      27034 bytes=524.288k dst_gpu=0 src_gpu=1   19.0102GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):20/manual_time           25679 ns      40198 ns      25888 bytes=1048.58k dst_gpu=0 src_gpu=1   38.0294GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):21/manual_time           45961 ns      60478 ns      15263 bytes=2.09715M dst_gpu=0 src_gpu=1   42.4948GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):22/manual_time           73586 ns      88128 ns       9210 bytes=4.1943M dst_gpu=0 src_gpu=1   53.0839GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):23/manual_time          128437 ns     143238 ns       5442 bytes=8.38861M dst_gpu=0 src_gpu=1   60.8277GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):24/manual_time          243961 ns     258822 ns       2879 bytes=16.7772M dst_gpu=0 src_gpu=1   64.0472GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):25/manual_time          476247 ns     491117 ns       1468 bytes=33.5544M dst_gpu=0 src_gpu=1   65.6172GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):26/manual_time          937438 ns     952326 ns        746 bytes=67.1089M dst_gpu=0 src_gpu=1   66.6711GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):27/manual_time         1859283 ns    1874531 ns        376 bytes=134.218M dst_gpu=0 src_gpu=1   67.2302GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):28/manual_time         3702441 ns    3718973 ns        189 bytes=268.435M dst_gpu=0 src_gpu=1    67.523GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):29/manual_time         7389792 ns    7410883 ns         95 bytes=536.871M dst_gpu=0 src_gpu=1   67.6609GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):30/manual_time        14770810 ns   14810638 ns         47 bytes=1073.74M dst_gpu=0 src_gpu=1   67.7011GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):31/manual_time        29519143 ns   29631863 ns         24 bytes=2.14748G dst_gpu=0 src_gpu=1   67.7526GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):32/manual_time        59020403 ns   59418646 ns         12 bytes=4.29497G dst_gpu=0 src_gpu=1   67.7732GB/s
+Comm_Memcpy_GPUToGPUPeer/1/0/log2(N):33/manual_time       118700823 ns  120257981 ns          6 bytes=8.58993G dst_gpu=0 src_gpu=1   67.3963GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/1/0/log2(N):8/manual_time       25913 ns      54944 ns      26907 bytes=256 gpu0=1 gpu1=0   18.8428MB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/1/0/log2(N):10/manual_time      25918 ns      54953 ns      26806 bytes=1024 gpu0=1 gpu1=0   75.3585MB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/1/0/log2(N):12/manual_time      25995 ns      55088 ns      26728 bytes=4.096k gpu0=1 gpu1=0   300.534MB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/1/0/log2(N):14/manual_time      25811 ns      54839 ns      27037 bytes=16.384k gpu0=1 gpu1=0   1.18237GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/1/0/log2(N):16/manual_time      25771 ns      54728 ns      26974 bytes=65.536k gpu0=1 gpu1=0   4.73671GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/1/0/log2(N):18/manual_time      26051 ns      55108 ns      26818 bytes=262.144k gpu0=1 gpu1=0    18.743GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/1/0/log2(N):20/manual_time      29721 ns      59742 ns      23581 bytes=1048.58k gpu0=1 gpu1=0   65.7162GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/1/0/log2(N):22/manual_time      72723 ns     104336 ns       8966 bytes=4.1943M gpu0=1 gpu1=0   107.429GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/1/0/log2(N):24/manual_time     243060 ns     274766 ns       2843 bytes=16.7772M gpu0=1 gpu1=0   128.569GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/1/0/log2(N):26/manual_time     937223 ns     969415 ns        747 bytes=67.1089M gpu0=1 gpu1=0   133.373GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/1/0/log2(N):28/manual_time    3703543 ns    3737389 ns        189 bytes=268.435M gpu0=1 gpu1=0   135.006GB/s
+Comm_Duplex_Memcpy_GPUGPUPeer/1/0/log2(N):30/manual_time   14766418 ns   14826584 ns         47 bytes=1073.74M gpu0=1 gpu1=0   135.442GB/s
+-bash-4.2$ 
