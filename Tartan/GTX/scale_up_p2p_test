@@ -1,0 +1,63 @@
+root@a8f02051f847:/usr/src/tartan/microbenchmark/scale_up_p2p_test# ./p2pTest
+[P2P (Peer-to-Peer) GPU Bandwidth Latency Test]
+Device: 0, GeForce GTX 980, pciBusID: 1, pciDeviceID: 0, pciDomainID:0
+
+***NOTE: In case a device doesn't have P2P access to other one, it falls back to normal memcopy procedure.
+So you can see lesser Bandwidth (GB/s) in those cases.
+
+P2P Connectivity Matrix
+     D\D     0
+     0       1
+Unidirectional P2P=Disabled Bandwidth Matrix (GB/s)
+   D\D     0
+     0 166.94
+Unidirectional P2P=Enabled Bandwidth Matrix (GB/s)
+   D\D     0
+     0 166.92
+Bidirectional P2P=Disabled Bandwidth Matrix (GB/s)
+   D\D     0
+     0 167.25
+Bidirectional P2P=Enabled Bandwidth Matrix (GB/s)
+   D\D     0
+     0 166.98
+P2P=Disabled Latency Matrix (us)
+   D\D     0
+     0   2.17
+P2P=Enabled Latency Matrix (us)
+   D\D     0
+     0   2.16
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+root@a8f02051f847:/usr/src/tartan/microbenchmark/scale_up_p2p_test#
+
+root@a8f02051f847:/usr/src/tartan/microbenchmark/scale_up_p2p_test# ./p2pTest
+[P2P (Peer-to-Peer) GPU Bandwidth Latency Test]
+Device: 0, GeForce GTX 980, pciBusID: 1, pciDeviceID: 0, pciDomainID:0
+
+***NOTE: In case a device doesn't have P2P access to other one, it falls back to normal memcopy procedure.
+So you can see lesser Bandwidth (GB/s) in those cases.
+
+P2P Connectivity Matrix
+     D\D     0
+     0       1
+Unidirectional P2P=Disabled Bandwidth Matrix (GB/s)
+   D\D     0
+     0 166.94
+Unidirectional P2P=Enabled Bandwidth Matrix (GB/s)
+   D\D     0
+     0 167.02
+Bidirectional P2P=Disabled Bandwidth Matrix (GB/s)
+   D\D     0
+     0 167.32
+Bidirectional P2P=Enabled Bandwidth Matrix (GB/s)
+   D\D     0
+     0 166.80
+P2P=Disabled Latency Matrix (us)
+   D\D     0
+     0   2.13
+P2P=Enabled Latency Matrix (us)
+   D\D     0
+     0   2.13
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+root@a8f02051f847:/usr/src/tartan/microbenchmark/scale_up_p2p_test#
