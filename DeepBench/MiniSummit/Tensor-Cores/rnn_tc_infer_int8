@@ -1,0 +1,5 @@
+                 Running inference benchmark 
+                         Times
+-------------------------------------------------------------------------------------------------------------------
+    type    hidden   N     timesteps   precision   fwd_time (usec)   
+    lstm     512       1      25          int8
