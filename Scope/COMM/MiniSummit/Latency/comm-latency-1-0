@@ -1,0 +1,73 @@
+-bash-4.2$ ./scope --benchmark_filter=Latency -c=1 -c=0 --benchmark_out_format=json --benchmark_out=results/comm-latency-1-0.json
+2019-12-17 18:46:24
+Running ./scope
+Run on (128 X 3800 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x32)
+  L1 Instruction 32K (x32)
+  L2 Unified 512K (x16)
+  L3 Unified 10240K (x16)
+-----------------------------------------------------------------------------------------------------------
+Benchmark                                                    Time           CPU Iterations UserCounters...
+-----------------------------------------------------------------------------------------------------------
+Comm_UM_Latency_GPUToGPU/1/0/log2(N):8/manual_time      325185 ns     405837 ns       2185 dst_gpu=0 src_gpu=1 strides=8
+Comm_UM_Latency_GPUToGPU/1/0/log2(N):10/manual_time     388522 ns     474051 ns       1396 dst_gpu=0 src_gpu=1 strides=10
+Comm_UM_Latency_GPUToGPU/1/0/log2(N):12/manual_time     463048 ns     555647 ns       1284 dst_gpu=0 src_gpu=1 strides=12
+Comm_UM_Latency_GPUToGPU/1/0/log2(N):14/manual_time     531092 ns     632758 ns       1315 dst_gpu=0 src_gpu=1 strides=14
+Comm_UM_Latency_GPUToGPU/1/0/log2(N):16/manual_time     614815 ns     723144 ns       1029 dst_gpu=0 src_gpu=1 strides=16
+Comm_UM_Latency_GPUToGPU/1/0/log2(N):18/manual_time     669195 ns     788210 ns        954 dst_gpu=0 src_gpu=1 strides=18
+Comm_UM_Latency_GPUToGPU/1/0/log2(N):20/manual_time     747912 ns     872702 ns        743 dst_gpu=0 src_gpu=1 strides=20
+Comm_UM_Latency_GPUToGPU/1/0/log2(N):22/manual_time     817812 ns     954835 ns        751 dst_gpu=0 src_gpu=1 strides=22
+Comm_UM_Latency_GPUToGPU/1/0/log2(N):24/manual_time     886013 ns    1027523 ns        742 dst_gpu=0 src_gpu=1 strides=24
+Comm_UM_Latency_GPUToGPU/1/0/log2(N):26/manual_time     952258 ns    1106847 ns        720 dst_gpu=0 src_gpu=1 strides=26
+Comm_UM_Latency_GPUToGPU/1/0/log2(N):28/manual_time    1040700 ns    1199784 ns        595 dst_gpu=0 src_gpu=1 strides=28
+Comm_UM_Latency_GPUToGPU/1/0/log2(N):30/manual_time    1080095 ns    1253150 ns        629 dst_gpu=0 src_gpu=1 strides=30
+Comm_UM_Latency_GPUToHost/1/log2(N):8                   230323 ns     230346 ns       3138 cuda_id=1 strides=8
+Comm_UM_Latency_GPUToHost/1/log2(N):10                  281437 ns     281463 ns       2489 cuda_id=1 strides=10
+Comm_UM_Latency_GPUToHost/1/log2(N):12                  331660 ns     331687 ns       2173 cuda_id=1 strides=12
+Comm_UM_Latency_GPUToHost/1/log2(N):14                  382960 ns     382986 ns       1829 cuda_id=1 strides=14
+Comm_UM_Latency_GPUToHost/1/log2(N):16                  433500 ns     433525 ns       1666 cuda_id=1 strides=16
+Comm_UM_Latency_GPUToHost/1/log2(N):18                  484213 ns     484228 ns       1445 cuda_id=1 strides=18
+Comm_UM_Latency_GPUToHost/1/log2(N):20                  519052 ns     519073 ns       1305 cuda_id=1 strides=20
+Comm_UM_Latency_GPUToHost/1/log2(N):22                  586474 ns     586502 ns       1178 cuda_id=1 strides=22
+Comm_UM_Latency_GPUToHost/1/log2(N):24                  638303 ns     638332 ns       1093 cuda_id=1 strides=24
+Comm_UM_Latency_GPUToHost/1/log2(N):26                  688581 ns     688625 ns       1014 cuda_id=1 strides=26
+Comm_UM_Latency_GPUToHost/1/log2(N):28                  740474 ns     740502 ns        940 cuda_id=1 strides=28
+Comm_UM_Latency_GPUToHost/1/log2(N):30                  763837 ns     763877 ns        887 cuda_id=1 strides=30
+Comm_UM_Latency_GPUToHost/0/log2(N):8                   220098 ns     220113 ns       3189 cuda_id=0 strides=8
+Comm_UM_Latency_GPUToHost/0/log2(N):10                  268191 ns     268209 ns       2609 cuda_id=0 strides=10
+Comm_UM_Latency_GPUToHost/0/log2(N):12                  317034 ns     317059 ns       2213 cuda_id=0 strides=12
+Comm_UM_Latency_GPUToHost/0/log2(N):14                  363916 ns     363942 ns       1916 cuda_id=0 strides=14
+Comm_UM_Latency_GPUToHost/0/log2(N):16                  413419 ns     413437 ns       1697 cuda_id=0 strides=16
+Comm_UM_Latency_GPUToHost/0/log2(N):18                  472339 ns     472344 ns       1517 cuda_id=0 strides=18
+Comm_UM_Latency_GPUToHost/0/log2(N):20                  523106 ns     523109 ns       1332 cuda_id=0 strides=20
+Comm_UM_Latency_GPUToHost/0/log2(N):22                  557334 ns     557361 ns       1255 cuda_id=0 strides=22
+Comm_UM_Latency_GPUToHost/0/log2(N):24                  606563 ns     606592 ns       1151 cuda_id=0 strides=24
+Comm_UM_Latency_GPUToHost/0/log2(N):26                  654434 ns     654455 ns       1070 cuda_id=0 strides=26
+Comm_UM_Latency_GPUToHost/0/log2(N):28                  707474 ns     707493 ns        994 cuda_id=0 strides=28
+Comm_UM_Latency_GPUToHost/0/log2(N):30                  771897 ns     771910 ns        905 cuda_id=0 strides=30
+Comm_UM_Latency_HostToGPU/1/log2(N):8/manual_time       282834 ns     360823 ns       2422 cuda_id=1 strides=8
+Comm_UM_Latency_HostToGPU/1/log2(N):10/manual_time      331101 ns     415142 ns       2061 cuda_id=1 strides=10
+Comm_UM_Latency_HostToGPU/1/log2(N):12/manual_time      395912 ns     487608 ns       1773 cuda_id=1 strides=12
+Comm_UM_Latency_HostToGPU/1/log2(N):14/manual_time      444394 ns     541005 ns       1530 cuda_id=1 strides=14
+Comm_UM_Latency_HostToGPU/1/log2(N):16/manual_time      520568 ns     625662 ns       1320 cuda_id=1 strides=16
+Comm_UM_Latency_HostToGPU/1/log2(N):18/manual_time      578973 ns     690682 ns       1204 cuda_id=1 strides=18
+Comm_UM_Latency_HostToGPU/1/log2(N):20/manual_time      654290 ns     773361 ns       1040 cuda_id=1 strides=20
+Comm_UM_Latency_HostToGPU/1/log2(N):22/manual_time      722704 ns     848946 ns        985 cuda_id=1 strides=22
+Comm_UM_Latency_HostToGPU/1/log2(N):24/manual_time      755048 ns     885671 ns        912 cuda_id=1 strides=24
+Comm_UM_Latency_HostToGPU/1/log2(N):26/manual_time      831746 ns     971993 ns        778 cuda_id=1 strides=26
+Comm_UM_Latency_HostToGPU/1/log2(N):28/manual_time      882430 ns    1029967 ns        690 cuda_id=1 strides=28
+Comm_UM_Latency_HostToGPU/1/log2(N):30/manual_time      946149 ns    1099488 ns        741 cuda_id=1 strides=30
+Comm_UM_Latency_HostToGPU/0/log2(N):8/manual_time       258558 ns     325798 ns       2656 cuda_id=0 strides=8
+Comm_UM_Latency_HostToGPU/0/log2(N):10/manual_time      315442 ns     386744 ns       2225 cuda_id=0 strides=10
+Comm_UM_Latency_HostToGPU/0/log2(N):12/manual_time      374139 ns     449758 ns       1876 cuda_id=0 strides=12
+Comm_UM_Latency_HostToGPU/0/log2(N):14/manual_time      428621 ns     509025 ns       1340 cuda_id=0 strides=14
+Comm_UM_Latency_HostToGPU/0/log2(N):16/manual_time      489135 ns     574039 ns       1393 cuda_id=0 strides=16
+Comm_UM_Latency_HostToGPU/0/log2(N):18/manual_time      536552 ns     626115 ns       1303 cuda_id=0 strides=18
+Comm_UM_Latency_HostToGPU/0/log2(N):20/manual_time      610432 ns     704342 ns       1143 cuda_id=0 strides=20
+Comm_UM_Latency_HostToGPU/0/log2(N):22/manual_time      670409 ns     768972 ns       1019 cuda_id=0 strides=22
+Comm_UM_Latency_HostToGPU/0/log2(N):24/manual_time      725212 ns     830105 ns        966 cuda_id=0 strides=24
+Comm_UM_Latency_HostToGPU/0/log2(N):26/manual_time      778085 ns     886668 ns        895 cuda_id=0 strides=26
+Comm_UM_Latency_HostToGPU/0/log2(N):28/manual_time      834174 ns     947300 ns        768 cuda_id=0 strides=28
+Comm_UM_Latency_HostToGPU/0/log2(N):30/manual_time      891565 ns    1009514 ns        780 cuda_id=0 strides=30
+-bash-4.2$ 
