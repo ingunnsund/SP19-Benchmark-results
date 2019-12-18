@@ -1,0 +1,23 @@
+ NCCL MPI AllReduce 
+ Num Ranks: 1
+----------------------------------------------------------------------------------------------------
+    # of floats    bytes transferred    Avg Time (msec)    Max Time (msec)
+----------------------------------------------------------------------------------------------------
+[82bbd93323cc:00141] *** Process received signal ***
+[82bbd93323cc:00141] Signal: Aborted (6)
+[82bbd93323cc:00141] Signal code:  (-6)
+[82bbd93323cc:00141] [ 0] /lib/x86_64-linux-gnu/libpthread.so.0(+0x12890)[0x7ff54f25c890]
+[82bbd93323cc:00141] [ 1] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0xc7)[0x7ff54e8f6e97]
+[82bbd93323cc:00141] [ 2] /lib/x86_64-linux-gnu/libc.so.6(abort+0x141)[0x7ff54e8f8801]
+[82bbd93323cc:00141] [ 3] /usr/lib/x86_64-linux-gnu/libstdc++.so.6(+0x8c957)[0x7ff54ef4d957]
+[82bbd93323cc:00141] [ 4] /usr/lib/x86_64-linux-gnu/libstdc++.so.6(+0x92ab6)[0x7ff54ef53ab6]
+[82bbd93323cc:00141] [ 5] /usr/lib/x86_64-linux-gnu/libstdc++.so.6(+0x92af1)[0x7ff54ef53af1]
+[82bbd93323cc:00141] [ 6] /usr/lib/x86_64-linux-gnu/libstdc++.so.6(+0x92d24)[0x7ff54ef53d24]
+[82bbd93323cc:00141] [ 7] bin/nccl_mpi_all_reduce(+0x36e9)[0x55a1863ea6e9]
+[82bbd93323cc:00141] [ 8] bin/nccl_mpi_all_reduce(+0x3da7)[0x55a1863eada7]
+[82bbd93323cc:00141] [ 9] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7)[0x7ff54e8d9b97]
+[82bbd93323cc:00141] [10] bin/nccl_mpi_all_reduce(+0x30aa)[0x55a1863ea0aa]
+[82bbd93323cc:00141] *** End of error message ***
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 0 on node 82bbd93323cc exited on signal 6 (Aborted).
+--------------------------------------------------------------------------

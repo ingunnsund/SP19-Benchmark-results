@@ -1,0 +1,4 @@
+                 Running inference benchmark 
+                         Times
+----------------------------------------------------------------------------------------
+    m       n      k      a_t     b_t      precision        time (usec)  pad_kerenels  
