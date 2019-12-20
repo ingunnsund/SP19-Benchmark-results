@@ -15,20 +15,22 @@ def create_heat_map(a, custom_cmap, filename):
     fig, ax1 = plt.subplots()
     # ibm: 
     # im = plt.imshow(nm, cmap=custom_cmap, vmin=87, vmax=1350, interpolation='nearest')
-    im = plt.imshow(nm, cmap=custom_cmap, interpolation='nearest', norm=LogNorm(vmin=24, vmax=1000))
+#    im = plt.imshow(nm, cmap=custom_cmap, interpolation='nearest', norm=LogNorm(vmin=24, vmax=1000))
+    im = plt.imshow(nm, cmap=custom_cmap, interpolation='nearest', norm=LogNorm(vmin=8, vmax=1000))
+
     #im = plt.imshow(nm, cmap=custom_cmap, vmin=81, vmax=4024, interpolation='nearest')
     cb = plt.colorbar(im)
 
     ax1.xaxis.tick_top()
     #cb.set_label('Bandwidth (GB/s)', rotation=360, labelpad=20)
-    cb.set_label('Bandwidth (GB/s)', rotation=360, labelpad=30)
+    cb.set_label('Bandwidth (GB/s)')
     #cb.set_label('Latency (μs)', rotation=360, labelpad=20, position=[0, 0.55])
     ax1.set_xlabel('Device id')    
     ax1.xaxis.set_label_position('top') 
     ax1.xaxis.set_label_coords(-0.12, 1.02)
     #show every gpu nr
-    ax1.xaxis.set_major_locator(ticker.MultipleLocator(1))
-    ax1.yaxis.set_major_locator(ticker.MultipleLocator(1))
+    ax1.xaxis.set_major_locator(ticker.MultipleLocator(2))
+    ax1.yaxis.set_major_locator(ticker.MultipleLocator(2))
 
     plt.savefig(filename, bbox_inches = 'tight', pad_inches = 0)
 
@@ -92,18 +94,20 @@ custom_color_map_tripple_bw = LinearSegmentedColormap.from_list(
 #create_heat_map(a4, custom_color_map_dual, "yme-latency-pcie.svg")
 #create_heat_map(a3, custom_color_map_tripple, "dgx2-latency-pcie.svg")
 #create_heat_map(a6, custom_color_map_tripple, "dgx2-latency-nvlink.svg")
-#create_heat_map(bw_pci, custom_color_map_tripple_bw, "dgx2-bw-uni-pcie.svg")
-#create_heat_map(bw_nvlink, custom_color_map_tripple_bw, "dgx2-bw-uni-nvlink.svg")
-#create_heat_map(bw_bi_pci, custom_color_map_tripple_bw, "dgx2-bw-bi-pcie.svg")
-#create_heat_map(bw_bi_nvlink, custom_color_map_tripple_bw, "dgx2-bw-bi-nvlink.svg")
+create_heat_map(bw_pci, custom_color_map_tripple_bw, "dgx2-bw-uni-pcie1.svg")
+create_heat_map(bw_nvlink, custom_color_map_tripple_bw, "dgx2-bw-uni-nvlink1.svg")
+create_heat_map(bw_bi_pci, custom_color_map_tripple_bw, "dgx2-bw-bi-pcie1.svg")
+create_heat_map(bw_bi_nvlink, custom_color_map_tripple_bw, "dgx2-bw-bi-nvlink1.svg")
 
-#create_heat_map(yme_bw_uni_pci, custom_color_map_tripple_bw, "yme-bw-uni-pci.svg")
-#create_heat_map(yme_bw_uni_nvlink, custom_color_map_tripple_bw, "yme-bw-uni-nvlink.svg")
-#create_heat_map(yme_bw_bi_pci, custom_color_map_tripple_bw, "yme-bw-bi-pci.svg")
-#create_heat_map(yme_bw_bi_nvlink, custom_color_map_tripple_bw, "yme-bw-bi-nvlink.svg")
+"""
+create_heat_map(yme_bw_uni_pci, custom_color_map_tripple_bw, "yme-bw-uni-pci1.svg")
+create_heat_map(yme_bw_uni_nvlink, custom_color_map_tripple_bw, "yme-bw-uni-nvlink1.svg")
+create_heat_map(yme_bw_bi_pci, custom_color_map_tripple_bw, "yme-bw-bi-pci1.svg")
+create_heat_map(yme_bw_bi_nvlink, custom_color_map_tripple_bw, "yme-bw-bi-nvlink1.svg")
 
 
-create_heat_map(ms_bw_uni_pci, custom_color_map_tripple_bw, "ms-bw-uni-pci.svg")
-create_heat_map(ms_bw_uni_nvlink, custom_color_map_tripple_bw, "ms-bw-uni-nvlink.svg")
-create_heat_map(ms_bw_bi_pci, custom_color_map_tripple_bw, "ms-bw-bi-pci.svg")
-create_heat_map(ms_bw_bi_nvlink, custom_color_map_tripple_bw, "ms-bw-bi-nvlink.svg")
+create_heat_map(ms_bw_uni_pci, custom_color_map_tripple_bw, "ms-bw-uni-pci1.svg")
+create_heat_map(ms_bw_uni_nvlink, custom_color_map_tripple_bw, "ms-bw-uni-nvlink1.svg")
+create_heat_map(ms_bw_bi_pci, custom_color_map_tripple_bw, "ms-bw-bi-pci1.svg")
+create_heat_map(ms_bw_bi_nvlink, custom_color_map_tripple_bw, "ms-bw-bi-nvlink1.svg")
+"""
